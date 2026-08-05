@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWM82RH0BZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DWM82RH0BZ');
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil academico del CRECE: trayectorias, identificadores academicos, lineas de investigacion y evidencias verificables.">
+  <title>Perfil acad&eacute;mico | CRECE</title>
+  <!-- SEO -->
+  <link rel="canonical" href="https://crece.ece.edu.mx/perfil-academico.html">
+  <link rel="icon" type="image/jpeg" href="/assets/logo-crece.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CRECE — ECE Nuevo León">
+  <meta property="og:url" content="https://crece.ece.edu.mx/perfil-academico.html">
+  <meta property="og:title" content="Perfil académico | CRECE">
+  <meta property="og:description" content="Perfil académico del Dr. José Alfredo Fernández González, coordinador del CRECE: trayectoria, ORCID, líneas de investigación y producción verificable.">
+  <meta property="og:image" content="https://crece.ece.edu.mx/assets/og-crece.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://crece.ece.edu.mx/assets/og-crece.jpg">
+  <meta property="og:locale" content="es_MX">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .profile-layout { display: grid; grid-template-columns: 320px 1fr; gap: 28px; align-items: start; }
+    .profile-aside, .profile-main-card, .profile-section-card { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--gray-xlt); }
+    .profile-aside { padding: 24px; position: sticky; top: 92px; }
+    .profile-photo-lg { width: 132px; height: 132px; border-radius: 50%; object-fit: cover; border: 4px solid var(--off-white); box-shadow: var(--shadow-sm); margin-bottom: 18px; }
+    .profile-aside h2 { color: var(--navy); margin: 0 0 6px; font-size: 1.25rem; }
+    .profile-role { color: var(--orange); font-weight: 700; margin-bottom: 14px; }
+    .profile-links { display: flex; flex-direction: column; gap: 8px; margin-top: 18px; }
+    .profile-links a { color: var(--orange); font-weight: 700; font-size: .9rem; }
+    .profile-main-card { padding: 28px; border-top: 4px solid var(--orange); }
+    .profile-main-card h2, .profile-section-card h2 { color: var(--navy); margin-top: 0; }
+    .profile-main-card p, .profile-section-card p { color: var(--gray); }
+    .profile-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+    .profile-fact { background: var(--off-white); border-radius: var(--radius); padding: 14px 16px; }
+    .profile-fact strong { display: block; color: var(--navy); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 4px; }
+    .profile-fact span { color: var(--gray); font-size: .92rem; }
+    .profile-section-card { padding: 24px; margin-top: 22px; }
+    .evidence-list { display: grid; gap: 10px; margin-top: 14px; }
+    .evidence-list li { color: var(--gray); border-left: 4px solid var(--orange); background: var(--off-white); padding: 12px 14px; }
+    .product-list, .thesis-list { display: grid; gap: 14px; margin-top: 16px; }
+    .product-item, .thesis-item { background: var(--off-white); border-radius: var(--radius); padding: 16px; border-left: 4px solid var(--orange); }
+    .product-item h3, .thesis-item h3 { color: var(--navy); font-family: var(--font-body); font-size: 1rem; margin: 0 0 8px; line-height: 1.35; }
+    .product-item p, .thesis-item p { margin: 0 0 8px; }
+    .product-meta, .thesis-meta { color: var(--gray); font-size: .9rem; }
+    .product-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .product-links a { color: var(--orange); font-weight: 700; font-size: .9rem; }
+    .section-kicker { color: var(--orange); font-weight: 800; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; margin: 18px 0 10px; }
+    .pending-note { background: var(--white); border: 1px dashed var(--gray-xlt); border-radius: var(--radius); padding: 14px 16px; margin-top: 16px; }
+    .member-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 18px; }
+    .member-card { background: var(--white); border-radius: var(--radius-lg); padding: 20px; border: 1px solid var(--gray-xlt); box-shadow: var(--shadow-sm); }
+    .member-card h3 { color: var(--navy); font-family: var(--font-body); font-weight: 700; font-size: 1rem; margin: 0 0 8px; }
+    .member-card p { margin: 0; color: var(--gray); font-size: .9rem; }
+    @media (max-width: 900px) { .profile-layout { grid-template-columns: 1fr; } .profile-aside { position: static; } .profile-grid, .member-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container" aria-label="Navegaci&oacute;n principal">
+      <div class="nav-wrap">
+        <a href="index.html" class="nav-logo" aria-label="CRECE inicio"><img src="assets/logo-crece.jpg" alt="CRECE"></a>
+        <ul class="nav-menu">
+          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">El CRECE</button>
+            <ul class="dropdown"><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li><a href="contacto.html">Contacto</a></li></ul></li>
+          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Oferta</button>
+            <ul class="dropdown"><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></li>
+          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Investigaci&oacute;n</button>
+            <ul class="dropdown"><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="red-rain.html">Red RAIN</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li></ul></li>
+          <li class="nav-item"><button class="nav-link active" type="button" aria-haspopup="true" aria-expanded="false">Publicaciones</button>
+            <ul class="dropdown"><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="perfil-academico.html" class="active">Perfil acad&eacute;mico</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></li>
+        </ul>
+        <a href="convocatorias.html" class="btn btn-primary btn-sm nav-cta">Convocatorias</a>
+        <button class="nav-burger" id="burgerBtn" aria-label="Abrir men&uacute;" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <p class="m-lbl">El CRECE</p><a class="m-link" href="nosotros.html">Nosotros</a><a class="m-link" href="equipo.html">Equipo de Trabajo</a><a class="m-link" href="convenios.html">Convenios</a><a class="m-link" href="contacto.html">Contacto</a><hr>
+      <p class="m-lbl">Oferta</p><a class="m-link" href="oferta-educativa.html">Oferta Educativa</a><a class="m-link" href="convocatorias.html">Convocatorias</a><a class="m-link" href="conocer.html">Proyecto CONOCER</a><hr>
+      <p class="m-lbl">Investigaci&oacute;n</p><a class="m-link" href="investigacion.html">Investigaci&oacute;n</a><a class="m-link" href="red-rain.html">Red RAIN</a><a class="m-link" href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a><hr>
+      <p class="m-lbl">Publicaciones</p><a class="m-link" href="publicaciones.html">Publicaciones</a><a class="m-link active" href="perfil-academico.html">Perfil acad&eacute;mico</a><a class="m-link" href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a><a class="m-link" href="vectores.html">Revista Vectores</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><a href="publicaciones.html">Publicaciones</a><span>/</span><span>Perfil acad&eacute;mico</span></div>
+        <h1>Perfil acad&eacute;mico</h1>
+        <p>Trayectorias acad&eacute;micas, identificadores, l&iacute;neas de investigaci&oacute;n y evidencias verificables de integrantes del CRECE.</p>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="profile-layout">
+          <aside class="profile-aside">
+            <img class="profile-photo-lg" src="assets/jose-alfredo-fernandez.jpg" alt="Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez">
+            <h2>Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez</h2>
+            <div class="profile-role">Coordinaci&oacute;n CRECE</div>
+            <p>Doctor en Educaci&oacute;n con Acentuaci&oacute;n en Comunicaci&oacute;n y Tecnolog&iacute;a Educativa.</p>
+            <div class="profile-links">
+              <a href="https://orcid.org/0000-0002-0487-7091" target="_blank" rel="noopener">ORCID: 0000-0002-0487-7091</a>
+              <a href="https://scholar.google.com/citations?user=NVOZ-MIAAAAJ&amp;hl=es" target="_blank" rel="noopener">Google Acad&eacute;mico</a>
+              <a href="publicaciones.html">Producci&oacute;n acad&eacute;mica</a>
+            </div>
+          </aside>
+
+          <div>
+            <article class="profile-main-card">
+              <span class="eyebrow">Perfil documentado</span>
+              <h2>Trayectoria acad&eacute;mica</h2>
+              <p>Este perfil concentra datos acad&eacute;micos verificables para presentar de manera ordenada la producci&oacute;n, l&iacute;neas de investigaci&oacute;n, formaci&oacute;n de recursos humanos, proyectos y actividades de divulgaci&oacute;n vinculadas al trabajo del CRECE.</p>
+              <div class="profile-grid">
+                <div class="profile-fact"><strong>CVU</strong><span>947644</span></div>
+                <div class="profile-fact"><strong>SNII</strong><span>Candidato</span></div>
+                <div class="profile-fact"><strong>Instituci&oacute;n</strong><span>Escuela de Ciencias de la Educaci&oacute;n</span></div>
+                <div class="profile-fact"><strong>Adscripci&oacute;n operativa</strong><span>Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa</span></div>
+              </div>
+            </article>
+
+            <section class="profile-section-card">
+              <h2>L&iacute;neas de investigaci&oacute;n</h2>
+              <p>Educaci&oacute;n superior, formaci&oacute;n continua docente, tecnolog&iacute;a educativa, inteligencia artificial aplicada a la educaci&oacute;n y educaci&oacute;n en l&iacute;nea.</p>
+            </section>
+
+            <section class="profile-section-card">
+              <h2>Producci&oacute;n acad&eacute;mica de autor&iacute;a y coautor&iacute;a</h2>
+              <p>Productos documentados con ficha editorial, DOI, ISBN, ISSN, PDF o enlace acad&eacute;mico disponible.</p>
+              <div class="product-list">
+                <article class="product-item">
+                  <h3>Planeamiento de la educaci&oacute;n</h3>
+                  <p class="product-meta">Jos&eacute; Alfredo Fern&aacute;ndez-Gonz&aacute;lez &middot; Mar&iacute;a de Jes&uacute;s Araiza-V&aacute;zquez. VinculaT&eacute;gica EFAN, 6(2), 1917-1924, 2020.</p>
+                  <p class="product-meta">DOI: 10.29105/vtga6.2-697</p>
+                  <div class="product-links">
+                    <a href="https://vinculategica.uanl.mx/index.php/v/article/view/697" target="_blank" rel="noopener">Ficha</a>
+                    <a href="https://vinculategica.uanl.mx/index.php/v/article/view/697/575" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </article>
+                <article class="product-item">
+                  <h3>Autorregulaci&oacute;n emocional a trav&eacute;s del arte de la pintura en alumnos de educaci&oacute;n primaria</h3>
+                  <p class="product-meta">Jacob Fern&aacute;ndez Gonz&aacute;lez &middot; Mar&iacute;a Dolores Monta&ntilde;ez Almaguer &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. VECTORES, 4(1), 2024.</p>
+                  <p class="product-meta">DOI: 10.56375/ve4.1-36</p>
+                  <div class="product-links">
+                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36" target="_blank" rel="noopener">Ficha</a>
+                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36/23" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </article>
+                <article class="product-item">
+                  <h3>Implementaci&oacute;n de teleformaci&oacute;n ante el confinamiento sanitario por el COVID-19 en primaria</h3>
+                  <p class="product-meta">Joan Alexis Rodr&iacute;guez Villarreal &middot; Arturo Delgado Santos &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. VECTORES, 2(2), 33-43, 2023.</p>
+                  <p class="product-meta">DOI: 10.56375/ve2.2-30</p>
+                  <div class="product-links">
+                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14" target="_blank" rel="noopener">Ficha</a>
+                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14/11" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </article>
+                <article class="product-item">
+                  <h3>Aprendizaje socioemocional: Diagn&oacute;stico y propuestas emergentes despu&eacute;s del COVID-19</h3>
+                  <p class="product-meta">Jos&eacute; Alfredo Fern&aacute;ndez-Gonz&aacute;lez &middot; Mar&iacute;a de Jes&uacute;s Araiza-V&aacute;zquez &middot; Yuliana Margarita Alcal&aacute;-Arriaga. En <em>Educaci&oacute;n en Tiempos de Crisis: Pandemia, Guerra e Incertidumbre</em>, cap. 3, 2023.</p>
+                  <p class="product-meta">ISBN: 978-607-8788-95-8</p>
+                  <div class="product-links">
+                    <a href="https://libros.uanl.mx/index.php/u/catalog/book/172" target="_blank" rel="noopener">Ficha</a>
+                    <a href="https://libros.uanl.mx/index.php/u/catalog/download/172/239/591?inline=1" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </article>
+                <article class="product-item">
+                  <h3>El docente ante entornos virtuales en el periodo de confinamiento: Nuevos retos, habilidades y competencias</h3>
+                  <p class="product-meta">Sergio Guadalupe Torres Flores &middot; V&iacute;ctor Alberto J&aacute;uregui Montalvo &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. En <em>Comunicaci&oacute;n y tecnolog&iacute;as de la informaci&oacute;n en tiempos de pandemia</em>, cap. 1, 2023.</p>
+                  <p class="product-meta">ISBN: 978-607-27-2257-6</p>
+                  <div class="product-links">
+                    <a href="https://www.researchgate.net/publication/388859311_Comunicacion_y_Tecnologias_de_la_informacion_en_tiempos_de_pandemia" target="_blank" rel="noopener">Ficha / PDF</a>
+                  </div>
+                </article>
+                <article class="product-item">
+                  <h3>Necesidades emocionales en un grupo de tercer grado de primaria en confinamiento por COVID-19</h3>
+                  <p class="product-meta">Yuliana Margarita Alcal&aacute; Arriaga &middot; Joan Alexis Rodr&iacute;guez Villarreal &middot; Jacob Fern&aacute;ndez Gonz&aacute;lez &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. VECTORES, 1(1), 106-115, 2022.</p>
+                  <p class="product-meta">DOI: 10.56375/ve1.1-17</p>
+                  <div class="product-links">
+                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9" target="_blank" rel="noopener">Ficha</a>
+                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9/7" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </article>
+                <article class="product-item">
+                  <h3>Experiencia docente en un grupo de tercer grado de primaria en tiempo de contingencia por el COVID-19</h3>
+                  <p class="product-meta">Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez &middot; Mar&iacute;a de Jes&uacute;s Araiza V&aacute;zquez. Daena: International Journal of Good Conscience, 15(3), 1-23, 2020.</p>
+                  <p class="product-meta">ISSN: 1870-557X</p>
+                  <div class="product-links">
+                    <a href="https://www.spentamexico.org/v15-n3/A6.15%283%291-13.pdf" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </article>
+              </div>
+              <div class="pending-note">
+                <p><strong>Memorias y ponencias:</strong> apartado preparado para integrar registros cuando se cuente con ficha, programa, constancia, memoria publicada o enlace oficial.</p>
+              </div>
+            </section>
+
+            <section class="profile-section-card">
+              <h2>Formaci&oacute;n de recursos humanos</h2>
+              <p>Direcciones de tesis vinculadas a la Escuela de Ciencias de la Educaci&oacute;n y al CAMM, organizadas como evidencia acad&eacute;mica del trabajo formativo.</p>
+              <p class="section-kicker">Escuela de Ciencias de la Educaci&oacute;n</p>
+              <div class="thesis-list">
+                <article class="thesis-item">
+                  <h3>Estrategias de aprendizaje y motivaci&oacute;n acad&eacute;mica en estudiantes universitarios: un estudio correlacional</h3>
+                  <p class="thesis-meta">Dulce Mar&iacute;a Salas de la Rosa &middot; Maestr&iacute;a en Psicopedagog&iacute;a &middot; Junio 2026.</p>
+                </article>
+                <article class="thesis-item">
+                  <h3>Dise&ntilde;o de estrategia psicopedag&oacute;gica con patrones para pensamiento matem&aacute;tico en bachillerato</h3>
+                  <p class="thesis-meta">Norma Dalia P&eacute;rez Vizzuett &middot; Maestr&iacute;a en Psicopedagog&iacute;a &middot; Junio 2026.</p>
+                </article>
+                <article class="thesis-item">
+                  <h3>Teatro con gui&ntilde;ol para fomentar la empat&iacute;a en segundo grado de primaria</h3>
+                  <p class="thesis-meta">Luis Vladymir Cantu Pe&ntilde;a &middot; Maestr&iacute;a en Psicopedagog&iacute;a &middot; Junio 2026.</p>
+                </article>
+              </div>
+              <p class="section-kicker">Doctorado en Educaci&oacute;n, CTE</p>
+              <div class="thesis-list">
+                <article class="thesis-item">
+                  <h3>IA generativa en la lectura y escritura argumentativa de secundaria</h3>
+                  <p class="thesis-meta">Yesenia Judith Hern&aacute;ndez Luna &middot; Doctorado en Educaci&oacute;n con acentuaci&oacute;n en Comunicaci&oacute;n y Tecnolog&iacute;a Educativa.</p>
+                </article>
+                <article class="thesis-item">
+                  <h3>Impacto de la inteligencia artificial en el aprendizaje del ingl&eacute;s en estudiantes de secundaria</h3>
+                  <p class="thesis-meta">Erika Ileana Vallejo Cadena &middot; Doctorado en Educaci&oacute;n con acentuaci&oacute;n en Comunicaci&oacute;n y Tecnolog&iacute;a Educativa.</p>
+                </article>
+              </div>
+              <p class="section-kicker">Centro de Actualizaci&oacute;n del Magisterio de Monterrey</p>
+              <div class="thesis-list">
+                <article class="thesis-item">
+                  <h3>Estrategias y herramientas que propicien el desarrollo socioemocional en grupos de sexto</h3>
+                  <p class="thesis-meta">Jos&eacute; Alfonso Mendo Alan&iacute;s &middot; Maestr&iacute;a en Educaci&oacute;n.</p>
+                </article>
+                <article class="thesis-item">
+                  <h3>Inteligencia Artificial para optimizar y fortalecer procesos de aprendizaje en sexto grado</h3>
+                  <p class="thesis-meta">Oscar Yael Navarro Montes &middot; Maestr&iacute;a en Educaci&oacute;n.</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="profile-section-card">
+              <h2>Evidencias acad&eacute;micas</h2>
+              <ul class="evidence-list">
+                <li><strong>Publicaciones:</strong> art&iacute;culos y cap&iacute;tulos con DOI, ISBN, ISSN, ficha editorial, PDF o enlace oficial.</li>
+                <li><strong>Formaci&oacute;n de recursos humanos:</strong> direcci&oacute;n de tesis con nombre, nivel, t&iacute;tulo, instituci&oacute;n y fecha cuando se encuentra disponible.</li>
+                <li><strong>Proyectos documentados:</strong> proyectos con objetivo, periodo, responsable, productos, evidencia y estado de avance.</li>
+                <li><strong>Divulgaci&oacute;n y acceso abierto:</strong> actividades y materiales p&uacute;blicos por integrar con respaldo verificable.</li>
+              </ul>
+            </section>
+
+            <section class="profile-section-card">
+              <h2>Perfiles acad&eacute;micos por integrar</h2>
+              <p>Los dem&aacute;s perfiles se agregar&aacute;n cuando se definan los datos acad&eacute;micos que cada integrante desea publicar y las evidencias correspondientes.</p>
+              <div class="member-grid">
+                <article class="member-card"><h3>Dra. Roc&iacute;o Tirado Velarde</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
+                <article class="member-card"><h3>Dr. Jacob Fern&aacute;ndez Gonz&aacute;lez</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
+                <article class="member-card"><h3>Joan Alexis Rodr&iacute;guez Villarreal</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="divider-rule"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="footer-logo-wrap"><img src="assets/logo-crece.jpg" alt="CRECE"></a><p>Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa de la Escuela de Ciencias de la Educaci&oacute;n.</p></div>
+        <div class="footer-col"><h5>El CRECE</h5><ul><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+        <div class="footer-col"><h5>Formaci&oacute;n</h5><ul><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></div>
+        <div class="footer-col"><h5>Acad&eacute;mico</h5><ul><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="perfil-academico.html">Perfil acad&eacute;mico</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 CRECE &mdash; Todos los derechos reservados.</p><div class="footer-gov">ECE <span></span> Gobierno de Nuevo Le&oacute;n</div></div>
+    </div>
+  </footer>
+  <script>
+    const burger = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (burger && mobileMenu) {
+      burger.addEventListener('click', () => {
+        const open = mobileMenu.classList.toggle('open');
+        burger.classList.toggle('active', open);
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    document.querySelectorAll('.nav-item > button.nav-link').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    });
+  </script>
+</body>
+</html>
+
+

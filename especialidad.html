@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Página muestra de la Especialidad en Docencia en Educación Primaria de la Escuela de Ciencias de la Educación.">
+  <meta name="theme-color" content="#101e3f">
+  <title>Especialidad en Docencia en Educación Primaria | ECE</title>
+  <link rel="icon" type="image/jpeg" href="/assets/logo-crece.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #f6f5f2;
+    }
+
+    .sample-bar {
+      background: #101e3f;
+      color: rgba(255,255,255,.72);
+      border-bottom: 2px solid #c8721a;
+    }
+
+    .sample-bar-inner {
+      width: min(100% - 40px, 1160px);
+      margin: 0 auto;
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .sample-logo {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 6px 14px;
+    }
+
+    .sample-logo img {
+      height: 38px;
+      width: auto;
+    }
+
+    .sample-note {
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.55);
+      text-align: right;
+    }
+
+    .specialty-hero {
+      position: relative;
+      overflow: hidden;
+      background: #101e3f;
+      color: #fff;
+      min-height: 690px;
+      display: grid;
+      align-items: stretch;
+    }
+
+    .specialty-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(12,22,40,.98) 0%, rgba(12,22,40,.92) 38%, rgba(12,22,40,.28) 72%, rgba(12,22,40,.55) 100%),
+        url("assets/especialidad-docencia-primaria-hero.png") center / cover no-repeat;
+    }
+
+    .specialty-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -10% -18% 42%;
+      height: 45%;
+      background: linear-gradient(135deg, rgba(200,114,26,.90), rgba(46,107,138,.45));
+      transform: skewX(-24deg);
+      opacity: .88;
+    }
+
+    .specialty-hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 40px, 1160px);
+      margin: 0 auto;
+      padding: 88px 0 72px;
+      display: grid;
+      grid-template-columns: minmax(0, 680px) 1fr;
+      gap: 48px;
+      align-items: end;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      margin-bottom: 22px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.11);
+      border: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.80);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .hero-kicker {
+      display: block;
+      color: #d4a430;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .specialty-hero h1 {
+      color: #fff;
+      font-size: clamp(2.35rem, 5.5vw, 5.2rem);
+      line-height: .98;
+      max-width: 780px;
+      margin: 0 0 22px;
+    }
+
+    .specialty-hero h1 span {
+      display: block;
+      color: #e08530;
+    }
+
+    .hero-copy {
+      max-width: 640px;
+      color: rgba(255,255,255,.78);
+      font-size: clamp(1rem, 1.6vw, 1.18rem);
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      align-self: end;
+    }
+
+    .metric-card {
+      min-height: 118px;
+      padding: 20px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.15);
+      backdrop-filter: blur(8px);
+    }
+
+    .metric-card strong {
+      display: block;
+      color: #fff;
+      font-family: var(--font-head);
+      font-size: 1.85rem;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .metric-card span {
+      color: rgba(255,255,255,.66);
+      font-size: .86rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .specialty-section {
+      padding: 88px 0;
+    }
+
+    .specialty-container {
+      width: min(100% - 40px, 1160px);
+      margin: 0 auto;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .lead-panel {
+      background: #fff;
+      border: 1px solid #edecea;
+      border-radius: 18px;
+      padding: 34px;
+      box-shadow: 0 12px 36px rgba(12,22,40,.08);
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #c8721a;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .specialty-title {
+      color: #1a2e5e;
+      font-size: clamp(1.65rem, 3vw, 2.4rem);
+      margin: 0 0 16px;
+      line-height: 1.15;
+    }
+
+    .lead-panel p,
+    .split-copy p,
+    .approval-note p {
+      color: #706e6a;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .promo-image {
+      border-radius: 18px;
+      box-shadow: 0 24px 56px rgba(12,22,40,.16);
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid rgba(12,22,40,.10);
+    }
+
+    .promo-image img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid #edecea;
+      border-top: 4px solid #2e6b8a;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 6px 24px rgba(12,22,40,.07);
+    }
+
+    .feature-card:nth-child(2) { border-top-color: #c8721a; }
+    .feature-card:nth-child(3) { border-top-color: #2f6f5b; }
+    .feature-card:nth-child(4) { border-top-color: #d4a430; }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #f6f5f2;
+      margin-bottom: 14px;
+      font-size: 1.25rem;
+    }
+
+    .feature-card h3 {
+      color: #1a2e5e;
+      font-size: 1rem;
+      margin: 0 0 8px;
+    }
+
+    .feature-card p {
+      color: #706e6a;
+      font-size: .92rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .dark-band {
+      background: #101e3f;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dark-band::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 50% 80% at 105% 20%, rgba(46,107,138,.35), transparent 60%),
+        repeating-linear-gradient(-45deg, transparent, transparent 48px, rgba(255,255,255,.02) 48px, rgba(255,255,255,.02) 49px);
+      pointer-events: none;
+    }
+
+    .dark-band .specialty-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .dark-band .specialty-title {
+      color: #fff;
+    }
+
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 34px;
+    }
+
+    .pathway-card {
+      border-radius: 18px;
+      padding: 28px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.13);
+    }
+
+    .pathway-card strong {
+      display: block;
+      color: #d4a430;
+      font-family: var(--font-head);
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .pathway-card h3 {
+      color: #fff;
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .pathway-card p {
+      color: rgba(255,255,255,.68);
+      font-size: .95rem;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .curriculum-wrap {
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid #edecea;
+      box-shadow: 0 12px 36px rgba(12,22,40,.08);
+      background: #fff;
+      margin-top: 30px;
+    }
+
+    .curriculum-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 840px;
+    }
+
+    .curriculum-table th,
+    .curriculum-table td {
+      padding: 16px 18px;
+      text-align: left;
+      border-bottom: 1px solid #edecea;
+      vertical-align: top;
+      color: #706e6a;
+      font-size: .94rem;
+    }
+
+    .curriculum-table th {
+      background: #1a2e5e;
+      color: #fff;
+      font-size: .78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .curriculum-table td:first-child,
+    .curriculum-table td:nth-child(3),
+    .curriculum-table td:nth-child(4) {
+      color: #1a2e5e;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .timeline-card {
+      background: #fff;
+      border-radius: 18px;
+      border: 1px solid #edecea;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(12,22,40,.07);
+    }
+
+    .timeline-card span {
+      color: #c8721a;
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .timeline-card h3 {
+      color: #1a2e5e;
+      margin: 8px 0;
+    }
+
+    .timeline-card p {
+      color: #706e6a;
+      margin: 0;
+    }
+
+    .approval-note {
+      background: #fff7eb;
+      border: 1px solid #f3d7ac;
+      border-left: 5px solid #c8721a;
+      border-radius: 16px;
+      padding: 26px;
+      margin-top: 28px;
+    }
+
+    .approval-note h3 {
+      color: #8b4a00;
+      margin: 0 0 8px;
+    }
+
+    .cta-panel {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      background: linear-gradient(135deg, #1a2e5e, #101e3f);
+      color: #fff;
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 24px 56px rgba(12,22,40,.16);
+    }
+
+    .cta-panel h2 {
+      color: #fff;
+      margin: 0 0 8px;
+      font-size: clamp(1.45rem, 3vw, 2.2rem);
+    }
+
+    .cta-panel p {
+      color: rgba(255,255,255,.72);
+      margin: 0;
+      max-width: 680px;
+    }
+
+    .sample-footer {
+      padding: 32px 0;
+      background: #0c1628;
+      color: rgba(255,255,255,.48);
+      text-align: center;
+      font-size: .82rem;
+    }
+
+    @media (max-width: 980px) {
+      .specialty-hero {
+        min-height: auto;
+      }
+
+      .specialty-hero-inner,
+      .intro-grid,
+      .cta-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-metrics,
+      .feature-grid,
+      .pathway-grid,
+      .timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .sample-bar-inner,
+      .specialty-container,
+      .specialty-hero-inner {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .sample-bar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .sample-note {
+        text-align: left;
+      }
+
+      .specialty-hero::before {
+        background:
+          linear-gradient(180deg, rgba(12,22,40,.92) 0%, rgba(12,22,40,.90) 50%, rgba(12,22,40,.62) 100%),
+          url("assets/especialidad-docencia-primaria-hero.png") center / cover no-repeat;
+      }
+
+      .specialty-hero-inner {
+        padding: 64px 0;
+      }
+
+      .hero-actions .btn,
+      .cta-panel .btn {
+        width: 100%;
+      }
+
+      .hero-metrics,
+      .feature-grid,
+      .pathway-grid,
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .lead-panel,
+      .cta-panel {
+        padding: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="sample-bar" aria-label="Página muestra aislada">
+    <div class="sample-bar-inner">
+      <div class="sample-logo">
+        <img src="assets/logo-crece.jpg" alt="CRECE">
+      </div>
+      <p class="sample-note">Página muestra · No enlazada al sitio principal</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="specialty-hero">
+      <div class="specialty-hero-inner">
+        <div>
+          <span class="status-pill">Propuesta en diseño curricular</span>
+          <span class="hero-kicker">Escuela de Ciencias de la Educación</span>
+          <h1>Especialidad en Docencia <span>en Educación Primaria</span></h1>
+          <p class="hero-copy">Una ruta de posgrado para fortalecer la práctica docente en Primaria desde el currículo de la Nueva Escuela Mexicana, las didácticas de los campos formativos y la intervención reflexiva en el aula.</p>
+          <div class="hero-actions">
+            <a href="mailto:crece@ece.edu.mx?subject=Informes%20Especialidad%20en%20Docencia%20en%20Educaci%C3%B3n%20Primaria" class="btn btn-primary">Solicitar informes</a>
+            <a href="#mapa-curricular" class="btn btn-outline-light">Ver mapa curricular</a>
+          </div>
+        </div>
+
+        <div class="hero-metrics" aria-label="Datos de la propuesta">
+          <div class="metric-card"><strong>2</strong><span>semestres en un año académico</span></div>
+          <div class="metric-card"><strong>720</strong><span>horas totales de formación</span></div>
+          <div class="metric-card"><strong>45</strong><span>créditos académicos</span></div>
+          <div class="metric-card"><strong>Mixta</strong><span>presencial, Moodle y práctica supervisada</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialty-section">
+      <div class="specialty-container">
+        <div class="intro-grid">
+          <article class="lead-panel">
+            <span class="section-eyebrow">Propósito formativo</span>
+            <h2 class="specialty-title">Formación situada para enseñar en Primaria</h2>
+            <p>La Especialidad está pensada para personas con formación inicial en Educación Preescolar que requieren ampliar sus saberes pedagógicos, curriculares y didácticos para desempeñarse en Educación Primaria.</p>
+            <p>El programa articula conocimiento del desarrollo del alumnado de 6 a 12 años, lectura del Plan de Estudio 2022, diseño de experiencias didácticas, evaluación formativa, inclusión y sistematización de la práctica.</p>
+          </article>
+
+          <figure class="promo-image">
+            <img src="assets/especialidad-docencia-primaria-practica.png" alt="Docente planificando una intervención didáctica con materiales de educación primaria">
+          </figure>
+        </div>
+
+        <div class="feature-grid" aria-label="Ejes de la especialidad">
+          <article class="feature-card">
+            <div class="feature-icon">📘</div>
+            <h3>Nueva Escuela Mexicana</h3>
+            <p>Marco curricular alineado con el Plan de Estudio 2022, campos formativos y ejes articuladores.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🧩</div>
+            <h3>Didácticas de Primaria</h3>
+            <p>Diseño de estrategias para Lenguajes, pensamiento científico, comunidad, ética e inclusión.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>Evaluación formativa</h3>
+            <p>Uso de evidencias, retroalimentación y seguimiento para mejorar el aprendizaje y la práctica docente.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🏫</div>
+            <h3>Intervención docente</h3>
+            <p>Práctica supervisada, asesoría y producto final sustentado en evidencias del aula.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialty-section dark-band">
+      <div class="specialty-container">
+        <span class="section-eyebrow">Modalidad mixta</span>
+        <h2 class="specialty-title">Tres componentes que conectan teoría, aula y acompañamiento</h2>
+        <div class="pathway-grid">
+          <article class="pathway-card">
+            <strong>240 h</strong>
+            <h3>Presencial</h3>
+            <p>Una jornada semanal para talleres, análisis de casos, modelaje didáctico y trabajo colegiado.</p>
+          </article>
+          <article class="pathway-card">
+            <strong>240 h</strong>
+            <h3>En línea con mediación docente</h3>
+            <p>Actividades, recursos, retroalimentación, tutoría y seguimiento verificable mediante Moodle ECE.</p>
+          </article>
+          <article class="pathway-card">
+            <strong>240 h</strong>
+            <h3>Práctica e intervención</h3>
+            <p>Diagnóstico, diseño, aplicación, sistematización, asesoría y producto final de titulación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialty-section" id="mapa-curricular">
+      <div class="specialty-container">
+        <span class="section-eyebrow">Mapa curricular</span>
+        <h2 class="specialty-title">Cuatro asignaturas integradoras y un eje transversal anual</h2>
+        <div class="curriculum-wrap">
+          <table class="curriculum-table">
+            <thead>
+              <tr>
+                <th>Semestre</th>
+                <th>Asignatura o componente</th>
+                <th>Horas</th>
+                <th>Créditos</th>
+                <th>Vinculación curricular</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Fundamentos de la Docencia en Educación Primaria y Desarrollo del Alumnado de 6 a 12 años</td>
+                <td>120</td>
+                <td>7.5</td>
+                <td>Transversal a los cuatro campos formativos</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Currículo de Educación Primaria y Didáctica de Lenguajes</td>
+                <td>120</td>
+                <td>7.5</td>
+                <td>Lenguajes</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Didácticas de los Campos Formativos en Educación Primaria</td>
+                <td>120</td>
+                <td>7.5</td>
+                <td>Saberes y Pensamiento Científico; Ética, Naturaleza y Sociedades; De lo Humano y lo Comunitario</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Planeación, Evaluación Formativa, Inclusión, Gestión de Aula e Intervención Docente</td>
+                <td>120</td>
+                <td>7.5</td>
+                <td>Transversal a los cuatro campos formativos</td>
+              </tr>
+              <tr>
+                <td>1 y 2</td>
+                <td>Práctica supervisada, intervención, asesoría y titulación</td>
+                <td>240</td>
+                <td>15</td>
+                <td>Componente transversal anual</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>Especialidad en Docencia en Educación Primaria</td>
+                <td>720</td>
+                <td>45</td>
+                <td>Modalidad mixta</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialty-section section--tint">
+      <div class="specialty-container">
+        <span class="section-eyebrow">Calendario de trabajo</span>
+        <h2 class="specialty-title">Una ruta anual organizada en dos semestres</h2>
+        <div class="timeline">
+          <article class="timeline-card">
+            <span>Semestre 1</span>
+            <h3>31 de agosto de 2026 a 29 de enero de 2027</h3>
+            <p>Fundamentos de la docencia, desarrollo del alumnado, currículo de Primaria y didáctica de Lenguajes.</p>
+          </article>
+          <article class="timeline-card">
+            <span>Semestre 2</span>
+            <h3>15 de febrero de 2027 a 13 de julio de 2027</h3>
+            <p>Didácticas de los campos formativos, planeación, evaluación formativa, inclusión e intervención docente.</p>
+          </article>
+        </div>
+
+        <article class="approval-note">
+          <h3>Sujeto a aprobación de las autoridades competentes.</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="specialty-section">
+      <div class="specialty-container">
+        <div class="cta-panel">
+          <div>
+            <h2>¿Quieres recibir información para inscribirte?</h2>
+          </div>
+          <a href="mailto:crece@ece.edu.mx?subject=Especialidad%20en%20Docencia%20en%20Educaci%C3%B3n%20Primaria" class="btn btn-primary">Contactar CRECE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sample-footer">
+    <div class="specialty-container">Escuela de Ciencias de la Educación · Centro de Recursos para la Enseñanza y Ciencia Educativa</div>
+  </footer>
+</body>
+</html>
