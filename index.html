@@ -1,1032 +1,186 @@
-﻿<!DOCTYPE html>
-<html lang="es"><head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWM82RH0BZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DWM82RH0BZ');
-</script>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="El CRECE es la unidad académica de la ECE dedicada a la formación continua, investigación educativa, publicación y divulgación para los docentes de Nuevo León.">
+  <meta name="description" content="DEP integra formación, investigación, innovación educativa, publicación y divulgación de la Escuela de Ciencias de la Educación.">
   <meta name="theme-color" content="#101e3f">
-  <title>CRECE | Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa</title>
-  <!-- SEO -->
-  <link rel="canonical" href="https://crece.ece.edu.mx">
-  <link rel="icon" type="image/jpeg" href="/assets/logo-crece.jpg">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CRECE — ECE Nuevo León">
-  <meta property="og:url" content="https://crece.ece.edu.mx">
-  <meta property="og:title" content="CRECE | Centro de Recursos para la Enseñanza y Ciencia Educativa">
-  <meta property="og:description" content="Centro de Recursos para la Enseñanza y Ciencia Educativa de la Escuela de Ciencias de la Educación.">
-  <meta property="og:image" content="https://crece.ece.edu.mx/assets/og-crece.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://crece.ece.edu.mx/assets/og-crece.jpg">
-  <meta property="og:locale" content="es_MX">
-
+  <title>DEP | División de Estudios de Posgrado</title>
+  <link rel="canonical" href="https://dep.edu.mx/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  
-
-  <style>
-    .hero {
-      background: var(--navy-dark);
-      color: var(--white);
-      padding: 90px 0 80px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(ellipse 60% 80% at 105% 50%, rgba(46,107,138,.22) 0%, transparent 60%),
-        radial-gradient(ellipse 40% 60% at -10% 80%, rgba(200,114,26,.08) 0%, transparent 55%);
-      pointer-events: none;
-    }
-
-    .hero-inner {
-      display: grid; grid-template-columns: minmax(0, .86fr) minmax(520px, 1.14fr);
-      gap: 56px; align-items: center; position: relative;
-    }
-
-    .hero-overline {
-      display: flex; align-items: center; gap: 10px;
-      font-size: .72rem; font-weight: 700; letter-spacing: .13em;
-      text-transform: uppercase; color: rgba(255,255,255,.55);
-      margin-bottom: 20px;
-    }
-
-    .hero-overline::before {
-      content: ''; display: block; width: 28px; height: 2px;
-      background: var(--orange); flex-shrink: 0;
-    }
-
-    .hero-logo-wrap {
-      display: flex; align-items: center; gap: 16px; margin-bottom: 22px;
-    }
-
-    .hero-logo-img {
-      height: 56px; width: auto;
-      background: var(--white); border-radius: var(--radius);
-      padding: 6px 14px; display: block;
-    }
-
-    .hero-acronym {
-      font-family: var(--font-head);
-      font-size: clamp(2.8rem, 5vw, 4.2rem);
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: .04em;
-      line-height: 1;
-    }
-
-    .hero-name {
-      font-family: var(--font-body);
-      font-size: .85rem;
-      font-weight: 600;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,.55);
-      margin-bottom: 18px;
-      max-width: 440px;
-      line-height: 1.5;
-    }
-
-    .hero-tagline {
-      font-family: var(--font-head);
-      font-size: clamp(1.2rem, 2.2vw, 1.65rem);
-      color: var(--white);
-      line-height: 1.3;
-      max-width: 520px;
-      margin-bottom: 32px;
-    }
-
-    .hero-tagline em { font-style: italic; color: rgba(255,255,255,.75); }
-
-    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
-
-    .hero-actions .hero-action-btn {
-      min-height: 48px;
-      padding-inline: 16px;
-      border: 1px solid rgba(255, 255, 255, .18);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, .16);
-    }
-
-    .hero-actions .hero-action-btn:hover {
-      box-shadow: 0 16px 36px rgba(0, 0, 0, .22);
-    }
-
-    .hero-actions .hero-action-btn:focus-visible {
-      outline: 3px solid rgba(255, 255, 255, .72);
-      outline-offset: 3px;
-    }
-
-    .hero-action-icon {
-      display: inline-grid;
-      place-items: center;
-      width: 22px;
-      height: 22px;
-      border-radius: 7px;
-      background: rgba(255, 255, 255, .16);
-      font-size: .88rem;
-      line-height: 1;
-    }
-
-    .hero-action-register { background: #c8721a; color: var(--white); }
-    .hero-action-register:hover { background: #e08530; }
-
-    .hero-action-enroll { background: #2e6b8a; color: var(--white); }
-    .hero-action-enroll:hover { background: #357b9f; }
-
-    .hero-action-payments { background: #2f6f5b; color: var(--white); }
-    .hero-action-payments:hover { background: #39826b; }
-
-    #inscripcion-pagos .payment-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    #inscripcion-pagos .payment-card {
-      position: relative;
-      overflow: hidden;
-      background: var(--white);
-      border: 1px solid var(--gray-xlt);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-sm);
-      padding: 0;
-    }
-
-    #inscripcion-pagos .payment-card::before {
-      content: '';
-      display: block;
-      height: 5px;
-      background: var(--orange);
-    }
-
-    #inscripcion-pagos .payment-card:nth-child(2)::before { background: var(--steel); }
-    #inscripcion-pagos .payment-card:nth-child(3)::before { background: #2f6f5b; }
-
-    #inscripcion-pagos .payment-card h3 {
-      padding: 22px 24px 8px;
-      margin: 0;
-      color: var(--navy);
-      font-family: var(--font-head);
-      font-size: 1.2rem;
-    }
-
-    #inscripcion-pagos .payment-card .info-list {
-      padding: 0 24px;
-      margin: 8px 0 0;
-    }
-
-    #inscripcion-pagos .payment-card .info-list li {
-      display: flex;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--gray-xlt);
-    }
-
-    #inscripcion-pagos .payment-card .info-list li strong {
-      color: var(--navy);
-    }
-
-    #inscripcion-pagos .payment-total {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin: 18px 24px 24px;
-      padding: 14px 16px;
-      border-radius: var(--radius);
-      background: #ffefd5;
-      color: #8b4a00;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-
-    #inscripcion-pagos .bank-card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 24px;
-    }
-
-    @media (max-width: 900px) {
-      #inscripcion-pagos .payment-grid,
-      #inscripcion-pagos .bank-card {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .hero-callout {
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: var(--radius-xl);
-      padding: 16px;
-      box-shadow: var(--shadow-lg);
-      backdrop-filter: blur(6px);
-    }
-
-    .hero-callout-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .hero-callout img {
-      width: 100%;
-      max-height: 520px;
-      object-fit: contain;
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      box-shadow: 0 18px 42px rgba(0,0,0,.22);
-      cursor: zoom-in;
-    }
-
-    .image-lightbox { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 28px; background: rgba(12, 22, 40, .88); }
-    .image-lightbox[hidden] { display: none !important; }
-    .image-lightbox__inner { position: relative; width: min(100%, 1120px); max-height: calc(100vh - 56px); display: grid; gap: 12px; }
-    .image-lightbox__img { max-width: 100%; max-height: calc(100vh - 128px); width: auto; height: auto; margin: 0 auto; object-fit: contain; border-radius: var(--radius); background: var(--white); box-shadow: 0 24px 70px rgba(0, 0, 0, .34); }
-    .image-lightbox__caption { color: rgba(255, 255, 255, .82); text-align: center; font-size: .88rem; line-height: 1.45; }
-    .image-lightbox__close { position: absolute; top: -14px; right: -14px; z-index: 2; width: 42px; height: 42px; border: 1px solid rgba(255, 255, 255, .24); border-radius: 50%; background: var(--white); color: var(--navy-dark); font-size: 1.5rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow-md); }
-    .image-lightbox__close:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-    body.lightbox-open { overflow: hidden; }
-
-    .hero-side {
-      display: flex; flex-direction: column; gap: 14px; align-items: center;
-    }
-
-    .hero-pillar {
-      width: 100%;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
-      border-radius: var(--radius-lg);
-      padding: 18px 20px;
-      display: flex; align-items: center; gap: 14px;
-      backdrop-filter: blur(6px);
-      transition: background var(--transition), border-color var(--transition);
-    }
-
-    .hero-pillar:hover {
-      background: rgba(255,255,255,.10);
-      border-color: rgba(255,255,255,.18);
-    }
-
-    .hero-pillar-icon {
-      width: 40px; height: 40px; flex-shrink: 0;
-      background: rgba(200,114,26,.85);
-      border-radius: 10px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
-    }
-
-    .hero-pillar-text h4 {
-      font-family: var(--font-body);
-      font-size: .9rem; font-weight: 700;
-      color: var(--white); margin-bottom: 2px;
-    }
-
-    .hero-pillar-text p {
-      font-size: .75rem;
-      color: rgba(255,255,255,.55);
-    }
-
-    .stats-strip {
-      background: var(--navy);
-      padding: 36px 0;
-      color: var(--white);
-      border-top: 1px solid rgba(255,255,255,.06);
-    }
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-    }
-
-    .stat-item {
-      display: flex; align-items: center; gap: 16px;
-      padding: 18px 28px;
-      border-right: 1px solid rgba(255,255,255,.12);
-    }
-
-    .stat-item:last-child { border-right: none; }
-
-    .stat-icon { font-size: 1.8rem; flex-shrink: 0; }
-
-    .stat-num {
-      font-family: var(--font-head);
-      font-size: 1.8rem;
-      color: var(--gold);
-      line-height: 1; margin-bottom: 2px;
-    }
-
-    .stat-lbl { font-size: .78rem; color: rgba(255,255,255,.65); font-weight: 600; }
-
-    .que-es-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 64px; align-items: center;
-    }
-
-    .que-es-text p {
-      font-size: 1.05rem; color: var(--gray);
-      margin-bottom: 14px; line-height: 1.7;
-    }
-
-    .que-es-text p strong { color: var(--navy); }
-
-    .que-es-visual {
-      background: var(--off-white);
-      border-radius: var(--radius-xl);
-      padding: 36px;
-      border: 1px solid var(--gray-xlt);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .ejes-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
-    }
-
-    .eje {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 22px;
-      border-left: 3px solid var(--orange);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .eje-icon { font-size: 1.5rem; margin-bottom: 8px; }
-
-    .eje h4 { font-family: var(--font-body); font-size: .88rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
-
-    .eje p  { font-size: .78rem; color: var(--gray); }
-
-    .oferta-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-    }
-
-    .oferta-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      padding: 32px 28px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--gray-xlt);
-      border-top: 3px solid var(--navy);
-      display: flex; flex-direction: column; gap: 12px;
-      transition: transform var(--transition), box-shadow var(--transition);
-    }
-
-    .oferta-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-
-    .oferta-card.accent { border-top-color: var(--orange); }
-
-    .oferta-card.steel  { border-top-color: var(--steel); }
-
-    .oferta-icon {
-      width: 48px; height: 48px;
-      background: var(--off-white);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem;
-    }
-
-    .oferta-card h3 {
-      font-family: var(--font-head);
-      font-size: 1.15rem; color: var(--navy);
-      line-height: 1.25;
-    }
-
-    .oferta-card p { font-size: .88rem; color: var(--gray); flex: 1; line-height: 1.6; }
-
-    .noticias-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
-    }
-
-    .noticia-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-sm);
-      display: flex; flex-direction: column;
-      transition: transform .2s, box-shadow .2s;
-    }
-
-    .noticia-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-
-    .noticia-img {
-      height: 140px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 2.5rem;
-    }
-
-    .noticia-img.cat-convocatoria { background: linear-gradient(135deg, #1a2e5e, #2e6b8a); }
-
-    .noticia-img.cat-publicacion  { background: linear-gradient(135deg, #0c1628, #1a2e5e); }
-
-    .noticia-img.cat-evento       { background: linear-gradient(135deg, #2e6b8a, #1a6e45); }
-
-    .noticia-body { padding: 20px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
-
-    .noticia-cat {
-      font-size: .7rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--orange);
-    }
-
-    .noticia-title {
-      font-family: var(--font-head);
-      font-size: 1rem; color: var(--navy); line-height: 1.3; flex: 1;
-    }
-
-    .noticia-date { font-size: .75rem; color: var(--gray); }
-
-    .noticia-footer {
-      padding: 12px 20px;
-      background: var(--gray-xlt);
-    }
-
-    .accesos-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 162px));
-      justify-content: center;
-      gap: 16px;
-    }
-
-    .acceso-link {
-      display: flex; flex-direction: column;
-      align-items: center; gap: 10px;
-      min-height: 116px;
-      padding: 26px 12px;
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--gray-xlt);
-      box-shadow: var(--shadow-sm);
-      text-align: center;
-      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-      text-decoration: none;
-    }
-
-    .acceso-link:hover {
-      border-color: var(--orange);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .acceso-link:hover .acceso-label { color: var(--orange); }
-
-    .acceso-icon {
-      width: 50px; height: 50px;
-      background: var(--off-white);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem;
-      transition: background var(--transition);
-    }
-
-    .acceso-link:hover .acceso-icon { background: #ffefd5; }
-
-    .acceso-label {
-      font-size: .78rem; font-weight: 700;
-      color: var(--navy); line-height: 1.3;
-      transition: color .18s;
-    }
-
-    .footer-col a { font-size: .83rem; color: rgba(255,255,255,.58); transition: color .16s; }
-
-    .footer-col a:hover { color: var(--white); }
-
-    .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-
-    .footer-bottom p { font-size: .75rem; color: rgba(255,255,255,.30); }
-
-    .footer-gov { font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: rgba(255,255,255,.35); }
-
-    .footer-gov span { display: inline-block; width: 1px; height: 12px; background: rgba(255,255,255,.25); margin: 0 8px; vertical-align: middle; }
-
-    @media (max-width: 1024px) {
-      .accesos-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 162px)); }
-      .footer-grid  { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 900px) {
-      .hero-inner    { grid-template-columns: 1fr; }
-      .hero-side     { display: none; }
-      .hero-callout  { max-width: 520px; margin: 10px auto 0; }
-      .hero-callout-grid { grid-template-columns: 1fr; }
-      .stats-grid    { grid-template-columns: repeat(2, 1fr); }
-      .stat-item     { border-right: none; border-bottom: 1px solid rgba(255,255,255,.10); }
-      .stat-item:nth-child(2n) { }
-      .que-es-grid   { grid-template-columns: 1fr; gap: 36px; }
-      .oferta-grid   { grid-template-columns: 1fr; }
-      .noticias-grid { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 768px) {
-      .nav-menu, .nav-cta { display: none; }
-      .nav-burger { display: flex; }
-      .accesos-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 162px)); }
-      .footer-grid  { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 500px) {
-      .hero { padding: 58px 0 54px; }
-      .hero-callout { padding: 10px; }
-      .image-lightbox { padding: 16px; }
-      .image-lightbox__close { top: 8px; right: 8px; }
-      .image-lightbox__img { max-height: calc(100vh - 104px); }
-      .stats-grid   { grid-template-columns: 1fr; }
-      .stat-item    { padding: 16px 14px; border-right: none; }
-      .accesos-grid { grid-template-columns: repeat(2, minmax(0, 162px)); }
-      .footer-grid  { grid-template-columns: 1fr; }
-      .ejes-grid    { grid-template-columns: 1fr; }
-    }
-  </style>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .dep-mark { display:grid; line-height:1; color:#fff; letter-spacing:.08em; font-weight:800; }
+    .dep-mark strong { font-size:1.15rem; }
+    .dep-mark span { margin-top:3px; font-size:.56rem; letter-spacing:.12em; color:rgba(255,255,255,.62); }
+    .dep-nav .nav-wrap { gap:24px; }
+    .dep-nav .nav-logo { height:auto; padding:8px 0; background:none; border-radius:0; }
+    .dep-nav .nav-menu { gap:0; }
+    .dep-nav .nav-menu a { padding:9px 10px; font-size:.8rem; font-weight:700; letter-spacing:.02em; color:rgba(255,255,255,.76); }
+    .dep-nav .nav-menu a:hover { color:#fff; }
+    .dep-nav .nav-action { margin-left:4px; padding:8px 14px; border:1px solid rgba(255,255,255,.38); border-radius:999px; color:#fff; font-size:.76rem; font-weight:700; white-space:nowrap; }
+    .dep-nav .nav-action:hover { background:rgba(255,255,255,.1); }
+    .dep-hero { position:relative; overflow:hidden; padding:104px 0 94px; color:#fff; background:#101e3f; }
+    .dep-hero::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 87% 18%, rgba(200,114,26,.33), transparent 27%), radial-gradient(circle at 76% 76%, rgba(46,107,138,.45), transparent 25%), linear-gradient(115deg, transparent 0 53%, rgba(255,255,255,.04) 53% 54%, transparent 54%); }
+    .dep-hero .container { position:relative; }
+    .hero-layout { display:grid; grid-template-columns:minmax(0,1.28fr) minmax(280px,.72fr); gap:72px; align-items:end; }
+    .hero-kicker { display:flex; align-items:center; gap:10px; margin-bottom:24px; color:#f0c46a; font-size:.76rem; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+    .hero-kicker::before { width:32px; height:2px; background:#c8721a; content:""; }
+    .dep-hero h1 { max-width:760px; margin:0 0 22px; color:#fff; font-size:clamp(2.25rem,5.1vw,4.55rem); letter-spacing:-.045em; }
+    .dep-hero p { max-width:650px; margin:0; color:rgba(255,255,255,.74); font-size:clamp(1rem,1.6vw,1.2rem); line-height:1.65; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+    .hero-actions .btn { border-radius:999px; }
+    .hero-note { padding:26px; border:1px solid rgba(255,255,255,.16); border-radius:18px; background:rgba(8,18,42,.32); backdrop-filter:blur(8px); }
+    .hero-note .small-label { color:#f0c46a; }
+    .hero-note h2 { margin:10px 0 12px; color:#fff; font-size:1.35rem; }
+    .hero-note p { font-size:.92rem; color:rgba(255,255,255,.66); }
+    .small-label { display:block; color:#c8721a; font-size:.7rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    .impact-band { position:relative; z-index:2; margin-top:-34px; }
+    .impact-grid { display:grid; grid-template-columns:1.25fr repeat(3,1fr); overflow:hidden; border-radius:18px; border:1px solid #e4e1dc; background:#fff; box-shadow:0 16px 42px rgba(12,22,40,.13); }
+    .impact-lead, .impact-item { min-height:132px; padding:25px 28px; }
+    .impact-lead { display:flex; align-items:center; background:#f4ead9; }
+    .impact-lead h2 { color:#1a2e5e; font-size:1.24rem; }
+    .impact-item { border-left:1px solid #e8e5e0; }
+    .impact-number { display:block; margin-bottom:4px; color:#1a2e5e; font-family:"Libre Baskerville",Georgia,serif; font-size:1.6rem; font-weight:700; }
+    .impact-item p { color:#706e6a; font-size:.84rem; line-height:1.35; }
+    .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start; }
+    .intro-copy .section-title { max-width:590px; font-size:clamp(1.8rem,3.2vw,2.7rem); }
+    .intro-copy p { max-width:600px; margin:0 0 18px; color:#595754; font-size:1.03rem; }
+    .principles { display:grid; gap:0; border-top:1px solid #dedad3; }
+    .principle { display:grid; grid-template-columns:44px 1fr; gap:16px; padding:19px 0; border-bottom:1px solid #dedad3; }
+    .principle-num { color:#c8721a; font-family:"Libre Baskerville",Georgia,serif; font-size:1.15rem; }
+    .principle h3 { margin:0 0 3px; color:#1a2e5e; font-family:"Source Sans 3",sans-serif; font-size:.98rem; font-weight:800; letter-spacing:0; }
+    .principle p { color:#706e6a; font-size:.88rem; line-height:1.45; }
+    .ecosystem { background:#f6f5f2; }
+    .section-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:35px; }
+    .section-heading .section-lead { max-width:545px; }
+    .ecosystem-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .eco-card { display:flex; min-height:300px; flex-direction:column; padding:26px; border:1px solid #e5e1db; border-radius:16px; background:#fff; box-shadow:0 2px 12px rgba(12,22,40,.05); transition:transform .18s ease, box-shadow .18s ease; }
+    .eco-card:hover { transform:translateY(-4px); box-shadow:0 12px 26px rgba(12,22,40,.12); }
+    .eco-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
+    .eco-symbol { display:grid; width:46px; height:46px; place-items:center; border-radius:12px; background:#edf0f7; color:#1a2e5e; font-family:"Libre Baskerville",Georgia,serif; font-size:1.05rem; font-weight:700; }
+    .eco-status { padding:4px 8px; border-radius:999px; background:#f4ead9; color:#8a5817; font-size:.66rem; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
+    .eco-card h3 { margin:25px 0 11px; color:#1a2e5e; font-size:1.28rem; }
+    .eco-card p { color:#706e6a; font-size:.9rem; line-height:1.55; }
+    .eco-card a { margin-top:auto; padding-top:20px; color:#1a2e5e; font-size:.82rem; font-weight:800; }
+    .eco-card a:hover { color:#c8721a; }
+    .research-block { background:#1a2e5e; color:#fff; }
+    .research-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:72px; align-items:center; }
+    .research-block h2 { margin:10px 0 16px; color:#fff; font-size:clamp(1.7rem,3vw,2.5rem); }
+    .research-block p { color:rgba(255,255,255,.72); }
+    .research-points { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .research-point { min-height:145px; padding:20px; border:1px solid rgba(255,255,255,.14); border-radius:14px; background:rgba(255,255,255,.06); }
+    .research-point strong { display:block; margin-bottom:7px; color:#f0c46a; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; }
+    .research-point span { color:rgba(255,255,255,.72); font-size:.88rem; line-height:1.42; }
+    .report-grid { display:grid; grid-template-columns:1.18fr .82fr; gap:30px; align-items:stretch; }
+    .report-card { padding:38px; border-radius:18px; background:#f4ead9; }
+    .report-card h2 { margin:9px 0 15px; color:#1a2e5e; font-size:clamp(1.55rem,2.6vw,2.15rem); }
+    .report-card p { max-width:620px; color:#595754; }
+    .report-list { display:grid; gap:11px; margin:24px 0 28px; }
+    .report-list li { display:flex; gap:10px; color:#595754; font-size:.92rem; }
+    .report-list li::before { content:"•"; color:#c8721a; font-weight:800; }
+    .status-card { display:flex; flex-direction:column; justify-content:center; padding:38px; border-radius:18px; background:#101e3f; }
+    .status-card h3 { margin:12px 0; color:#fff; font-size:1.45rem; }
+    .status-card p { color:rgba(255,255,255,.68); font-size:.93rem; }
+    .status-card a { margin-top:25px; color:#f0c46a; font-size:.82rem; font-weight:800; }
+    .dep-footer-brand { max-width:270px; }
+    .dep-footer-brand .dep-mark { margin-bottom:16px; }
+    .dep-footer-brand p { color:rgba(255,255,255,.52); font-size:.84rem; }
+    @media (max-width:1000px) { .hero-layout,.intro-grid,.research-grid,.report-grid { grid-template-columns:1fr; gap:38px; } .ecosystem-grid { grid-template-columns:1fr 1fr; } .impact-grid { grid-template-columns:1fr 1fr; } .impact-lead { grid-column:1 / -1; min-height:auto; } .impact-item:nth-child(3) { border-left:0; } .dep-nav .nav-menu { display:none; } .dep-nav .nav-action { margin-left:auto; } }
+    @media (max-width:640px) { .dep-hero { padding:76px 0 72px; } .hero-note { padding:22px; } .impact-band { margin-top:-22px; } .impact-grid,.ecosystem-grid,.research-points { grid-template-columns:1fr; } .impact-item,.impact-item:nth-child(3) { border-left:0; border-top:1px solid #e8e5e0; } .section-heading { display:block; } .section-heading .section-lead { margin-top:12px; } .eco-card { min-height:250px; } .report-card,.status-card { padding:27px; } }
+  </style>
 </head>
 <body>
-
-  <!-- ═══ HEADER ═══════════════════════════════════════════════════ -->
-  <header class="site-header">
-    <nav class="container" aria-label="Navegaci&oacute;n principal">
+  <header class="site-header dep-nav">
+    <nav class="container" aria-label="Navegación principal">
       <div class="nav-wrap">
-        <a href="index.html" class="nav-logo" aria-label="CRECE inicio"><img src="assets/logo-crece.jpg" alt="CRECE"></a>
-        <ul class="nav-menu">
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">El CRECE<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li class="dropdown-divider"></li><li><a href="contacto.html">Contacto</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Oferta<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Investigaci&oacute;n<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="red-rain.html">Red RAIN</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Publicaciones<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="perfil-academico.html">Perfil académico</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></li>
-          <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-        </ul>
-        <a href="convocatorias.html" class="btn btn-primary btn-sm nav-cta">Convocatorias</a>
-        <button class="nav-burger" id="burgerBtn" aria-label="Abrir men&uacute;" aria-expanded="false"><span></span><span></span><span></span></button>
+        <a class="nav-logo" href="index.html" aria-label="DEP, inicio"><span class="dep-mark"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></span></a>
+        <div class="nav-menu">
+          <a href="#dep">DEP</a><a href="nosotros.html">CRECE</a><a href="investigacion.html">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html">Editorial ECE</a>
+        </div>
+        <a class="nav-action" href="#informe">Informe anual</a>
       </div>
     </nav>
-    <div class="mobile-menu" id="mobileMenu" aria-label="Navegaci&oacute;n m&oacute;vil">
-      <p class="m-lbl">El CRECE</p><a class="m-link" href="nosotros.html">Nosotros</a><a class="m-link" href="equipo.html">Equipo de Trabajo</a><a class="m-link" href="convenios.html">Convenios</a><a class="m-link" href="contacto.html">Contacto</a><hr>
-      <p class="m-lbl">Oferta</p><a class="m-link" href="oferta-educativa.html">Oferta Educativa</a><a class="m-link" href="convocatorias.html">Convocatorias</a><a class="m-link" href="conocer.html">Proyecto CONOCER</a><hr>
-      <p class="m-lbl">Investigaci&oacute;n</p><a class="m-link" href="investigacion.html">Investigaci&oacute;n</a><a class="m-link" href="red-rain.html">Red RAIN</a><a class="m-link" href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a><hr>
-      <p class="m-lbl">Publicaciones</p><a class="m-link" href="publicaciones.html">Publicaciones</a><a class="m-link" href="perfil-academico.html">Perfil académico</a><a class="m-link" href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a><a class="m-link" href="vectores.html">Revista Vectores</a><hr>
-      <a class="m-link" href="noticias.html">Noticias</a>
-    </div>
   </header>
 
   <main>
+    <section class="dep-hero">
+      <div class="container hero-layout">
+        <div>
+          <p class="hero-kicker">Escuela de Ciencias de la Educación</p>
+          <h1>Conocimiento que se forma, investiga, publica y transforma.</h1>
+          <p>La División de Estudios de Posgrado articula formación, investigación aplicada, innovación educativa, publicación y divulgación para fortalecer la educación.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#dep">Conocer DEP</a><a class="btn btn-outline-light" href="#informe">Primer informe anual</a></div>
+        </div>
+        <aside class="hero-note" aria-label="Estado del proyecto"><span class="small-label">Primera versión</span><h2>Un ecosistema académico en construcción.</h2><p>DEP reúne proyectos con trayectorias y propósitos propios bajo una ruta común de evidencia, colaboración y conocimiento abierto.</p></aside>
+      </div>
+    </section>
 
-    <!-- ═══ 1. HERO ═══════════════════════════════════════════════ -->
-    <section class="hero" id="inicio">
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-content">
-            <p class="hero-overline">División de Estudios de Posgrado de la Escuela de Ciencias de la Educación &nbsp;·&nbsp; Gobierno de Nuevo León</p>
+    <section class="impact-band" aria-label="Resultados del primer año">
+      <div class="container"><div class="impact-grid">
+        <div class="impact-lead"><h2>Primer año de CRECE<br>Resultados que abren una nueva etapa.</h2></div>
+        <div class="impact-item"><span class="impact-number">≈ 2,000</span><p>estudiantes atendidos en línea mediante proyectos formativos.</p></div>
+        <div class="impact-item"><span class="impact-number">2025–2026</span><p>primer periodo de consolidación institucional de CRECE.</p></div>
+        <div class="impact-item"><span class="impact-number">4 líneas</span><p>articuladas para formación, investigación, publicación y divulgación.</p></div>
+      </div></div>
+    </section>
 
-            <div class="hero-logo-wrap">
-              <img src="assets/logo-crece.jpg" alt="CRECE" class="hero-logo-img">
-              <span class="hero-acronym">
-</span>
-            </div>
-
-            <p class="hero-name">Centro de Recursos para la Enseñanza y Ciencia Educativa</p>
-
-            <h1 class="hero-tagline">
-              Formación, investigación, publicación y divulgación<br>
-              <em>al servicio del magisterio de Nuevo León.</em>
-            </h1>
-
-            <p style="font-size:1rem;color:rgba(255,255,255,.72);max-width:560px;margin:-14px 0 26px;line-height:1.6;">Admisiones abiertas para Licenciatura en Ciencias de la Educaci&oacute;n y Posgrados ECE 2026. Modalidades escolarizadas en turno matutino, cupo limitado y formulario &uacute;nico de inscripci&oacute;n.</p>
-
-            <div class="hero-actions">
-              <a href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener" class="btn hero-action-btn hero-action-register"><span class="hero-action-icon" aria-hidden="true">✓</span>Inscripci&oacute;n Nuevo Ingreso 2026</a>
-            </div>
-          </div>
-
-          <div class="hero-callout" aria-label="Convocatorias vigentes de Licenciatura y Posgrados ECE 2026">
-            <div class="hero-callout-grid">
-              <img src="assets/convocatoria-2026-lic-esc.jpg" alt="Convocatoria 2026 de Licenciatura en Ciencias de la Educación modalidad escolarizada">
-              <img src="assets/convocatoria-posgrados-ece-2026.png" alt="Convocatoria 2026 de Posgrados ECE">
-            </div>
-          </div>
+    <section class="section" id="dep">
+      <div class="container intro-grid">
+        <div class="intro-copy"><span class="eyebrow">Identidad DEP</span><h2 class="section-title">Una plataforma para ordenar y proyectar el trabajo académico.</h2><p>DEP organiza un ecosistema dirigido a producir conocimiento útil, fortalecer comunidades académicas y hacer visibles sus resultados con claridad institucional.</p><p>Su función no es sustituir las identidades de los proyectos existentes, sino articularlas: CRECE como unidad de formación e innovación, Vectores como revista, la investigación colaborativa como horizonte y Editorial ECE como ruta de publicación digital.</p></div>
+        <div class="principles" aria-label="Principios de DEP">
+          <article class="principle"><span class="principle-num">01</span><div><h3>Rigor y evidencia</h3><p>Los proyectos se presentan con productos, responsables y resultados verificables.</p></div></article>
+          <article class="principle"><span class="principle-num">02</span><div><h3>Conocimiento compartido</h3><p>La formación, las publicaciones y la divulgación convierten la experiencia en valor público.</p></div></article>
+          <article class="principle"><span class="principle-num">03</span><div><h3>Innovación con sentido educativo</h3><p>La tecnología se integra como medio para responder a problemas reales de la educación.</p></div></article>
         </div>
       </div>
     </section>
 
-    <!-- ═══ 2. DATOS INSTITUCIONALES ══════════════════════════════ -->
-    <div class="stats-strip">
+    <section class="section ecosystem" id="ecosistema">
       <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-icon">📅</div>
-            <div>
-              <div class="stat-num">2025</div>
-              <div class="stat-lbl">Año de creación</div>
-            </div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon">👨‍🏫</div>
-            <div>
-              <div class="stat-num">1,600+</div>
-              <div class="stat-lbl">Docentes formados</div>
-            </div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon">📋</div>
-            <div>
-              <div class="stat-num">13</div>
-              <div class="stat-lbl">Convocatorias realizadas</div>
-            </div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-icon">🏛</div>
-            <div>
-              <div class="stat-num">ECE</div>
-              <div class="stat-lbl">Adscrito a la Escuela de Ciencias de la Educación</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ 3. INSCRIPCIÓN Y PAGOS ════════════════════════════════ -->
-    <section class="section section--tint" id="inscripcion-pagos">
-      <div class="container">
-        <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:28px;">
-          <div>
-            <span class="eyebrow">Nuevo ingreso 2026</span>
-            <h2 class="section-title">Inscripci&oacute;n y pagos</h2>
-            <p class="section-lead">La ECE ofrece a estudiantes de primer semestre una beca del 50 % sobre el costo total de inscripci&oacute;n. El formulario &uacute;nico concentra registro, papeler&iacute;a y comprobante de pago.</p>
-          </div>
-          <a href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener" class="btn btn-primary">Formulario &uacute;nico de inscripci&oacute;n</a>
-        </div>
-
-        <div class="payment-grid">
-          <article class="payment-card">
-            <h3>Licenciatura</h3>
-            <ul class="info-list">
-              <li><strong>Cuota interna:</strong> $1,500</li>
-              <li><strong>Cuota semestral:</strong> $2,600</li>
-              <li><strong>Total:</strong> $4,100</li>
-            </ul>
-            <p class="payment-total"><span>Total con beca</span><strong>$2,050</strong></p>
-          </article>
-
-          <article class="payment-card">
-            <h3>Maestr&iacute;a</h3>
-            <ul class="info-list">
-              <li><strong>Cuota interna:</strong> $3,200</li>
-              <li><strong>Costo por materia:</strong> $1,900</li>
-              <li><strong>N&uacute;mero de materias:</strong> 3</li>
-              <li><strong>Total:</strong> $8,900</li>
-            </ul>
-            <p class="payment-total"><span>Total con beca</span><strong>$4,450</strong></p>
-          </article>
-
-          <article class="payment-card">
-            <h3>Doctorado</h3>
-            <ul class="info-list">
-              <li><strong>Cuota interna:</strong> $3,500</li>
-              <li><strong>Costo por materia:</strong> $5,100</li>
-              <li><strong>N&uacute;mero de materias:</strong> 2</li>
-              <li><strong>Total:</strong> $13,700</li>
-            </ul>
-            <p class="payment-total"><span>Total con beca</span><strong>$6,850</strong></p>
-          </article>
-        </div>
-
-        <div class="bank-card">
-          <article class="info-card">
-            <h3>Datos bancarios</h3>
-            <ul class="info-list">
-              <li><strong>Banco:</strong> HSBC</li>
-              <li><strong>Cuenta:</strong> 04065132664</li>
-              <li><strong>CLABE interbancaria:</strong> 021580040651326647</li>
-              <li><strong>Beneficiario:</strong> Escuela de Ciencias de la Educaci&oacute;n (ECE)</li>
-            </ul>
-          </article>
-
-          <article class="info-card">
-            <h3>Concepto de pago</h3>
-            <p>En el campo &ldquo;Concepto de pago&rdquo; escribe la abreviatura del programa, tu primer nombre y tu primer apellido.</p>
-            <ul class="info-list">
-              <li><strong>LIC:</strong> Licenciatura</li>
-              <li><strong>MAE:</strong> Maestr&iacute;a</li>
-              <li><strong>DOC:</strong> Doctorado</li>
-              <li><strong>Ejemplo:</strong> LIC PERLA ORTIZ</li>
-            </ul>
-            <p style="margin-top:14px;">Despu&eacute;s de realizar el pago, adjunta tu comprobante en el apartado correspondiente del formulario.</p>
-          </article>
+        <div class="section-heading"><div><span class="eyebrow">Ecosistema DEP</span><h2 class="section-title">Proyectos con identidad propia, propósito común.</h2></div><p class="section-lead">Cada línea conserva su naturaleza y aporta a una trayectoria integrada de formación, investigación y divulgación.</p></div>
+        <div class="ecosystem-grid">
+          <article class="eco-card"><div class="eco-top"><span class="eco-symbol">C</span><span class="eco-status">Activo</span></div><h3>CRECE</h3><p>Centro de Recursos para la Enseñanza y Ciencia Educativa: formación continua, innovación pedagógica y proyectos aplicados.</p><a href="nosotros.html">Conocer CRECE →</a></article>
+          <article class="eco-card"><div class="eco-top"><span class="eco-symbol">V</span><span class="eco-status">Activo</span></div><h3>Vectores</h3><p>Revista para la producción y difusión de conocimiento educativo, bajo una dirección editorial especializada.</p><a href="vectores.html">Ir a Revista Vectores →</a></article>
+          <article class="eco-card" id="grupo"><div class="eco-top"><span class="eco-symbol">IA</span><span class="eco-status">En creación</span></div><h3>Grupo de Interés</h3><p>Innovación Educativa e Inteligencia Artificial: espacio inicial para diálogo, colaboración y desarrollo de futuros proyectos de investigación.</p><a href="investigacion.html">Explorar investigación →</a></article>
+          <article class="eco-card"><div class="eco-top"><span class="eco-symbol">E</span><span class="eco-status">En consolidación</span></div><h3>Editorial ECE</h3><p>Publicación de libros digitales, colecciones, memorias y materiales académicos para ampliar el alcance del conocimiento.</p><a href="publicaciones.html">Ver publicaciones →</a></article>
         </div>
       </div>
     </section>
 
-    <!-- ═══ 4. QUÉ ES EL CRECE ════════════════════════════════════ -->
-    <section class="section" id="que-es">
-      <div class="container">
-        <div class="que-es-grid">
-          <div class="que-es-text">
-            <span class="eyebrow">Acerca del CRECE</span>
-            <h2 class="section-title">¿Qué es el CRECE?</h2>
-            <p>El CRECE es la <strong>unidad académica de la Escuela de Ciencias de la Educación (ECE)</strong> dedicada a la formación continua, la investigación educativa, la producción editorial y la divulgación del conocimiento pedagógico para los docentes de Nuevo León.</p>
-            <p>Trabaja en colaboración con la Secretaría de Educación del Estado y otras instituciones de educación superior, generando programas de actualización pertinentes y alineados con las necesidades del sistema educativo estatal.</p>
-            <div style="margin-top:24px;">
-              <a href="nosotros.html" class="btn btn-secondary">Conocer más sobre el CRECE</a>
-            </div>
-          </div>
-
-          <div class="que-es-visual">
-            <p style="font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);margin-bottom:16px;">Cuatro ejes de trabajo</p>
-            <div class="ejes-grid">
-              <div class="eje">
-                <div class="eje-icon">🏫</div>
-                <h4>Formación</h4>
-                <p>Cursos y diplomados certificados</p>
-              </div>
-              <div class="eje">
-                <div class="eje-icon">🔎</div>
-                <h4>Investigación</h4>
-                <p>Proyectos educativos aplicados</p>
-              </div>
-              <div class="eje">
-                <div class="eje-icon">📄</div>
-                <h4>Publicación</h4>
-                <p>Revista Vectores y editorial</p>
-              </div>
-              <div class="eje">
-                <div class="eje-icon">📳</div>
-                <h4>Divulgación</h4>
-                <p>Difusión pedagógica estatal</p>
-              </div>
-            </div>
-          </div>
+    <section class="section research-block" id="investigacion">
+      <div class="container research-grid">
+        <div><span class="eyebrow eyebrow--light">Investigación e innovación</span><h2>Del problema educativo al conocimiento compartido.</h2><p>DEP busca que la experiencia de formación, la tecnología educativa y el trabajo colaborativo se transformen en proyectos, productos académicos y acciones de divulgación con sentido social.</p></div>
+        <div class="research-points">
+          <div class="research-point"><strong>Investigación aplicada</strong><span>Proyectos que documentan, analizan y proponen mejoras para situaciones educativas concretas.</span></div>
+          <div class="research-point"><strong>Inteligencia artificial</strong><span>Exploración crítica y responsable de herramientas, prácticas y retos para la innovación educativa.</span></div>
+          <div class="research-point"><strong>Comunidad académica</strong><span>Seminarios, colaboraciones y espacios de intercambio que fortalecen nuevas líneas de trabajo.</span></div>
+          <div class="research-point"><strong>Acceso abierto</strong><span>Divulgación de resultados y recursos que permitan reconocer, consultar y aprovechar el trabajo realizado.</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ═══ 5. OFERTA EDUCATIVA (preview) ════════════════════════ -->
-    <section class="section section--tint" id="oferta">
-      <div class="container">
-        <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px;">
-          <div>
-            <span class="eyebrow">Programas académicos</span>
-            <h2 class="section-title">Oferta Educativa</h2>
-            <p class="section-lead">Programas de actualización y formación continua para el personal docente de Nuevo León.</p>
-          </div>
-          <a href="oferta-educativa.html" class="btn btn-secondary">Ver oferta completa</a>
-        </div>
-
-        <div class="oferta-grid">
-          <div class="oferta-card">
-            <div class="oferta-icon">👤</div>
-            <h3>Cursos en Línea</h3>
-            <p>Programas de 40 horas en modalidad virtual, diseñados para que los docentes actualicen sus competencias sin desplazarse. Certificados por la ECE.</p>
-            <a href="oferta-educativa.html" class="btn btn-outline btn-sm" style="margin-top:auto;">Ver cursos</a>
-          </div>
-          <div class="oferta-card accent">
-            <div class="oferta-icon">🏫</div>
-            <h3>Diplomados</h3>
-            <p>Programas de 120 horas que profundizan en temáticas clave como Educación Socioemocional, Computación Aplicada e Inteligencia Artificial en Educación.</p>
-            <a href="oferta-educativa.html" class="btn btn-outline btn-sm" style="margin-top:auto;">Ver diplomados</a>
-          </div>
-          <div class="oferta-card steel">
-            <div class="oferta-icon">🏅</div>
-            <h3>Certificación CONOCER</h3>
-            <p>Evaluación y certificación de competencias laborales docentes conforme al marco del Consejo Nacional de Normalización y Certificación (CONOCER-SEP).</p>
-            <a href="conocer.html" class="btn btn-outline btn-sm" style="margin-top:auto;">Ver certificación</a>
-          </div>
-        </div>
+    <section class="section" id="informe">
+      <div class="container report-grid">
+        <article class="report-card"><span class="eyebrow">Rendición de cuentas</span><h2>Primer Informe Anual CRECE 2025–2026</h2><p>Un espacio público para presentar los resultados del primer año, reconocer a quienes han participado y abrir la siguiente etapa de DEP.</p><ul class="report-list"><li>Formación, cursos y diplomados.</li><li>Atención digital y herramientas tecnológicas.</li><li>Investigación, publicación y divulgación.</li><li>Agenda de trabajo y proyectos por venir.</li></ul><a class="btn btn-secondary" href="contacto.html">Solicitar información</a></article>
+        <aside class="status-card"><span class="small-label">En preparación</span><h3>El informe será la primera memoria pública de esta etapa.</h3><p>La fecha, programa y materiales se anunciarán por los canales institucionales cuando estén confirmados.</p><a href="noticias.html">Consultar noticias y avisos →</a></aside>
       </div>
     </section>
-
-    <!-- ═══ 6. NOTICIAS Y AVISOS ══════════════════════════════════ -->
-    <section class="section" id="noticias">
-      <div class="container">
-        <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;flex-wrap:wrap;gap:16px;">
-          <div>
-            <span class="eyebrow">Últimas actualizaciones</span>
-            <h2 class="section-title">Noticias y Avisos</h2>
-          </div>
-          <a href="noticias.html" class="btn btn-outline btn-sm">Ver todas las noticias</a>
-        </div>
-
-        <div class="noticias-grid">
-          <div class="noticia-card">
-            <div class="noticia-img cat-convocatoria">🎓</div>
-            <div class="noticia-body">
-              <p class="noticia-cat">Admisiones</p>
-              <h3 class="noticia-title">Licenciatura en Ciencias de la Educaci&oacute;n: modalidad escolarizada y turno matutino</h3>
-              <p class="noticia-date">Inicio septiembre de 2026 · Acuerdo AM-II 031/2022</p>
-            </div>
-            <div class="noticia-footer">
-              <a href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Inscripci&oacute;n</a>
-            </div>
-          </div>
-
-          <div class="noticia-card">
-            <div class="noticia-img cat-convocatoria">🎓</div>
-            <div class="noticia-body">
-              <p class="noticia-cat">Admisiones</p>
-              <h3 class="noticia-title">Convocatoria 2026 Posgrados ECE: maestr&iacute;as y doctorado en turno matutino</h3>
-              <p class="noticia-date">Inicio septiembre de 2026 · Cupo limitado</p>
-            </div>
-            <div class="noticia-footer">
-              <a href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Inscripci&oacute;n</a>
-            </div>
-          </div>
-
-          <div class="noticia-card">
-            <div class="noticia-img cat-convocatoria">📋</div>
-            <div class="noticia-body">
-              <p class="noticia-cat">Convocatoria</p>
-              <h3 class="noticia-title">Convocatoria abierta ECE-CAMM: cursos y diplomados extracurriculares para admisión</h3>
-              <p class="noticia-date">Inscripciones hasta el 15 de julio de 2026, 23:55 hrs.</p>
-            </div>
-            <div class="noticia-footer">
-              <a href="convocatorias.html#convocatoria-camm-junio-2026" class="btn btn-secondary btn-sm">Ver convocatoria</a>
-            </div>
-          </div>
-
-          <div class="noticia-card">
-            <div class="noticia-img cat-publicacion">📑</div>
-            <div class="noticia-body">
-              <p class="noticia-cat">Publicación</p>
-              <h3 class="noticia-title">Nuevo número de la Revista Vectores ya disponible: Vol. 6, Núm. 1, enero–junio 2026</h3>
-              <p class="noticia-date">20 de mayo de 2026</p>
-            </div>
-            <div class="noticia-footer">
-              <a href="vectores.html" class="btn btn-secondary btn-sm">Leer más</a>
-            </div>
-          </div>
-
-          <div class="noticia-card">
-            <div class="noticia-img cat-evento">📍</div>
-            <div class="noticia-body">
-              <p class="noticia-cat">Proyecto en construcción</p>
-              <h3 class="noticia-title">Red RAIN: iniciativa académica en etapa de diseño conceptual</h3>
-              <p class="noticia-date">8 de mayo de 2026</p>
-            </div>
-            <div class="noticia-footer">
-              <a href="red-rain.html" class="btn btn-secondary btn-sm">Leer más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══ 6. ACCESOS DIRECTOS ═══════════════════════════════════ -->
-    <section class="section section--tint" id="accesos">
-      <div class="container">
-        <div style="text-align:center;margin-bottom:40px;">
-          <span class="eyebrow">Navegación rápida</span>
-          <h2 class="section-title" style="margin-bottom:0;">Accesos directos</h2>
-        </div>
-        <div class="accesos-grid">
-          <a href="vectores.html" class="acceso-link">
-            <div class="acceso-icon">📑</div>
-            <span class="acceso-label">Revista Vectores</span>
-          </a>
-          <a href="investigacion.html" class="acceso-link">
-            <div class="acceso-icon">🔎</div>
-            <span class="acceso-label">Investigación</span>
-          </a>
-          <a href="red-rain.html" class="acceso-link">
-            <div class="acceso-icon">🌐</div>
-            <span class="acceso-label">Red RAIN</span>
-          </a>
-          <a href="publicaciones.html" class="acceso-link">
-            <div class="acceso-icon">📚</div>
-            <span class="acceso-label">Publicaciones</span>
-          </a>
-          <a href="contacto.html" class="acceso-link">
-            <div class="acceso-icon">✉</div>
-            <span class="acceso-label">Contacto</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- ═══ 7. FOOTER ════════════════════════════════════════════════ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="footer-logo-wrap"><img src="assets/logo-crece.jpg" alt="CRECE"></a><p>Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa de la Escuela de Ciencias de la Educaci&oacute;n.</p></div>
-        <div class="footer-col"><h5>El CRECE</h5><ul><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
-        <div class="footer-col"><h5>Formaci&oacute;n</h5><ul><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></div>
-        <div class="footer-col"><h5>Acad&eacute;mico</h5><ul><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="red-rain.html">Red RAIN</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="perfil-academico.html">Perfil académico</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></div>
-        <div class="footer-col"><h5>Contacto</h5><ul><li><a href="mailto:crece@ece.edu.mx">crece@ece.edu.mx</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="contacto.html">Aviso de privacidad</a></li></ul></div>
+        <div class="dep-footer-brand"><span class="dep-mark"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></span><p>Plataforma académica de la División de Estudios de Posgrado de la Escuela de Ciencias de la Educación.</p></div>
+        <div class="footer-col"><h5>DEP</h5><ul><li><a href="#dep">Identidad</a></li><li><a href="#ecosistema">Ecosistema</a></li><li><a href="#informe">Informe anual</a></li></ul></div>
+        <div class="footer-col"><h5>Formación</h5><ul><li><a href="nosotros.html">CRECE</a></li><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li></ul></div>
+        <div class="footer-col"><h5>Conocimiento</h5><ul><li><a href="investigacion.html">Investigación</a></li><li><a href="vectores.html">Revista Vectores</a></li><li><a href="publicaciones.html">Editorial ECE</a></li></ul></div>
+        <div class="footer-col"><h5>Contacto</h5><ul><li><a href="contacto.html">Contacto institucional</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="contacto.html">Aviso de privacidad</a></li></ul></div>
       </div>
-      <div class="footer-bottom"><p>&copy; 2026 CRECE &mdash; Todos los derechos reservados.</p><div class="footer-gov">ECE <span></span> Gobierno de Nuevo Le&oacute;n</div></div>
+      <div class="footer-bottom"><p>© 2026 División de Estudios de Posgrado de la Escuela de Ciencias de la Educación.</p><div class="footer-gov">ECE <span></span> Gobierno de Nuevo León</div></div>
     </div>
   </footer>
-  <div class="image-lightbox" id="imageLightbox" hidden role="dialog" aria-modal="true" aria-label="Imagen ampliada">
-    <div class="image-lightbox__inner">
-      <button class="image-lightbox__close" type="button" aria-label="Cerrar imagen ampliada">&times;</button>
-      <img class="image-lightbox__img" src="" alt="">
-      <p class="image-lightbox__caption"></p>
-    </div>
-  </div>
-
-  <script>
-    /* ── Hamburger ── */
-    const burger = document.getElementById('burgerBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (burger && mobileMenu) {
-      burger.addEventListener('click', () => {
-        const open = mobileMenu.classList.toggle('open');
-        burger.classList.toggle('active', open);
-        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        burger.classList.remove('active');
-        burger.setAttribute('aria-expanded', 'false');
-      }));
-    }
-
-    /* ── Dropdowns (táctil) ── */
-    document.querySelectorAll('.nav-item > button.nav-link').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.parentElement;
-        const isOpen = item.classList.toggle('open');
-        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        document.querySelectorAll('.nav-item').forEach(other => {
-          if (other !== item) {
-            other.classList.remove('open');
-            const ob = other.querySelector('button.nav-link');
-            if (ob) ob.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-    });
-    document.addEventListener('click', e => {
-      if (!e.target.closest('.nav-item')) {
-        document.querySelectorAll('.nav-item').forEach(item => {
-          item.classList.remove('open');
-          const btn = item.querySelector('button.nav-link');
-          if (btn) btn.setAttribute('aria-expanded', 'false');
-        });
-      }
-    });
-
-    const lightbox = document.getElementById('imageLightbox');
-    const calloutImg = document.querySelector('.hero-callout img');
-    if (lightbox && calloutImg) {
-      const lightboxImg = lightbox.querySelector('.image-lightbox__img');
-      const caption = lightbox.querySelector('.image-lightbox__caption');
-      const closeBtn = lightbox.querySelector('.image-lightbox__close');
-      const openLightbox = () => {
-        lightboxImg.src = calloutImg.currentSrc || calloutImg.src;
-        lightboxImg.alt = calloutImg.alt || '';
-        caption.textContent = calloutImg.alt || '';
-        lightbox.hidden = false;
-        document.body.classList.add('lightbox-open');
-        closeBtn.focus();
-      };
-      const closeLightbox = () => {
-        lightbox.hidden = true;
-        lightboxImg.src = '';
-        document.body.classList.remove('lightbox-open');
-        calloutImg.focus();
-      };
-      calloutImg.tabIndex = 0;
-      calloutImg.setAttribute('role', 'button');
-      calloutImg.setAttribute('title', 'Ampliar imagen');
-      calloutImg.addEventListener('click', openLightbox);
-      calloutImg.addEventListener('keydown', e => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          openLightbox();
-        }
-      });
-      closeBtn.addEventListener('click', closeLightbox);
-      lightbox.addEventListener('click', e => {
-        if (e.target === lightbox) closeLightbox();
-      });
-      document.addEventListener('keydown', e => {
-        if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
-      });
-    }
-  </script>
 </body>
 </html>
-
-
