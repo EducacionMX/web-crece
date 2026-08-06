@@ -22,13 +22,13 @@
     .dep-nav .nav-menu a:hover { color:#fff; }
     .dep-nav .nav-action { margin-left:4px; padding:8px 14px; border:1px solid rgba(255,255,255,.38); border-radius:999px; color:#fff; font-size:.76rem; font-weight:700; white-space:nowrap; }
     .dep-nav .nav-action:hover { background:rgba(255,255,255,.1); }
-    .dep-hero { position:relative; overflow:hidden; padding:104px 0 94px; color:#fff; background:#101e3f; }
+    .dep-hero { position:relative; overflow:hidden; padding:72px 0 64px; color:#fff; background:#101e3f; }
     .dep-hero::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 87% 18%, rgba(200,114,26,.33), transparent 27%), radial-gradient(circle at 76% 76%, rgba(46,107,138,.45), transparent 25%), linear-gradient(115deg, transparent 0 53%, rgba(255,255,255,.04) 53% 54%, transparent 54%); }
     .dep-hero .container { position:relative; }
     .hero-layout { display:grid; grid-template-columns:minmax(0,1.28fr) minmax(280px,.72fr); gap:72px; align-items:end; }
     .hero-kicker { display:flex; align-items:center; gap:10px; margin-bottom:24px; color:#f0c46a; font-size:.76rem; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
     .hero-kicker::before { width:32px; height:2px; background:#c8721a; content:""; }
-    .dep-hero h1 { max-width:760px; margin:0 0 22px; color:#fff; font-size:clamp(2.25rem,5.1vw,4.55rem); letter-spacing:-.045em; }
+    .dep-hero h1 { max-width:700px; margin:0 0 18px; color:#fff; font-size:clamp(2rem,3.5vw,3.25rem); letter-spacing:-.035em; }
     .dep-hero p { max-width:650px; margin:0; color:rgba(255,255,255,.74); font-size:clamp(1rem,1.6vw,1.2rem); line-height:1.65; }
     .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
     .hero-actions .btn { border-radius:999px; }
@@ -45,6 +45,15 @@
     .impact-item { border-left:1px solid #e8e5e0; }
     .impact-number { display:block; margin-bottom:4px; color:#1a2e5e; font-family:"Libre Baskerville",Georgia,serif; font-size:1.6rem; font-weight:700; }
     .impact-item p { color:#706e6a; font-size:.84rem; line-height:1.35; }
+    .calls-section { padding:62px 0; background:#fff; }
+    .calls-grid { display:grid; grid-template-columns:1.12fr 1fr 1fr; gap:16px; }
+    .call-card { display:flex; min-height:230px; flex-direction:column; padding:27px; border:1px solid #e4e1dc; border-radius:16px; background:#fff; box-shadow:0 3px 13px rgba(12,22,40,.06); }
+    .call-card--primary { background:#1a2e5e; border-color:#1a2e5e; }
+    .call-card h3 { margin:10px 0; color:#1a2e5e; font-size:1.2rem; }
+    .call-card p { color:#706e6a; font-size:.91rem; line-height:1.5; }
+    .call-card--primary h3 { color:#fff; }
+    .call-card--primary p { color:rgba(255,255,255,.72); }
+    .call-card .btn { width:fit-content; margin-top:auto; padding:9px 17px; border-radius:999px; }
     .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start; }
     .intro-copy .section-title { max-width:590px; font-size:clamp(1.8rem,3.2vw,2.7rem); }
     .intro-copy p { max-width:600px; margin:0 0 18px; color:#595754; font-size:1.03rem; }
@@ -88,8 +97,8 @@
     .dep-footer-brand { max-width:270px; }
     .dep-footer-brand .dep-mark { margin-bottom:16px; }
     .dep-footer-brand p { color:rgba(255,255,255,.52); font-size:.84rem; }
-    @media (max-width:1000px) { .hero-layout,.intro-grid,.research-grid,.report-grid { grid-template-columns:1fr; gap:38px; } .ecosystem-grid { grid-template-columns:1fr 1fr; } .impact-grid { grid-template-columns:1fr 1fr; } .impact-lead { grid-column:1 / -1; min-height:auto; } .impact-item:nth-child(3) { border-left:0; } .dep-nav .nav-menu { display:none; } .dep-nav .nav-action { margin-left:auto; } }
-    @media (max-width:640px) { .dep-hero { padding:76px 0 72px; } .hero-note { padding:22px; } .impact-band { margin-top:-22px; } .impact-grid,.ecosystem-grid,.research-points { grid-template-columns:1fr; } .impact-item,.impact-item:nth-child(3) { border-left:0; border-top:1px solid #e8e5e0; } .section-heading { display:block; } .section-heading .section-lead { margin-top:12px; } .eco-card { min-height:250px; } .report-card,.status-card { padding:27px; } }
+    @media (max-width:1000px) { .hero-layout,.intro-grid,.research-grid,.report-grid { grid-template-columns:1fr; gap:38px; } .ecosystem-grid,.calls-grid { grid-template-columns:1fr 1fr; } .calls-grid .call-card--primary { grid-column:1 / -1; } .impact-grid { grid-template-columns:1fr 1fr; } .impact-lead { grid-column:1 / -1; min-height:auto; } .impact-item:nth-child(3) { border-left:0; } .dep-nav .nav-menu { display:none; } .dep-nav .nav-action { margin-left:auto; } }
+    @media (max-width:640px) { .dep-hero { padding:58px 0 54px; } .dep-hero h1 { font-size:2rem; } .hero-note { padding:22px; } .impact-band { margin-top:-22px; } .impact-grid,.ecosystem-grid,.research-points,.calls-grid { grid-template-columns:1fr; } .calls-grid .call-card--primary { grid-column:auto; } .impact-item,.impact-item:nth-child(3) { border-left:0; border-top:1px solid #e8e5e0; } .section-heading { display:block; } .section-heading .section-lead { margin-top:12px; } .eco-card { min-height:250px; } .report-card,.status-card { padding:27px; } }
   </style>
 </head>
 <body>
@@ -98,9 +107,9 @@
       <div class="nav-wrap">
         <a class="nav-logo" href="index.html" aria-label="DEP, inicio"><span class="dep-mark"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></span></a>
         <div class="nav-menu">
-          <a href="#dep">DEP</a><a href="nosotros.html">CRECE</a><a href="investigacion.html">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html">Editorial ECE</a>
+          <a href="#dep">DEP</a><a href="convocatorias.html">Convocatorias</a><a href="nosotros.html">CRECE</a><a href="investigacion.html">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html">Editorial ECE</a>
         </div>
-        <a class="nav-action" href="#informe">Informe anual</a>
+        <a class="nav-action" href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener">Inscripciones</a>
       </div>
     </nav>
   </header>
@@ -112,7 +121,7 @@
           <p class="hero-kicker">Escuela de Ciencias de la Educación</p>
           <h1>Conocimiento que se forma, investiga, publica y transforma.</h1>
           <p>La División de Estudios de Posgrado articula formación, investigación aplicada, innovación educativa, publicación y divulgación para fortalecer la educación.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#dep">Conocer DEP</a><a class="btn btn-outline-light" href="#informe">Primer informe anual</a></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="convocatorias.html">Ver convocatorias</a><a class="btn btn-outline-light" href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener">Inscripción</a></div>
         </div>
         <aside class="hero-note" aria-label="Estado del proyecto"><span class="small-label">Primera versión</span><h2>Un ecosistema académico en construcción.</h2><p>DEP reúne proyectos con trayectorias y propósitos propios bajo una ruta común de evidencia, colaboración y conocimiento abierto.</p></aside>
       </div>
@@ -125,6 +134,17 @@
         <div class="impact-item"><span class="impact-number">2025–2026</span><p>primer periodo de consolidación institucional de CRECE.</p></div>
         <div class="impact-item"><span class="impact-number">4 líneas</span><p>articuladas para formación, investigación, publicación y divulgación.</p></div>
       </div></div>
+    </section>
+
+    <section class="calls-section" id="convocatorias">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">Admisiones y formación</span><h2 class="section-title">Convocatorias e inscripciones</h2></div><p class="section-lead">Consulta los avisos institucionales y utiliza los canales de registro correspondientes para cada programa.</p></div>
+        <div class="calls-grid">
+          <article class="call-card call-card--primary"><span class="small-label">Registro disponible</span><h3>Licenciatura y Posgrados ECE</h3><p>El formulario único concentra el registro de nuevo ingreso, la documentación requerida y el comprobante de pago cuando corresponda.</p><a class="btn btn-primary" href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener">Ir a inscripción</a></article>
+          <article class="call-card"><span class="small-label">Información actualizada</span><h3>Convocatorias institucionales</h3><p>Consulta requisitos, modalidades, avisos de admisión y los mecanismos oficiales de seguimiento.</p><a class="btn btn-outline" href="convocatorias.html">Ver convocatorias</a></article>
+          <article class="call-card"><span class="small-label">Formación continua</span><h3>Cursos y diplomados</h3><p>Conoce la oferta educativa y revisa las convocatorias publicadas para actividades de actualización profesional.</p><a class="btn btn-outline" href="oferta-educativa.html">Ver oferta educativa</a></article>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="dep">
