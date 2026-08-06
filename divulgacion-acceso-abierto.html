@@ -62,31 +62,16 @@
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="container" aria-label="Navegaci&oacute;n principal">
-      <div class="nav-wrap">
-        <a href="index.html" class="nav-logo" aria-label="CRECE inicio"><img src="assets/logo-crece.jpg" alt="CRECE"></a>
-        <ul class="nav-menu">
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">El CRECE</button>
-            <ul class="dropdown"><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li><a href="contacto.html">Contacto</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Oferta</button>
-            <ul class="dropdown"><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Investigaci&oacute;n</button>
-            <ul class="dropdown"><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="red-rain.html">Red RAIN</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link active" type="button" aria-haspopup="true" aria-expanded="false">Publicaciones</button>
-            <ul class="dropdown"><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="perfil-academico.html">Perfil acad&eacute;mico</a></li><li><a href="divulgacion-acceso-abierto.html" class="active">Divulgaci&oacute;n y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></li>
-        </ul>
-        <a href="convocatorias.html" class="btn btn-primary btn-sm nav-cta">Convocatorias</a>
-        <button class="nav-burger" id="burgerBtn" aria-label="Abrir men&uacute;" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu">
-      <p class="m-lbl">El CRECE</p><a class="m-link" href="nosotros.html">Nosotros</a><a class="m-link" href="equipo.html">Equipo de Trabajo</a><a class="m-link" href="convenios.html">Convenios</a><a class="m-link" href="contacto.html">Contacto</a><hr>
-      <p class="m-lbl">Oferta</p><a class="m-link" href="oferta-educativa.html">Oferta Educativa</a><a class="m-link" href="convocatorias.html">Convocatorias</a><a class="m-link" href="conocer.html">Proyecto CONOCER</a><hr>
-      <p class="m-lbl">Investigaci&oacute;n</p><a class="m-link" href="investigacion.html">Investigaci&oacute;n</a><a class="m-link" href="red-rain.html">Red RAIN</a><a class="m-link" href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a><hr>
-      <p class="m-lbl">Publicaciones</p><a class="m-link" href="publicaciones.html">Publicaciones</a><a class="m-link" href="perfil-academico.html">Perfil acad&eacute;mico</a><a class="m-link active" href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a><a class="m-link" href="vectores.html">Revista Vectores</a>
+  <header class="dep-global-header">
+    <div class="container dep-global-wrap">
+      <a class="dep-global-brand" href="index.html" aria-label="DEP, inicio"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></a>
+      <nav class="dep-global-nav" aria-label="Navegación principal DEP"><a href="index.html">DEP</a><a href="convocatorias.html">Convocatorias</a><a href="nosotros.html">CRECE</a><a href="investigacion.html" class="dep-global-active">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html">Editorial ECE</a></nav>
+      <a class="dep-global-action" href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener">Inscripciones</a>
     </div>
   </header>
+  <nav class="dep-context-bar" aria-label="Navegación de sección">
+    <div class="container dep-context-inner"><span class="dep-context-title">Investigación e innovación educativa</span><div class="dep-context-links"><a href="investigacion.html">Presentación</a><a href="red-rain.html">Grupo de Interés IA</a><a href="proyectos-tecnologicos.html">Proyectos tecnológicos</a><a href="perfil-academico.html">Perfil académico</a><a href="divulgacion-acceso-abierto.html" class="dep-context-active">Divulgación</a></div></div>
+  </nav>
 
   <main>
     <section class="page-hero">
@@ -155,7 +140,7 @@
     const burger = document.getElementById('burgerBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     if (burger && mobileMenu) {
-      burger.addEventListener('click', () => {
+      burger?.addEventListener('click', () => {
         const open = mobileMenu.classList.toggle('open');
         burger.classList.toggle('active', open);
         burger.setAttribute('aria-expanded', open ? 'true' : 'false');

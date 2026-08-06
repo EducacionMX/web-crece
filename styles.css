@@ -164,6 +164,103 @@ h5 {
   border-bottom: 2px solid var(--orange);
 }
 
+/* Navegación DEP: marco común y barra contextual por línea de trabajo. */
+.dep-global-header {
+  position: sticky;
+  top: 0;
+  z-index: 220;
+  background: var(--navy-dark);
+  border-bottom: 2px solid var(--orange);
+}
+
+.dep-global-header .dep-global-wrap {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.dep-global-brand {
+  display: grid;
+  flex-shrink: 0;
+  color: var(--white);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .08em;
+}
+
+.dep-global-brand strong { font-size: 1.08rem; }
+.dep-global-brand span { margin-top: 4px; color: rgba(255,255,255,.62); font-size: .54rem; letter-spacing: .12em; }
+
+.dep-global-nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+}
+
+.dep-global-nav a {
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  color: rgba(255,255,255,.78);
+  font-size: .79rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+
+.dep-global-nav a:hover,
+.dep-global-nav a.dep-global-active { background: rgba(255,255,255,.1); color: var(--white); }
+
+.dep-global-action {
+  flex-shrink: 0;
+  margin-left: 4px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: var(--radius-pill);
+  color: var(--white);
+  font-size: .75rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.dep-global-action:hover { background: rgba(255,255,255,.1); }
+
+.dep-context-bar { background: var(--off-white); border-bottom: 1px solid var(--gray-xlt); }
+
+.dep-context-inner {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.dep-context-title {
+  flex-shrink: 0;
+  color: var(--navy);
+  font-family: var(--font-head);
+  font-size: .9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dep-context-links { display: flex; align-items: center; gap: 3px; }
+
+.dep-context-links a {
+  flex-shrink: 0;
+  padding: 5px 8px;
+  border-radius: var(--radius);
+  color: var(--gray);
+  font-size: .77rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.dep-context-links a:hover,
+.dep-context-links a.dep-context-active { color: var(--orange); background: var(--white); }
+
 .nav-wrap {
   min-height: var(--nav-h);
   display: flex;
@@ -781,6 +878,10 @@ h5 {
   .bank-card {
     grid-template-columns: 1fr;
   }
+
+  .dep-global-wrap { flex-wrap: wrap; padding: 9px 0; }
+  .dep-global-nav { order: 3; flex-basis: 100%; overflow-x: auto; margin-left: 0; padding-bottom: 2px; }
+  .dep-global-action { margin-left: auto; }
 }
 
 @media (max-width: 640px) {

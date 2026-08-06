@@ -120,33 +120,16 @@
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="container" aria-label="Navegaci&oacute;n principal">
-      <div class="nav-wrap">
-        <a href="index.html" class="nav-logo" aria-label="CRECE inicio"><img src="assets/logo-crece.jpg" alt="CRECE"></a>
-        <ul class="nav-menu">
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">El CRECE<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li class="dropdown-divider"></li><li><a href="contacto.html">Contacto</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Oferta<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Investigaci&oacute;n<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="red-rain.html">Red RAIN</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li></ul></li>
-          <li class="nav-item"><button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false">Publicaciones<svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg></button>
-            <ul class="dropdown"><li><a href="publicaciones.html" class="active">Publicaciones</a></li><li><a href="perfil-academico.html">Perfil académico</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></li>
-          <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-        </ul>
-        <a href="convocatorias.html" class="btn btn-primary btn-sm nav-cta">Convocatorias</a>
-        <button class="nav-burger" id="burgerBtn" aria-label="Abrir men&uacute;" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </nav>
-    <div class="mobile-menu" id="mobileMenu" aria-label="Navegaci&oacute;n m&oacute;vil">
-      <p class="m-lbl">El CRECE</p><a class="m-link" href="nosotros.html">Nosotros</a><a class="m-link" href="equipo.html">Equipo de Trabajo</a><a class="m-link" href="convenios.html">Convenios</a><a class="m-link" href="contacto.html">Contacto</a><hr>
-      <p class="m-lbl">Oferta</p><a class="m-link" href="oferta-educativa.html">Oferta Educativa</a><a class="m-link" href="convocatorias.html">Convocatorias</a><a class="m-link" href="conocer.html">Proyecto CONOCER</a><hr>
-      <p class="m-lbl">Investigaci&oacute;n</p><a class="m-link" href="investigacion.html">Investigaci&oacute;n</a><a class="m-link" href="red-rain.html">Red RAIN</a><a class="m-link" href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a><hr>
-      <p class="m-lbl">Publicaciones</p><a class="m-link active" href="publicaciones.html">Publicaciones</a><a class="m-link" href="perfil-academico.html">Perfil académico</a><a class="m-link" href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a><a class="m-link" href="vectores.html">Revista Vectores</a><hr>
-      <a class="m-link" href="noticias.html">Noticias</a>
+  <header class="dep-global-header">
+    <div class="container dep-global-wrap">
+      <a class="dep-global-brand" href="index.html" aria-label="DEP, inicio"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></a>
+      <nav class="dep-global-nav" aria-label="Navegación principal DEP"><a href="index.html">DEP</a><a href="convocatorias.html">Convocatorias</a><a href="nosotros.html">CRECE</a><a href="investigacion.html">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html" class="dep-global-active">Editorial ECE</a></nav>
+      <a class="dep-global-action" href="https://forms.gle/V27Rrk9RbPfSSXDx8" target="_blank" rel="noopener">Inscripciones</a>
     </div>
   </header>
+  <nav class="dep-context-bar" aria-label="Navegación de sección">
+    <div class="container dep-context-inner"><span class="dep-context-title">Publicaciones · Editorial ECE y Vectores</span><div class="dep-context-links"><a href="publicaciones.html" class="dep-context-active">Editorial ECE</a><a href="vectores.html">Revista Vectores</a><a href="divulgacion-acceso-abierto.html">Acceso abierto</a></div></div>
+  </nav>
 
   <div class="page-hero">
     <div class="container page-hero-inner">
@@ -332,8 +315,8 @@
   
   <script>
     const burger=document.getElementById('burgerBtn'),mm=document.getElementById('mobileMenu');
-    burger.addEventListener('click',()=>{const o=mm.classList.toggle('open');burger.classList.toggle('active',o);burger.setAttribute('aria-expanded',o);});
-    mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');burger.classList.remove('active');burger.setAttribute('aria-expanded','false');}));
+    burger?.addEventListener('click',()=>{const o=mm.classList.toggle('open');burger.classList.toggle('active',o);burger.setAttribute('aria-expanded',o);});
+    mm?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');burger.classList.remove('active');burger.setAttribute('aria-expanded','false');}));
     document.querySelectorAll('.nav-item>button.nav-link').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,isOpen=item.classList.toggle('open');btn.setAttribute('aria-expanded',isOpen);document.querySelectorAll('.nav-item').forEach(o=>{if(o!==item){o.classList.remove('open');const b=o.querySelector('button.nav-link');if(b)b.setAttribute('aria-expanded','false');}});});});
     document.addEventListener('click',e=>{if(!e.target.closest('.nav-item')){document.querySelectorAll('.nav-item').forEach(i=>{i.classList.remove('open');const b=i.querySelector('button.nav-link');if(b)b.setAttribute('aria-expanded','false');});}});
   </script>
