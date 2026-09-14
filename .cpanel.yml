@@ -5,4 +5,5 @@ deployment:
     - /bin/cp -R *.html $DEPLOYPATH
     - /bin/cp -R styles.css $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R sitemap.xml $DEPLOYPATH
     - /bin/cp -R respaldos $DEPLOYPATH
