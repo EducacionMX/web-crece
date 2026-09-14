@@ -4,4 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/creceedu/public_html/
     - /bin/cp -R *.html $DEPLOYPATH
     - /bin/cp -R styles.css $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R respaldos $DEPLOYPATH
