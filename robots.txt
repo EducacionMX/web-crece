@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://crece.ece.edu.mx/sitemap.xml
+Sitemap: https://dep.edu.mx/sitemap.xml
