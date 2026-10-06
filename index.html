@@ -1,206 +1,206 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWM82RH0BZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DWM82RH0BZ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DEP integra formación, investigación, innovación educativa, publicación y divulgación de la Escuela de Ciencias de la Educación.">
-  <meta name="theme-color" content="#101e3f">
+  <meta name="theme-color" content="#2b3a55">
   <title>DEP | División de Estudios de Posgrado</title>
   <link rel="canonical" href="https://dep.edu.mx/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .dep-mark { display:grid; line-height:1; color:#fff; letter-spacing:.08em; font-weight:800; }
-    .dep-mark strong { font-size:1.15rem; }
-    .dep-mark span { margin-top:3px; font-size:.56rem; letter-spacing:.12em; color:rgba(255,255,255,.62); }
-    .dep-nav .nav-wrap { gap:24px; }
-    .dep-nav .nav-logo { height:auto; padding:8px 0; background:none; border-radius:0; }
-    .dep-nav .nav-menu { gap:0; }
-    .dep-nav .nav-menu a { padding:9px 10px; font-size:.8rem; font-weight:700; letter-spacing:.02em; color:rgba(255,255,255,.76); }
-    .dep-nav .nav-menu a:hover { color:#fff; }
-    .dep-nav .nav-action { margin-left:4px; padding:8px 14px; border:1px solid rgba(255,255,255,.38); border-radius:999px; color:#fff; font-size:.76rem; font-weight:700; white-space:nowrap; }
-    .dep-nav .nav-action:hover { background:rgba(255,255,255,.1); }
-    .dep-hero { position:relative; overflow:hidden; padding:72px 0 64px; color:#fff; background:#101e3f; }
-    .dep-hero::before { content:""; position:absolute; inset:0; background:radial-gradient(circle at 87% 18%, rgba(200,114,26,.33), transparent 27%), radial-gradient(circle at 76% 76%, rgba(46,107,138,.45), transparent 25%), linear-gradient(115deg, transparent 0 53%, rgba(255,255,255,.04) 53% 54%, transparent 54%); }
-    .dep-hero .container { position:relative; }
-    .hero-layout { display:grid; grid-template-columns:minmax(0,1.28fr) minmax(280px,.72fr); gap:72px; align-items:end; }
-    .hero-kicker { display:flex; align-items:center; gap:10px; margin-bottom:24px; color:#f0c46a; font-size:.76rem; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
-    .hero-kicker::before { width:32px; height:2px; background:#c8721a; content:""; }
-    .dep-hero h1 { max-width:700px; margin:0 0 18px; color:#fff; font-size:clamp(2rem,3.5vw,3.25rem); letter-spacing:-.035em; }
-    .dep-hero p { max-width:650px; margin:0; color:rgba(255,255,255,.74); font-size:clamp(1rem,1.6vw,1.2rem); line-height:1.65; }
-    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
-    .hero-actions .btn { border-radius:999px; }
-    .hero-note { padding:26px; border:1px solid rgba(255,255,255,.16); border-radius:18px; background:rgba(8,18,42,.32); backdrop-filter:blur(8px); }
-    .hero-note .small-label { color:#f0c46a; }
-    .hero-note h2 { margin:10px 0 12px; color:#fff; font-size:1.35rem; }
-    .hero-note p { font-size:.92rem; color:rgba(255,255,255,.66); }
-    .small-label { display:block; color:#c8721a; font-size:.7rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
-    .impact-band { position:relative; z-index:2; margin-top:-34px; }
-    .impact-grid { display:grid; grid-template-columns:1.25fr repeat(3,1fr); overflow:hidden; border-radius:18px; border:1px solid #e4e1dc; background:#fff; box-shadow:0 16px 42px rgba(12,22,40,.13); }
-    .impact-lead, .impact-item { min-height:132px; padding:25px 28px; }
-    .impact-lead { display:flex; align-items:center; background:#f4ead9; }
-    .impact-lead h2 { color:#1a2e5e; font-size:1.24rem; }
-    .impact-item { border-left:1px solid #e8e5e0; }
-    .impact-number { display:block; margin-bottom:4px; color:#1a2e5e; font-family:"Libre Baskerville",Georgia,serif; font-size:1.6rem; font-weight:700; }
-    .impact-item p { color:#706e6a; font-size:.84rem; line-height:1.35; }
-    .calls-section { padding:62px 0; background:#fff; }
-    .calls-grid { display:grid; grid-template-columns:1.12fr 1fr 1fr; gap:16px; }
-    .call-card { display:flex; min-height:230px; flex-direction:column; padding:27px; border:1px solid #e4e1dc; border-radius:16px; background:#fff; box-shadow:0 3px 13px rgba(12,22,40,.06); }
-    .call-card--primary { background:#1a2e5e; border-color:#1a2e5e; }
-    .call-card h3 { margin:10px 0; color:#1a2e5e; font-size:1.2rem; }
-    .call-card p { color:#706e6a; font-size:.91rem; line-height:1.5; }
-    .call-card--primary h3 { color:#fff; }
-    .call-card--primary p { color:rgba(255,255,255,.72); }
-    .call-card .btn { width:fit-content; margin-top:auto; padding:9px 17px; border-radius:999px; }
-    .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start; }
-    .intro-copy .section-title { max-width:590px; font-size:clamp(1.8rem,3.2vw,2.7rem); }
-    .intro-copy p { max-width:600px; margin:0 0 18px; color:#595754; font-size:1.03rem; }
-    .principles { display:grid; gap:0; border-top:1px solid #dedad3; }
-    .principle { display:grid; grid-template-columns:44px 1fr; gap:16px; padding:19px 0; border-bottom:1px solid #dedad3; }
-    .principle-num { color:#c8721a; font-family:"Libre Baskerville",Georgia,serif; font-size:1.15rem; }
-    .principle h3 { margin:0 0 3px; color:#1a2e5e; font-family:"Source Sans 3",sans-serif; font-size:.98rem; font-weight:800; letter-spacing:0; }
-    .principle p { color:#706e6a; font-size:.88rem; line-height:1.45; }
-    .ecosystem { background:#f6f5f2; }
-    .section-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:35px; }
-    .section-heading .section-lead { max-width:545px; }
-    .ecosystem-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
-    .eco-card { display:flex; min-height:300px; flex-direction:column; padding:26px; border:1px solid #e5e1db; border-radius:16px; background:#fff; box-shadow:0 2px 12px rgba(12,22,40,.05); transition:transform .18s ease, box-shadow .18s ease; }
-    .eco-card:hover { transform:translateY(-4px); box-shadow:0 12px 26px rgba(12,22,40,.12); }
-    .eco-top { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
-    .eco-symbol { display:grid; width:46px; height:46px; place-items:center; border-radius:12px; background:#edf0f7; color:#1a2e5e; font-family:"Libre Baskerville",Georgia,serif; font-size:1.05rem; font-weight:700; }
-    .eco-status { padding:4px 8px; border-radius:999px; background:#f4ead9; color:#8a5817; font-size:.66rem; font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
-    .eco-card h3 { margin:25px 0 11px; color:#1a2e5e; font-size:1.28rem; }
-    .eco-card p { color:#706e6a; font-size:.9rem; line-height:1.55; }
-    .eco-card a { margin-top:auto; padding-top:20px; color:#1a2e5e; font-size:.82rem; font-weight:800; }
-    .eco-card a:hover { color:#c8721a; }
-    .research-block { background:#1a2e5e; color:#fff; }
-    .research-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:72px; align-items:center; }
-    .research-block h2 { margin:10px 0 16px; color:#fff; font-size:clamp(1.7rem,3vw,2.5rem); }
-    .research-block p { color:rgba(255,255,255,.72); }
-    .research-points { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-    .research-point { min-height:145px; padding:20px; border:1px solid rgba(255,255,255,.14); border-radius:14px; background:rgba(255,255,255,.06); }
-    .research-point strong { display:block; margin-bottom:7px; color:#f0c46a; font-size:.82rem; letter-spacing:.05em; text-transform:uppercase; }
-    .research-point span { color:rgba(255,255,255,.72); font-size:.88rem; line-height:1.42; }
-    .report-grid { display:grid; grid-template-columns:1.18fr .82fr; gap:30px; align-items:stretch; }
-    .report-card { padding:38px; border-radius:18px; background:#f4ead9; }
-    .report-card h2 { margin:9px 0 15px; color:#1a2e5e; font-size:clamp(1.55rem,2.6vw,2.15rem); }
-    .report-card p { max-width:620px; color:#595754; }
-    .report-list { display:grid; gap:11px; margin:24px 0 28px; }
-    .report-list li { display:flex; gap:10px; color:#595754; font-size:.92rem; }
-    .report-list li::before { content:"•"; color:#c8721a; font-weight:800; }
-    .status-card { display:flex; flex-direction:column; justify-content:center; padding:38px; border-radius:18px; background:#101e3f; }
-    .status-card h3 { margin:12px 0; color:#fff; font-size:1.45rem; }
-    .status-card p { color:rgba(255,255,255,.68); font-size:.93rem; }
-    .status-card a { margin-top:25px; color:#f0c46a; font-size:.82rem; font-weight:800; }
-    .dep-footer-brand { max-width:270px; }
-    .dep-footer-brand .dep-mark { margin-bottom:16px; }
-    .dep-footer-brand p { color:rgba(255,255,255,.52); font-size:.84rem; }
-    @media (max-width:1000px) { .hero-layout,.intro-grid,.research-grid,.report-grid { grid-template-columns:1fr; gap:38px; } .ecosystem-grid,.calls-grid { grid-template-columns:1fr 1fr; } .calls-grid .call-card--primary { grid-column:1 / -1; } .impact-grid { grid-template-columns:1fr 1fr; } .impact-lead { grid-column:1 / -1; min-height:auto; } .impact-item:nth-child(3) { border-left:0; } .dep-nav .nav-menu { display:none; } .dep-nav .nav-action { margin-left:auto; } }
-    @media (max-width:640px) { .dep-hero { padding:58px 0 54px; } .dep-hero h1 { font-size:2rem; } .hero-note { padding:22px; } .impact-band { margin-top:-22px; } .impact-grid,.ecosystem-grid,.research-points,.calls-grid { grid-template-columns:1fr; } .calls-grid .call-card--primary { grid-column:auto; } .impact-item,.impact-item:nth-child(3) { border-left:0; border-top:1px solid #e8e5e0; } .section-heading { display:block; } .section-heading .section-lead { margin-top:12px; } .eco-card { min-height:250px; } .report-card,.status-card { padding:27px; } }
+    .home-hero { background: var(--navy-dark); color: var(--white); padding: 88px 0 96px; }
+    .home-hero-grid { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,1fr); gap: 80px; align-items: end; }
+    .home-kicker { margin: 0 0 20px; font-size: 1rem; color: #c3c9d6; }
+    .home-hero h1 { font-family: var(--font-head); font-weight: 400; font-size: clamp(2.1rem, 4.4vw, 3.5rem); line-height: 1.12; letter-spacing: -.01em; text-wrap: balance; color: var(--white); }
+    .home-lead { margin-top: 28px; font-size: 1.25rem; line-height: 1.55; color: #dfe3ea; max-width: 34em; }
+    .home-tasks h2 { font-family: var(--font-body); font-size: .95rem; font-weight: 600; color: #c3c9d6; margin-bottom: 14px; }
+    .home-task { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 8px 4px; border-top: 1px solid rgba(255,255,255,.18); color: var(--white); text-decoration: none; font-size: 1.12rem; font-weight: 600; }
+    .home-task:last-child { border-bottom: 1px solid rgba(255,255,255,.18); }
+    .home-task:hover { color: var(--gold-light); }
+    .home-task small { display: block; margin-top: 2px; font-size: .88rem; font-weight: 400; color: #c3c9d6; }
+    .home-task svg { flex-shrink: 0; }
+    .home-section { padding: 96px 0 72px; }
+    .home-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+    .home-head h2, .home-units-title { font-family: var(--font-head); font-weight: 400; font-size: clamp(1.75rem, 3vw, 2.4rem); color: var(--navy-dark); }
+    .home-head a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--orange-text); }
+    .agenda-row { display: grid; grid-template-columns: 200px minmax(0,1fr) 220px; gap: 40px; padding: 36px 0; border-top: 1px solid var(--line); align-items: start; }
+    .agenda-row:last-child { border-bottom: 1px solid var(--line); }
+    .agenda-date { font-family: var(--font-head); font-size: 1.85rem; line-height: 1.15; color: var(--navy-dark); }
+    .agenda-state { margin-top: 10px; font-size: .95rem; color: var(--text-muted); }
+    .agenda-tag { margin-bottom: 6px; font-size: .95rem; font-weight: 600; color: var(--steel); }
+    .agenda-row h3 { font-family: var(--font-head); font-weight: 400; font-size: 1.5rem; line-height: 1.3; color: var(--navy-dark); }
+    .agenda-row p.agenda-text { margin-top: 12px; font-size: 1.06rem; line-height: 1.6; color: #3a3a46; max-width: 38em; }
+    .agenda-actions { display: flex; flex-direction: column; gap: 10px; }
+    .home-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 6px; font-weight: 700; font-size: .95rem; text-decoration: none; text-align: center; }
+    .home-btn--a { background: var(--action); color: var(--white); }
+    .home-btn--a:hover { background: var(--action-hover); color: var(--white); }
+    .home-btn--o { border: 1.5px solid var(--navy); color: var(--navy); }
+    .home-btn--o:hover { background: var(--navy); color: var(--white); }
+    .home-units { background: var(--off-white); padding: 88px 0; }
+    .home-units-title { margin-bottom: 40px; }
+    .home-units-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 40px; }
+    .home-unit img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+    .home-unit h3 { margin: 22px 0 8px; font-family: var(--font-head); font-weight: 400; font-size: 1.5rem; color: var(--navy-dark); }
+    .home-unit p { margin-bottom: 16px; font-size: 1.06rem; line-height: 1.6; color: #3a3a46; }
+    .home-unit a { display: flex; align-items: center; min-height: 44px; border-bottom: 1px solid var(--line); color: var(--navy); font-weight: 600; text-decoration: none; }
+    .home-unit a:hover { color: var(--orange-text); }
+    @media (max-width: 960px) {
+      .home-hero { padding: 48px 0 40px; }
+      .home-hero-grid, .home-units-grid { grid-template-columns: 1fr; gap: 40px; }
+      .agenda-row { grid-template-columns: 1fr; gap: 14px; padding: 28px 0; }
+      .agenda-date { font-size: 1.35rem; }
+      .home-section { padding: 56px 0 40px; }
+      .home-units { padding: 56px 0; }
+    }
   </style>
 </head>
 <body>
-  <header class="site-header dep-nav">
-    <nav class="container" aria-label="Navegación principal">
-      <div class="nav-wrap">
-        <a class="nav-logo" href="index.html" aria-label="DEP, inicio"><span class="dep-mark"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></span></a>
-        <div class="nav-menu">
-          <a href="#dep">DEP</a><a href="convocatorias.html">Convocatorias</a><a href="nosotros.html">CRECE</a><a href="investigacion.html">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html">Editorial ECE</a>
-        </div>
-        <a class="nav-action" href="convocatorias.html">Convocatorias CRECE</a>
-      </div>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="dep-header">
+  <div class="container dep-hdr">
+    <a class="dep-brand" href="index.html"><span class="dep-brand-name">DEP</span><span class="dep-brand-sub">División de Estudios de Posgrado, ECE</span></a>
+    <nav class="dep-nav-main" id="menu-principal" aria-label="Principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="nosotros.html">CRECE</a></li>
+        <li><a href="oferta-educativa.html">Formación</a></li>
+        <li><a href="investigacion.html">Investigación</a></li>
+        <li><a href="publicaciones.html">Publicaciones</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="dep-cta dep-cta--menu" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener">Consultar constancia</a>
     </nav>
-  </header>
+    <a class="dep-cta" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg>Consultar constancia</a>
+    <button class="dep-burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
 
-  <main>
-    <section class="dep-hero">
-      <div class="container hero-layout">
-        <div>
-          <p class="hero-kicker">Escuela de Ciencias de la Educación</p>
-          <h1>Conocimiento que se forma, investiga, publica y transforma.</h1>
-          <p>Formación, investigación, publicación y divulgación para fortalecer la educación.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="convocatorias.html">Ver convocatorias CRECE</a><a class="btn btn-outline-light" href="https://forms.gle/ib3HLqpaT9pkfzvb7" target="_blank" rel="noopener">Registro valor curricular</a></div>
-        </div>
-        <aside class="hero-note" aria-label="Estado del proyecto"><span class="small-label">Primera versión</span><h2>Un ecosistema académico en construcción.</h2><p>Proyectos con identidad propia, unidos por evidencia y colaboración.</p></aside>
+<main id="contenido">
+  <section class="home-hero">
+    <div class="container home-hero-grid">
+      <div>
+        <p class="home-kicker">Escuela de Ciencias de la Educación, Gobierno de Nuevo León</p>
+        <h1>Conocimiento que se forma, investiga, publica y transforma.</h1>
+        <p class="home-lead">Posgrado, formación continua, investigación y la Revista Vectores, reunidos en un solo lugar para el magisterio.</p>
       </div>
-    </section>
-
-    <section class="impact-band" aria-label="Resultados del primer año">
-      <div class="container"><div class="impact-grid">
-        <div class="impact-lead"><h2>Primer año de CRECE<br>Resultados que abren una nueva etapa.</h2></div>
-        <div class="impact-item"><span class="impact-number">≈ 2,000</span><p>estudiantes atendidos en línea mediante proyectos formativos.</p></div>
-        <div class="impact-item"><span class="impact-number">2025–2026</span><p>primer periodo de consolidación institucional de CRECE.</p></div>
-        <div class="impact-item"><span class="impact-number">4 líneas</span><p>articuladas para formación, investigación, publicación y divulgación.</p></div>
-      </div></div>
-    </section>
-
-    <section class="calls-section" id="convocatorias">
-      <div class="container">
-        <div class="section-heading"><div><span class="eyebrow">Admisiones y formación</span><h2 class="section-title">Convocatorias e inscripciones</h2></div><p class="section-lead">Avisos vigentes y registro oficial.</p></div>
-        <div class="calls-grid">
-          <article class="call-card call-card--primary"><span class="small-label">Convocatoria vigente</span><h3>Cursos y Diplomados ECE-CAMM</h3><p>Cursos de 40 horas y diplomados de 120 horas con validez USICAMM exclusivamente para el proceso de admisi&oacute;n. Nuevos grupos durante octubre, noviembre y diciembre.</p><a class="btn btn-primary" href="https://forms.gle/G3wFP5sjjeRhAEd88" target="_blank" rel="noopener">Inscribirme en línea</a></article>
-          <article class="call-card"><span class="small-label">Información actualizada</span><h3>Convocatorias institucionales</h3><p>Requisitos, modalidades y avisos.</p><a class="btn btn-outline" href="convocatorias.html">Ver convocatorias</a></article>
-          <article class="call-card"><span class="small-label">Octubre a diciembre 2026</span><h3>Diplomados y curso CRECE</h3><p>Oferta con valor curricular: cuatro diplomados de 120 horas y un curso de 40 horas, en l&iacute;nea y asincr&oacute;nicos.</p><a class="btn btn-outline" href="convocatorias.html#convocatoria-crece-valor-curricular-2026">Consultar convocatoria</a></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="dep">
-      <div class="container intro-grid">
-        <div class="intro-copy"><span class="eyebrow">Identidad DEP</span><h2 class="section-title">Una plataforma para el trabajo académico.</h2><p>DEP articula y hace visibles los resultados de sus proyectos.</p><p>CRECE forma e innova; Vectores publica; la investigación colabora; Editorial ECE difunde libros digitales.</p></div>
-        <div class="principles" aria-label="Principios de DEP">
-          <article class="principle"><span class="principle-num">01</span><div><h3>Rigor y evidencia</h3><p>Los proyectos se presentan con productos, responsables y resultados verificables.</p></div></article>
-          <article class="principle"><span class="principle-num">02</span><div><h3>Conocimiento compartido</h3><p>La formación, las publicaciones y la divulgación convierten la experiencia en valor público.</p></div></article>
-          <article class="principle"><span class="principle-num">03</span><div><h3>Innovación con sentido educativo</h3><p>La tecnología se integra como medio para responder a problemas reales de la educación.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section ecosystem" id="ecosistema">
-      <div class="container">
-        <div class="section-heading"><div><span class="eyebrow">Ecosistema DEP</span><h2 class="section-title">Proyectos con identidad propia.</h2></div><p class="section-lead">Una ruta común de formación, investigación y divulgación.</p></div>
-        <div class="ecosystem-grid">
-          <article class="eco-card"><div class="eco-top"><span class="eco-symbol">C</span><span class="eco-status">Activo</span></div><h3>CRECE</h3><p>Formaci&oacute;n con valor curricular, extracurricular e innovaci&oacute;n pedag&oacute;gica.</p><a href="nosotros.html">Conocer CRECE →</a></article>
-          <article class="eco-card"><div class="eco-top"><span class="eco-symbol">V</span><span class="eco-status">Activo</span></div><h3>Vectores</h3><p>Revista de conocimiento educativo.</p><a href="vectores.html">Ir a Revista Vectores →</a></article>
-          <article class="eco-card" id="grupo"><div class="eco-top"><span class="eco-symbol">IA</span><span class="eco-status">En creación</span></div><h3>Grupo de Interés</h3><p>Innovación Educativa e Inteligencia Artificial.</p><a href="investigacion.html">Explorar investigación →</a></article>
-          <article class="eco-card"><div class="eco-top"><span class="eco-symbol">E</span><span class="eco-status">En consolidación</span></div><h3>Editorial ECE</h3><p>Libros y materiales académicos digitales.</p><a href="publicaciones.html">Ver publicaciones →</a></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section research-block" id="investigacion">
-      <div class="container research-grid">
-        <div><span class="eyebrow eyebrow--light">Investigación e innovación</span><h2>Del problema educativo al conocimiento compartido.</h2><p>Experiencia, tecnología y colaboración convertidas en proyectos y productos académicos.</p></div>
-        <div class="research-points">
-          <div class="research-point"><strong>Investigación aplicada</strong><span>Proyectos que documentan, analizan y proponen mejoras para situaciones educativas concretas.</span></div>
-          <div class="research-point"><strong>Inteligencia artificial</strong><span>Exploración crítica y responsable de herramientas, prácticas y retos para la innovación educativa.</span></div>
-          <div class="research-point"><strong>Comunidad académica</strong><span>Seminarios, colaboraciones y espacios de intercambio que fortalecen nuevas líneas de trabajo.</span></div>
-          <div class="research-point"><strong>Acceso abierto</strong><span>Divulgación de resultados y recursos que permitan reconocer, consultar y aprovechar el trabajo realizado.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="informe">
-      <div class="container report-grid">
-        <article class="report-card"><span class="eyebrow">Rendición de cuentas</span><h2>Primer Informe Anual CRECE 2025–2026</h2><p>Resultados del primer año y la siguiente etapa de DEP.</p><ul class="report-list"><li>Formación y diplomados.</li><li>Atención digital.</li><li>Investigación y publicaciones.</li><li>Agenda próxima.</li></ul><a class="btn btn-secondary" href="contacto.html">Solicitar información</a></article>
-        <aside class="status-card"><span class="small-label">En preparación</span><h3>El informe será la primera memoria pública de esta etapa.</h3><p>La fecha, programa y materiales se anunciarán por los canales institucionales cuando estén confirmados.</p><a href="noticias.html">Consultar noticias y avisos →</a></aside>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="dep-footer-brand"><span class="dep-mark"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></span><p>Plataforma académica de la División de Estudios de Posgrado de la Escuela de Ciencias de la Educación.</p></div>
-        <div class="footer-col"><h5>DEP</h5><ul><li><a href="#dep">Identidad</a></li><li><a href="#ecosistema">Ecosistema</a></li><li><a href="#informe">Informe anual</a></li></ul></div>
-        <div class="footer-col"><h5>Formación</h5><ul><li><a href="nosotros.html">CRECE</a></li><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li></ul></div>
-        <div class="footer-col"><h5>Conocimiento</h5><ul><li><a href="investigacion.html">Investigación</a></li><li><a href="vectores.html">Revista Vectores</a></li><li><a href="publicaciones.html">Editorial ECE</a></li></ul></div>
-        <div class="footer-col"><h5>Contacto</h5><ul><li><a href="contacto.html">Contacto institucional</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="contacto.html">Aviso de privacidad</a></li></ul></div>
-      </div>
-      <div class="footer-bottom"><p>© 2026 División de Estudios de Posgrado de la Escuela de Ciencias de la Educación.<br>Responsable del sitio web: Dr. José Alfredo Fernández González.</p><div class="footer-gov">ECE <span></span> Gobierno de Nuevo León</div></div>
+      <nav class="home-tasks" aria-label="Accesos directos">
+        <h2>¿Qué necesitas hacer?</h2>
+        <a class="home-task" href="convocatorias.html"><span>Inscribirme a un curso o diplomado<small>Convocatorias de octubre a diciembre de 2026</small></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="home-task" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener"><span>Descargar mi constancia<small>Con tu CURP, cursos y diplomados del CRECE</small></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="home-task" href="vectores.html#convocatoria-vigente"><span>Enviar un artículo a Vectores<small>Volumen 7-1, recepción hasta el 15 de diciembre</small></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="home-task" href="oferta-educativa.html"><span>Conocer la oferta educativa<small>Diplomados y cursos con valor curricular</small></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </nav>
     </div>
-  </footer>
+  </section>
+
+  <section class="home-section" aria-labelledby="agenda-titulo">
+    <div class="container">
+      <div class="home-head">
+        <h2 id="agenda-titulo">Convocatorias abiertas</h2>
+        <a href="convocatorias.html">Ver todas, incluido el archivo</a>
+      </div>
+      <article class="agenda-row">
+        <div><p class="agenda-date">Oct–Dic<br>2026</p><p class="agenda-state">Inscripciones abiertas</p></div>
+        <div>
+          <p class="agenda-tag">ECE-CAMM · Validez USICAMM para admisión</p>
+          <h3>Cursos y diplomados extracurriculares</h3>
+          <p class="agenda-text">Cursos de 40 horas ($500) y diplomados de 120 horas ($1,200) en Educación Socioemocional e Inteligencia Artificial Aplicada a la Educación. En línea y autogestivos.</p>
+        </div>
+        <div class="agenda-actions">
+          <a class="home-btn home-btn--a" href="https://forms.gle/G3wFP5sjjeRhAEd88" target="_blank" rel="noopener">Inscribirme</a>
+          <a class="home-btn home-btn--o" href="convocatorias.html#convocatoria-ece-camm-octubre-diciembre-2026">Ver detalles y cartel</a>
+        </div>
+      </article>
+      <article class="agenda-row">
+        <div><p class="agenda-date">Oct–Dic<br>2026</p><p class="agenda-state">Inicio continuo, cupo limitado</p></div>
+        <div>
+          <p class="agenda-tag">CRECE · Valor curricular</p>
+          <h3>Diplomados y curso con valor curricular</h3>
+          <p class="agenda-text">Inglés A1-B1, Nueva Escuela Mexicana, Metodologías activas y Convivencia y cultura de paz (120 horas), más el curso de Aprendizaje Basado en Proyectos Comunitarios (40 horas). 100 % en línea.</p>
+        </div>
+        <div class="agenda-actions">
+          <a class="home-btn home-btn--a" href="https://forms.gle/ib3HLqpaT9pkfzvb7" target="_blank" rel="noopener">Inscribirme</a>
+          <a class="home-btn home-btn--o" href="convocatorias.html#convocatoria-crece-valor-curricular-2026">Ver detalles y cartel</a>
+        </div>
+      </article>
+      <article class="agenda-row">
+        <div><p class="agenda-date">Cierra<br>15 dic</p><p class="agenda-state">Publicación continua</p></div>
+        <div>
+          <p class="agenda-tag">Revista Vectores · Volumen 7-1</p>
+          <h3>Recepción de artículos de investigación</h3>
+          <p class="agenda-text">Artículos de investigación empírica y original en ciencias de la educación.</p>
+        </div>
+        <div class="agenda-actions">
+          <a class="home-btn home-btn--a" href="vectores.html#convocatoria-vigente">Leer la convocatoria</a>
+          <a class="home-btn home-btn--o" href="vectores.html#normas-editoriales">Normas editoriales</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-units" aria-labelledby="areas-titulo">
+    <div class="container">
+      <h2 id="areas-titulo" class="home-units-title">Lo que hace la DEP</h2>
+      <div class="home-units-grid">
+        <div class="home-unit">
+          <img src="assets/creacion-crece-2025-1.jpg" alt="Firma de creación del CRECE en septiembre de 2025" width="1280" height="822" loading="lazy" decoding="async">
+          <h3>CRECE</h3>
+          <p>Centro de Recursos para la Enseñanza y Ciencia Educativa: formación continua, convenios y vinculación.</p>
+          <a href="nosotros.html">Acerca del CRECE</a>
+          <a href="equipo.html">Equipo</a>
+          <a href="convenios.html">Convenios</a>
+        </div>
+        <div class="home-unit">
+          <img src="assets/convenio-camm-2025-1.jpg" alt="Firma del convenio entre la ECE y el CAMM" width="1200" height="900" loading="lazy" decoding="async">
+          <h3>Investigación</h3>
+          <p>Líneas de investigación educativa, producción académica del equipo y la Red de Investigación, en planificación.</p>
+          <a href="investigacion.html">Líneas y proyectos</a>
+          <a href="investigacion.html#red-investigacion">Red de Investigación</a>
+          <a href="perfil-academico.html">Perfil académico</a>
+        </div>
+        <div class="home-unit">
+          <img src="assets/uanleer-2026-presentacion-vectores.jpg" alt="Presentación de la Revista Vectores en las Jornadas UANLeer 2026" width="750" height="1000" loading="lazy" decoding="async">
+          <h3>Publicaciones</h3>
+          <p>Revista Vectores, Editorial ECE y divulgación en acceso abierto.</p>
+          <a href="vectores.html">Revista Vectores</a>
+          <a href="publicaciones.html">Editorial ECE</a>
+          <a href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="dep-footer">
+  <div class="container dep-ftr-grid">
+    <div class="dep-ftr-brand">
+      <p class="dep-ftr-name">DEP</p>
+      <p>Divisi&oacute;n de Estudios de Posgrado de la Escuela de Ciencias de la Educaci&oacute;n.</p>
+      <img src="assets/logo-crece.jpg" alt="CRECE, Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa" width="150" height="49" loading="lazy" decoding="async">
+    </div>
+    <nav aria-label="CRECE (pie)"><h2>CRECE</h2><ul><li><a href="nosotros.html">Acerca del CRECE</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="convenios.html">Convenios</a></li></ul></nav>
+    <nav aria-label="Formaci&oacute;n (pie)"><h2>Formaci&oacute;n</h2><ul><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li></ul></nav>
+    <nav aria-label="Conocimiento (pie)"><h2>Conocimiento</h2><ul><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="vectores.html">Revista Vectores</a></li><li><a href="publicaciones.html">Editorial ECE</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a></li></ul></nav>
+    <nav aria-label="Contacto (pie)"><h2>Contacto</h2><ul><li><a href="mailto:crece@ece.edu.mx">crece@ece.edu.mx</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener">Consultar constancia</a></li><li><a href="noticias.html">Noticias</a></li></ul></nav>
+  </div>
+  <div class="container dep-ftr-bottom">
+    <p>&copy; 2026 Divisi&oacute;n de Estudios de Posgrado y CRECE, Escuela de Ciencias de la Educaci&oacute;n.<br>Responsable del sitio web: Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez.</p>
+    <p>ECE &middot; Gobierno de Nuevo Le&oacute;n</p>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

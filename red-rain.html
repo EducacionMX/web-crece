@@ -1,266 +1,66 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DWM82RH0BZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-DWM82RH0BZ');
-</script>
-
+<html lang="es">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Red RAIN — proyecto académico en construcción del CRECE.">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="6; url=investigacion.html#red-investigacion">
   <title>Red RAIN | CRECE</title>
-  <!-- SEO -->
-  <link rel="canonical" href="https://dep.edu.mx/red-rain.html">
-  <link rel="icon" type="image/jpeg" href="/assets/logo-crece.jpg">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="CRECE — ECE Nuevo León">
-  <meta property="og:url" content="https://dep.edu.mx/red-rain.html">
-  <meta property="og:title" content="Red RAIN | CRECE">
-  <meta property="og:description" content="Red RAIN — proyecto académico del CRECE orientado a la investigación educativa en red.">
-  <meta property="og:image" content="https://dep.edu.mx/assets/og-crece.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://dep.edu.mx/assets/og-crece.jpg">
-  <meta property="og:locale" content="es_MX">
+  <link rel="canonical" href="https://dep.edu.mx/investigacion.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
-<!-- Versión desempaquetada para edición visual en cPanel. Fuentes incrustadas eliminadas para mantener el archivo <1MB. -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-
-    
-    :root{--navy-xdark:#0c1628;--navy-dark:#101e3f;--navy:#1a2e5e;--navy-mid:#253c78;--steel:#2e6b8a;--orange:#c8721a;--orange-lt:#e08530;--gold:#d4a430;--white:#ffffff;--off-white:#f6f5f2;--gray-xlt:#edecea;--gray-lt:#d0cecc;--gray:#706e6a;--dark:#1a1a28;--radius-sm:4px;--radius:6px;--radius-lg:10px;--radius-xl:16px;--radius-pill:100px;--shadow-sm:0 1px 4px rgba(0,0,0,.08),0 2px 8px rgba(0,0,0,.06);--shadow-md:0 4px 16px rgba(0,0,0,.10),0 8px 24px rgba(0,0,0,.07);--shadow-lg:0 8px 32px rgba(0,0,0,.14),0 16px 48px rgba(0,0,0,.08);--font-head:'Libre Baskerville',Georgia,serif;--font-body:'Source Sans 3','Segoe UI',sans-serif;--nav-h:68px;}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:var(--font-body);color:var(--dark);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;}img{max-width:100%;display:block;}a{color:inherit;text-decoration:none;}ul{list-style:none;}
-    h1,h2,h3,h4{font-family:var(--font-head);font-weight:400;line-height:1.22;text-wrap:pretty;}
-    .container{max-width:1160px;margin:0 auto;padding:0 24px;}.section{padding:72px 0;}.section--tint{background:var(--off-white);}.section--dark{background:var(--navy-dark);color:var(--white);}
-    .eyebrow{display:inline-block;font-family:var(--font-body);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:8px;}.eyebrow--light{color:var(--gold);}
-    .section-title{font-size:clamp(1.5rem,3vw,2.2rem);color:var(--navy);margin-bottom:12px;}.section-title--light{color:var(--white);}
-    .section-lead{font-size:1.05rem;color:var(--gray);max-width:640px;line-height:1.7;}.section-lead--light{color:rgba(255,255,255,.70);}
-    .site-header{position:sticky;top:0;z-index:200;background:var(--navy-dark);border-bottom:3px solid var(--orange);}
-    .nav-wrap{display:flex;align-items:center;height:var(--nav-h);gap:8px;}
-    .nav-logo{display:flex;align-items:center;flex-shrink:0;background:var(--white);border-radius:var(--radius);padding:5px 12px;height:44px;margin-right:8px;}.nav-logo img{height:30px;width:auto;}
-    .nav-menu{display:flex;align-items:center;gap:2px;flex:1;}.nav-item{position:relative;}
-    .nav-link{display:flex;align-items:center;gap:5px;padding:8px 13px;font-size:.83rem;font-weight:600;letter-spacing:.03em;color:rgba(255,255,255,.78);border-radius:var(--radius);cursor:pointer;border:none;background:none;white-space:nowrap;transition:color .16s,background .16s;font-family:var(--font-body);}
-    .nav-link:hover,.nav-item:hover>.nav-link,.nav-item.open>.nav-link,.nav-link.active{color:var(--white);background:rgba(255,255,255,.10);}
-    .nav-link svg{opacity:.6;transition:transform .2s;flex-shrink:0;}.nav-item:hover>.nav-link svg,.nav-item.open>.nav-link svg{transform:rotate(180deg);opacity:1;}
-    .dropdown{position:absolute;top: 100%;left:0;min-width:210px;background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:8px 0;border-top:3px solid var(--orange);opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s,visibility .18s;pointer-events:none;}
-    .nav-item:hover .dropdown,.nav-item.open .dropdown{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;}
-    .dropdown a{display:block;padding:9px 20px;font-size:.83rem;font-weight:600;color:var(--navy);transition:background .14s,color .14s;}.dropdown a:hover,.dropdown a.active{background:var(--off-white);color:var(--orange);}
-    .dropdown-divider{height:1px;background:var(--gray-xlt);margin:8px 0;}
-    .nav-cta{margin-left:auto;flex-shrink:0;}
-    .nav-burger{display:none;margin-left:auto;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;width:40px;height:40px;}
-    .nav-burger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:transform .25s,opacity .25s;}
-    .nav-burger.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}.nav-burger.active span:nth-child(2){opacity:0;}.nav-burger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-    .mobile-menu{display:none;position:fixed;top:calc(var(--nav-h) + 3px);left:0;right:0;background:var(--navy-dark);padding:12px 0 32px;overflow-y:auto;max-height:calc(100vh - var(--nav-h));z-index:190;border-bottom:2px solid var(--orange);}
-    .mobile-menu.open{display:block;}.m-lbl{padding:14px 24px 6px;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);}
-    .m-link{display:block;padding:10px 24px;font-size:.83rem;font-weight:600;color:rgba(255,255,255,.78);border-left:2px solid transparent;transition:color .14s,border-color .14s,background .14s;}.m-link:hover,.m-link.active{color:var(--white);border-left-color:var(--orange);background:rgba(255,255,255,.06);}
-    .mobile-menu hr{border:none;border-top:1px solid rgba(255,255,255,.08);margin:6px 24px;}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 26px;font-family:var(--font-body);font-size:.83rem;font-weight:700;letter-spacing:.04em;border-radius:var(--radius);border:2px solid transparent;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .15s,box-shadow .15s;white-space:nowrap;text-decoration:none;}
-    .btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm);}
-    .btn-primary{background:var(--orange);color:var(--white);}.btn-primary:hover{background:var(--orange-lt);}
-    .btn-secondary{background:var(--navy);color:var(--white);}.btn-secondary:hover{background:var(--navy-mid);}
-    .btn-gold{background:var(--gold);color:var(--navy-dark);}.btn-gold:hover{background:#e0b840;}
-    .btn-outline{background:transparent;color:var(--navy);border-color:var(--navy);}.btn-outline:hover{background:var(--navy);color:var(--white);}
-    .btn-outline-light{background:transparent;color:var(--white);border-color:rgba(255,255,255,.55);}.btn-outline-light:hover{background:rgba(255,255,255,.10);border-color:var(--white);}
-    .btn-sm{padding:7px 16px;font-size:.75rem;}.btn-lg{padding:14px 34px;font-size:1rem;}
-    .badge{display:inline-flex;align-items:center;gap:5px;padding:4px 11px;border-radius:var(--radius-pill);font-family:var(--font-body);font-size:.72rem;font-weight:700;letter-spacing:.05em;}
-    .badge-online{background:#ddf0e8;color:#1a6e45;}.badge-active{background:#ffefd5;color:#8b4a00;}.badge-new{background:var(--orange);color:var(--white);}
-    .divider-rule{height:4px;background:var(--orange);}
-    .site-footer{background:var(--navy-dark);color:rgba(255,255,255,.70);padding:48px 0 24px;}
-    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.09);margin-bottom:24px;}
-    .footer-logo-wrap{display:flex;align-items:center;background:var(--white);border-radius:var(--radius);padding:5px 12px;width:fit-content;margin-bottom:14px;}.footer-logo-wrap img{height:28px;width:auto;}
-    .footer-brand p{font-size:.83rem;color:rgba(255,255,255,.50);max-width:260px;line-height:1.6;}
-    .footer-col h5{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:12px;}
-    .footer-col ul{display:flex;flex-direction:column;gap:8px;}.footer-col a{font-size:.83rem;color:rgba(255,255,255,.58);transition:color .16s;}.footer-col a:hover{color:var(--white);}
-    .footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}.footer-bottom p{font-size:.75rem;color:rgba(255,255,255,.30);}
-    .footer-gov{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.35);}.footer-gov span{display:inline-block;width:1px;height:12px;background:rgba(255,255,255,.25);margin:0 8px;vertical-align:middle;}
-    .page-hero{background:var(--navy-dark);color:var(--white);padding:56px 0 48px;border-bottom:3px solid var(--orange);position:relative;overflow:hidden;}
-    .page-hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 50px,rgba(255,255,255,.012) 50px,rgba(255,255,255,.012) 51px);pointer-events:none;}
-    .page-hero-inner{position:relative;}
-    .breadcrumb{display:flex;align-items:center;gap:8px;font-size:.75rem;color:rgba(255,255,255,.45);margin-bottom:16px;font-weight:600;letter-spacing:.04em;}
-    .breadcrumb a{color:rgba(255,255,255,.45);transition:color .16s;}.breadcrumb a:hover{color:rgba(255,255,255,.8);}.breadcrumb span{color:rgba(255,255,255,.25);}
-    .page-hero h1{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--white);margin-bottom:10px;}.page-hero p{font-size:1.05rem;color:rgba(255,255,255,.65);max-width:560px;}
-    @media(max-width:768px){.nav-menu,.nav-cta{display:none;}.nav-burger{display:flex;}.footer-grid{grid-template-columns:1fr 1fr;}}
-    @media(max-width:500px){.footer-grid{grid-template-columns:1fr;}}
-    /* Red RAIN específico */
-    .rain-hero-inner{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;position:relative;}
-    .rain-acronym{font-family:var(--font-head);font-size:7rem;font-weight:700;color:rgba(255,255,255,.06);line-height:1;letter-spacing:.04em;flex-shrink:0;user-select:none;}
-    .red-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-    .red-card{background:var(--white);border-radius:var(--radius-xl);padding:28px;box-shadow:var(--shadow-sm);border-top:4px solid var(--navy);transition:transform .2s,box-shadow .2s;}
-    .red-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
-    .red-card.acento-orange{border-top-color:var(--orange);}.red-card.acento-steel{border-top-color:var(--steel);}
-    .red-card-icon{font-size:1.8rem;margin-bottom:14px;}
-    .red-card h3{font-family:var(--font-body);font-size:.97rem;font-weight:700;color:var(--navy);margin-bottom:8px;}
-    .red-card p{font-size:.85rem;color:var(--gray);line-height:1.6;}
-    .estados-map{background:var(--navy);border-radius:var(--radius-xl);padding:40px;color:var(--white);text-align:center;}
-    .estados-num{font-family:var(--font-head);font-size:5rem;color:var(--gold);line-height:1;margin-bottom:8px;}
-    .estados-lbl{font-size:.83rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);}
-    .estados-lista{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:24px;}
-    .estado-chip{padding:5px 14px;background:rgba(255,255,255,.08);border-radius:var(--radius-pill);font-size:.75rem;font-weight:600;color:rgba(255,255,255,.75);border:1px solid rgba(255,255,255,.10);}
-    .jornadas-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
-    .jornada-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-sm);display:flex;gap:18px;align-items:flex-start;border:1px solid var(--gray-xlt);}
-    .jornada-fecha{background:var(--navy);border-radius:var(--radius-lg);padding:12px 16px;text-align:center;flex-shrink:0;min-width:64px;}
-    .jornada-fecha .mes{font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.55);}
-    .jornada-fecha .dia{font-family:var(--font-head);font-size:1.6rem;color:var(--white);line-height:1;}
-    .jornada-fecha .anio{font-size:.7rem;color:rgba(255,255,255,.40);}
-    .jornada-body h4{font-family:var(--font-body);font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:4px;}
-    .jornada-body p{font-size:.83rem;color:var(--gray);line-height:1.55;margin-bottom:8px;}
-    .jornada-tag{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;background:var(--off-white);border-radius:var(--radius-pill);font-size:.7rem;font-weight:700;color:var(--navy);}
-    .unirse-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-    .paso-join{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px;}
-    .paso-join-num{width:36px;height:36px;flex-shrink:0;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:.92rem;color:var(--white);font-weight:700;}
-    .paso-join-body h4{font-family:var(--font-body);font-size:.92rem;font-weight:700;color:var(--navy);margin-bottom:2px;}
-    .paso-join-body p{font-size:.83rem;color:var(--gray);line-height:1.55;}
-    .join-card{background:var(--navy);border-radius:var(--radius-xl);padding:32px;color:var(--white);}
-    .join-card h3{font-size:1.3rem;color:var(--white);margin-bottom:10px;}
-    .join-card p{font-size:.92rem;color:rgba(255,255,255,.70);margin-bottom:20px;line-height:1.65;}
-    .join-req{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
-    .join-req li{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:rgba(255,255,255,.75);}
-    .join-req li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;}
-    @media(max-width:900px){.rain-hero-inner{grid-template-columns:1fr;}.rain-acronym{display:none;}.red-grid{grid-template-columns:1fr 1fr;}.jornadas-grid{grid-template-columns:1fr;}.unirse-grid{grid-template-columns:1fr;}}
-    @media(max-width:500px){.red-grid{grid-template-columns:1fr;}.section .container>div[style*="grid-template-columns:1.2fr .8fr"]{grid-template-columns:1fr!important;gap:32px!important;}.estados-map{padding:28px 20px;}.estados-num{font-size:2.1rem!important;}}
-  
-  </style>
 </head>
 <body>
-  <header class="dep-global-header">
-    <div class="container dep-global-wrap">
-      <a class="dep-global-brand" href="index.html" aria-label="DEP, inicio"><strong>DEP</strong><span>DIVISIÓN DE ESTUDIOS DE POSGRADO</span></a>
-      <nav class="dep-global-nav" aria-label="Navegación principal DEP"><a href="index.html">DEP</a><a href="convocatorias.html">Convocatorias</a><a href="nosotros.html">CRECE</a><a href="investigacion.html" class="dep-global-active">Investigación</a><a href="vectores.html">Vectores</a><a href="publicaciones.html">Editorial ECE</a></nav>
-      <a class="dep-global-action" href="https://forms.gle/G3wFP5sjjeRhAEd88" target="_blank" rel="noopener">Registro CRECE</a>
-    </div>
-  </header>
-  <nav class="dep-context-bar" aria-label="Navegación de sección">
-    <div class="container dep-context-inner"><span class="dep-context-title">Investigación e innovación educativa</span><div class="dep-context-links"><a href="investigacion.html">Presentación</a><a href="red-rain.html" class="dep-context-active">Grupo de Interés IA</a><a href="proyectos-tecnologicos.html">Proyectos tecnológicos</a><a href="perfil-academico.html">Perfil académico</a><a href="divulgacion-acceso-abierto.html">Divulgación</a></div></div>
-  </nav>
-
-  <div class="page-hero">
-    <div class="container page-hero-inner">
-      <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><span>Investigación</span><span>/</span><span>Red RAIN</span></div>
-      <div class="rain-hero-inner">
-        <div>
-          <span class="eyebrow--light" style="display:block;margin-bottom:8px;">Proyecto en construcción</span>
-          <h1 style="color:var(--white);margin-bottom:10px;">Red RAIN</h1>
-          <p style="font-size:1.05rem;color:rgba(255,255,255,.65);max-width:560px;margin-bottom:24px;">La Red RAIN se encuentra en etapa de diseño conceptual y organizativo. Próximamente se publicará información validada sobre sus objetivos, líneas de trabajo y mecanismos de participación.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;">
-            <a href="contacto.html" class="btn btn-primary">Solicitar información</a>
-            <a href="investigacion.html" class="btn btn-outline-light">Ver investigación</a>
-          </div>
-        </div>
-        <div class="rain-acronym">RAIN</div>
-      </div>
-    </div>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="dep-header">
+  <div class="container dep-hdr">
+    <a class="dep-brand" href="index.html"><span class="dep-brand-name">DEP</span><span class="dep-brand-sub">Divisi&oacute;n de Estudios de Posgrado, ECE</span></a>
+    <nav class="dep-nav-main" id="menu-principal" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">CRECE</a></li>
+        <li><a href="oferta-educativa.html">Formaci&oacute;n</a></li>
+        <li><a href="investigacion.html">Investigaci&oacute;n</a></li>
+        <li><a href="publicaciones.html">Publicaciones</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a class="dep-cta dep-cta--menu" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener">Consultar constancia</a>
+    </nav>
+    <a class="dep-cta" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg>Consultar constancia</a>
+    <button class="dep-burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir men&uacute;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
+</header>
 
-  <main>
-
-    <!-- Proyecto en construcción -->
-    <section class="section">
-      <div class="container">
-        <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:start;">
-          <div>
-            <span class="eyebrow">Estado actual</span>
-            <h2 class="section-title">Proyecto académico en construcción</h2>
-            <p class="section-lead" style="margin-bottom:18px;">La Red RAIN es una iniciativa en desarrollo del CRECE. En este momento todavía no se presenta como una red formalizada ni como una convocatoria abierta.</p>
-            <p style="font-size:.97rem;color:var(--gray);line-height:1.7;margin-bottom:14px;">El equipo está trabajando en definir su propósito, alcance, criterios de participación, líneas de colaboración y productos académicos esperados.</p>
-            <p style="font-size:.97rem;color:var(--gray);line-height:1.7;">Cuando la información esté validada institucionalmente, esta página se actualizará con datos verificables y una ruta clara de participación.</p>
-          </div>
-          <div>
-            <div class="estados-map">
-              <div class="estados-num" style="font-size:3.2rem;">En diseño</div>
-              <div class="estados-lbl">Información en revisión</div>
-              <p style="font-size:.9rem;color:rgba(255,255,255,.72);line-height:1.65;margin-top:18px;">Aún no hay cifras oficiales de integrantes, sedes, estados participantes, jornadas o actividades programadas.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Componentes por definir -->
-    <section class="section section--tint">
-      <div class="container">
-        <div style="text-align:center;margin-bottom:36px;">
-          <span class="eyebrow">Próximamente</span>
-          <h2 class="section-title">Componentes por definir</h2>
-        </div>
-        <div class="red-grid">
-          <div class="red-card">
-            <div class="red-card-icon">01</div>
-            <h3>Propósito académico</h3>
-            <p>Se definirá el objetivo central de la red y su relación con las líneas de investigación del CRECE.</p>
-          </div>
-          <div class="red-card acento-steel">
-            <div class="red-card-icon">02</div>
-            <h3>Criterios de participación</h3>
-            <p>Se establecerá quiénes podrán participar, bajo qué requisitos y con qué responsabilidades académicas.</p>
-          </div>
-          <div class="red-card acento-steel">
-            <div class="red-card-icon">03</div>
-            <h3>Líneas de trabajo</h3>
-            <p>Se integrarán áreas temáticas alineadas con investigación educativa, formación docente e innovación.</p>
-          </div>
-          <div class="red-card acento-orange">
-            <div class="red-card-icon">04</div>
-            <h3>Modelo de colaboración</h3>
-            <p>Se documentará la forma de trabajo, comunicación, acompañamiento y seguimiento de proyectos.</p>
-          </div>
-          <div class="red-card acento-orange">
-            <div class="red-card-icon">05</div>
-            <h3>Actividades</h3>
-            <p>Las actividades se anunciarán únicamente cuando exista programación confirmada.</p>
-          </div>
-          <div class="red-card">
-            <div class="red-card-icon">06</div>
-            <h3>Productos académicos</h3>
-            <p>Se precisarán los productos esperados, como reportes, materiales, ponencias o publicaciones.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="section" id="informes">
-      <div class="container">
-        <div class="join-card" style="max-width:760px;margin:0 auto;text-align:center;">
-          <h3>Información en actualización</h3>
-          <p>Por ahora, la Red RAIN debe considerarse un proyecto en construcción. Para consultas institucionales o seguimiento del desarrollo de esta iniciativa, puedes contactar al CRECE.</p>
-          <a href="contacto.html" class="btn btn-gold">Contacto CRECE</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  
-  <div class="divider-rule"></div>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="footer-logo-wrap"><img src="assets/logo-crece.jpg" alt="CRECE"></a><p>Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa de la Escuela de Ciencias de la Educaci&oacute;n.</p></div>
-        <div class="footer-col"><h5>El CRECE</h5><ul><li><a href="nosotros.html">Nosotros</a></li><li><a href="equipo.html">Equipo de Trabajo</a></li><li><a href="convenios.html">Convenios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
-        <div class="footer-col"><h5>Formaci&oacute;n</h5><ul><li><a href="oferta-educativa.html">Oferta Educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="conocer.html">Proyecto CONOCER</a></li></ul></div>
-        <div class="footer-col"><h5>Acad&eacute;mico</h5><ul><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="red-rain.html">Red RAIN</a></li><li><a href="proyectos-tecnologicos.html">Proyectos Tecnol&oacute;gicos</a></li><li><a href="publicaciones.html">Publicaciones</a></li><li><a href="perfil-academico.html">Perfil académico</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgación y acceso abierto</a></li><li><a href="vectores.html">Revista Vectores</a></li></ul></div>
-        <div class="footer-col"><h5>Contacto</h5><ul><li><a href="mailto:crece@ece.edu.mx">crece@ece.edu.mx</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="contacto.html">Aviso de privacidad</a></li></ul></div>
-      </div>
-      <div class="footer-bottom"><p>&copy; 2026 CRECE &mdash; Todos los derechos reservados.<br>Responsable del sitio web: Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez.</p><div class="footer-gov">ECE <span></span> Gobierno de Nuevo Le&oacute;n</div></div>
+<main id="contenido">
+  <section class="section">
+    <div class="container" style="max-width:760px">
+      <h1 class="section-title">Red RAIN</h1>
+      <p class="section-lead" style="margin:16px 0 28px">La Red RAIN concluy&oacute;. La sustituye la Red de Investigaci&oacute;n del CRECE, que se encuentra en planificaci&oacute;n.</p>
+      <a class="btn btn-primary" href="investigacion.html#red-investigacion">Ir a Red de Investigaci&oacute;n</a>
     </div>
-  </footer>
-  
-  <script>
-    const burger=document.getElementById('burgerBtn'),mm=document.getElementById('mobileMenu');
-    burger?.addEventListener('click',()=>{const o=mm.classList.toggle('open');burger.classList.toggle('active',o);burger.setAttribute('aria-expanded',o);});
-    mm?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');burger.classList.remove('active');burger.setAttribute('aria-expanded','false');}));
-    document.querySelectorAll('.nav-item>button.nav-link').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,isOpen=item.classList.toggle('open');btn.setAttribute('aria-expanded',isOpen);document.querySelectorAll('.nav-item').forEach(o=>{if(o!==item){o.classList.remove('open');const b=o.querySelector('button.nav-link');if(b)b.setAttribute('aria-expanded','false');}});});});
-    document.addEventListener('click',e=>{if(!e.target.closest('.nav-item')){document.querySelectorAll('.nav-item').forEach(i=>{i.classList.remove('open');const b=i.querySelector('button.nav-link');if(b)b.setAttribute('aria-expanded','false');});}});
-  </script>
+  </section>
+</main>
+<footer class="dep-footer">
+  <div class="container dep-ftr-grid">
+    <div class="dep-ftr-brand">
+      <p class="dep-ftr-name">DEP</p>
+      <p>Divisi&oacute;n de Estudios de Posgrado de la Escuela de Ciencias de la Educaci&oacute;n.</p>
+      <img src="assets/logo-crece.jpg" alt="CRECE, Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa" width="150" height="49" loading="lazy" decoding="async">
+    </div>
+    <nav aria-label="CRECE (pie)"><h2>CRECE</h2><ul><li><a href="nosotros.html">Acerca del CRECE</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="convenios.html">Convenios</a></li></ul></nav>
+    <nav aria-label="Formaci&oacute;n (pie)"><h2>Formaci&oacute;n</h2><ul><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li></ul></nav>
+    <nav aria-label="Conocimiento (pie)"><h2>Conocimiento</h2><ul><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="vectores.html">Revista Vectores</a></li><li><a href="publicaciones.html">Editorial ECE</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a></li></ul></nav>
+    <nav aria-label="Contacto (pie)"><h2>Contacto</h2><ul><li><a href="mailto:crece@ece.edu.mx">crece@ece.edu.mx</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener">Consultar constancia</a></li><li><a href="noticias.html">Noticias</a></li></ul></nav>
+  </div>
+  <div class="container dep-ftr-bottom">
+    <p>&copy; 2026 Divisi&oacute;n de Estudios de Posgrado y CRECE, Escuela de Ciencias de la Educaci&oacute;n.<br>Responsable del sitio web: Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez.</p>
+    <p>ECE &middot; Gobierno de Nuevo Le&oacute;n</p>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
 
-</body></html>
+</body>
+</html>
