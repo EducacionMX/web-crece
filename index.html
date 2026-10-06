@@ -35,8 +35,12 @@
     .home-head { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
     .home-head h2, .home-units-title { font-family: var(--font-head); font-weight: 400; font-size: clamp(1.75rem, 3vw, 2.4rem); color: var(--navy-dark); }
     .home-head a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--orange-text); }
-    .agenda-row { display: grid; grid-template-columns: 200px minmax(0,1fr) 220px; gap: 40px; padding: 36px 0; border-top: 1px solid var(--line); align-items: start; }
+    .agenda-row { display: grid; grid-template-columns: 170px 120px minmax(0,1fr) 220px; gap: 36px; padding: 36px 0; border-top: 1px solid var(--line); align-items: start; }
     .agenda-row:last-child { border-bottom: 1px solid var(--line); }
+    .agenda-thumb { display: block; width: 120px; border-radius: 4px; }
+    .agenda-thumb img { width: 120px; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 2px 10px rgba(35,47,69,.10); transition: box-shadow .18s ease, transform .18s ease; }
+    .agenda-thumb:hover img { box-shadow: 0 8px 22px rgba(35,47,69,.18); transform: translateY(-2px); }
+    .agenda-thumb:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
     .agenda-date { font-family: var(--font-head); font-size: 1.85rem; line-height: 1.15; color: var(--navy-dark); }
     .agenda-state { margin-top: 10px; font-size: .95rem; color: var(--text-muted); }
     .agenda-tag { margin-bottom: 6px; font-size: .95rem; font-weight: 600; color: var(--steel); }
@@ -59,7 +63,10 @@
     @media (max-width: 960px) {
       .home-hero { padding: 48px 0 40px; }
       .home-hero-grid, .home-units-grid { grid-template-columns: 1fr; gap: 40px; }
-      .agenda-row { grid-template-columns: 1fr; gap: 14px; padding: 28px 0; }
+      .agenda-row { grid-template-columns: 96px minmax(0,1fr); gap: 14px 18px; padding: 28px 0; }
+      .agenda-row > div:first-child { grid-column: 1 / -1; }
+      .agenda-row > .agenda-actions { grid-column: 1 / -1; }
+      .agenda-thumb, .agenda-thumb img { width: 96px; }
       .agenda-date { font-size: 1.35rem; }
       .home-section { padding: 56px 0 40px; }
       .home-units { padding: 56px 0; }
@@ -114,6 +121,7 @@
       </div>
       <article class="agenda-row">
         <div><p class="agenda-date">Oct–Dic<br>2026</p><p class="agenda-state">Inscripciones abiertas</p></div>
+        <a class="agenda-thumb" href="assets/convocatoria-crece-camm-octubre-diciembre-2026.jpg" target="_blank" rel="noopener" aria-label="Ver el cartel completo: cursos y diplomados ECE-CAMM"><img src="assets/mini-convocatoria-ece-camm-2026.jpg" alt="" width="240" height="320" loading="lazy" decoding="async"></a>
         <div>
           <p class="agenda-tag">ECE-CAMM · Validez USICAMM para admisión</p>
           <h3>Cursos y diplomados extracurriculares</h3>
@@ -126,6 +134,7 @@
       </article>
       <article class="agenda-row">
         <div><p class="agenda-date">Oct–Dic<br>2026</p><p class="agenda-state">Inicio continuo, cupo limitado</p></div>
+        <a class="agenda-thumb" href="assets/convocatoria-crece-valor-curricular-octubre-diciembre-2026.jpg" target="_blank" rel="noopener" aria-label="Ver el cartel completo: diplomados CRECE con valor curricular"><img src="assets/mini-convocatoria-crece-curricular-2026.jpg" alt="" width="240" height="320" loading="lazy" decoding="async"></a>
         <div>
           <p class="agenda-tag">CRECE · Valor curricular</p>
           <h3>Diplomados y curso con valor curricular</h3>
@@ -138,6 +147,7 @@
       </article>
       <article class="agenda-row">
         <div><p class="agenda-date">Cierra<br>15 dic</p><p class="agenda-state">Publicación continua</p></div>
+        <a class="agenda-thumb" href="assets/convocatoria-vectores-7-1-2026.jpg" target="_blank" rel="noopener" aria-label="Ver el cartel completo: Revista Vectores, volumen 7-1"><img src="assets/mini-convocatoria-vectores-7-1.jpg" alt="" width="240" height="371" loading="lazy" decoding="async"></a>
         <div>
           <p class="agenda-tag">Revista Vectores · Volumen 7-1</p>
           <h3>Recepción de artículos de investigación</h3>
