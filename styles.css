@@ -982,3 +982,35 @@ h5 {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Aviso de actualizacion de la plataforma y acceso a Moodle CRECE */
+.dep-cta--solid { background: var(--gold); color: var(--navy-dark); }
+.dep-cta--solid:hover { background: var(--gold-light); border-color: var(--gold-light); color: var(--navy-dark); }
+.plat-aviso { background: #fff6dd; border-top: 4px solid var(--gold); border-bottom: 1px solid var(--line); }
+.plat-aviso-in { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 20px; padding-bottom: 20px; }
+.plat-aviso-tag { margin: 0 0 2px; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-text); }
+.plat-aviso h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--navy-dark); }
+.plat-aviso p { margin: 0; max-width: 62ch; color: #3a3a46; }
+.plat-aviso a:not(.plat-aviso-btn) { color: var(--navy); font-weight: 600; }
+.plat-aviso-btn { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border-radius: 6px; background: var(--action); color: var(--white); font-weight: 700; text-decoration: none; }
+.plat-aviso-btn:hover { background: var(--action-hover); color: var(--white); }
+.plat-aviso-btn:focus-visible { outline: 3px solid var(--navy); outline-offset: 2px; }
+@media (max-width: 1239px) {
+  .dep-nav-main .dep-cta--menu + .dep-cta--menu { background: transparent; color: var(--gold-light); border: 1.5px solid var(--gold); margin-top: 10px; }
+}
+@media (max-width: 700px) {
+  .plat-aviso-in { flex-direction: column; align-items: stretch; gap: 16px; }
+  .plat-aviso-btn { width: 100%; }
+}
+/* Con dos botones en el encabezado, el menu se colapsa antes (961 a 1239 px) */
+@media (min-width: 961px) and (max-width: 1239px) {
+  .dep-cta { display: none; }
+  .dep-burger { display: inline-flex; }
+  .dep-nav-main { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--navy-dark); border-bottom: 3px solid var(--orange); padding: 8px 0 20px; max-height: calc(100vh - 79px); overflow-y: auto; }
+  .dep-nav-main.is-open { display: block; }
+  .dep-nav-main ul { flex-direction: column; align-items: stretch; gap: 0; }
+  .dep-nav-main a { display: flex; min-height: 52px; padding: 0 20px; font-size: 1.05rem; border-radius: 0; border-top: 1px solid rgba(255,255,255,.1); }
+  .dep-nav-main a[aria-current] { box-shadow: inset 4px 0 0 var(--gold); }
+  .dep-nav-main .dep-cta--menu { display: flex; justify-content: center; margin: 16px 20px 0; min-height: 52px; background: var(--gold); color: var(--navy-dark); border: 0; }
+  .dep-header { position: sticky; }
+}
