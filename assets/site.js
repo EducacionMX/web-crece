@@ -14,5 +14,5 @@
     if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setOpen(false); btn.focus(); }
   });
   nav.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
-  window.addEventListener('resize', function () { if (window.innerWidth > 960) setOpen(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 1239) setOpen(false); });
 })();

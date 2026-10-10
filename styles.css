@@ -990,7 +990,7 @@ h5 {
 .plat-aviso-in { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 20px; padding-bottom: 20px; }
 .plat-aviso-tag { margin: 0 0 2px; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-text); }
 .plat-aviso h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--navy-dark); }
-.plat-aviso p { margin: 0; max-width: 62ch; color: #3a3a46; }
+.plat-aviso-body p:not(.plat-aviso-tag) { margin: 0; max-width: 62ch; color: #3a3a46; }
 .plat-aviso a:not(.plat-aviso-btn) { color: var(--navy); font-weight: 600; }
 .plat-aviso-btn { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border-radius: 6px; background: var(--action); color: var(--white); font-weight: 700; text-decoration: none; }
 .plat-aviso-btn:hover { background: var(--action-hover); color: var(--white); }
