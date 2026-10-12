@@ -29,7 +29,7 @@ Edita principalmente `contacto.html` y revisa tambien el pie de pagina comun en 
 
 Dato confirmado actualmente:
 
-- `crece@ece.edu.mx`
+- `crece@dep.edu.mx`
 
 Dato pendiente:
 
