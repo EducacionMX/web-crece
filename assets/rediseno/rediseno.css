@@ -929,3 +929,35 @@ body.cartel-abierto{overflow:hidden}
 @keyframes arte-baja{from{opacity:0;transform:translateY(-46px)}}
 @media (max-width:900px){.cab-arte{width:min(58vw,320px);opacity:.28;right:-12px}}
 @media (prefers-reduced-motion:reduce){.cab-arte,.cab-arte *{animation:none!important}}
+/* Arte animado genérico de cabeceras (15 páginas) */
+.cab-arte .t,.cab-arte .tc,.cab-arte .tg,.cab-arte .td{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;animation:arte-traza var(--dur,.9s) cubic-bezier(.45,0,.25,1) both;animation-delay:var(--d,0s)}
+.cab-arte .t{stroke:#E6C77F;stroke-width:2.2}
+.cab-arte .tc{stroke:#F3EEE4;stroke-width:2.8}
+.cab-arte .tg{stroke:rgba(243,238,228,.42);stroke-width:1.6}
+.cab-arte .td{stroke:#E6C77F;stroke-width:2;stroke-dasharray:.012 .02;animation:arte-aparece .9s ease-out both;animation-delay:var(--d,0s)}
+.cab-arte .n,.cab-arte .no{transform-box:fill-box;transform-origin:center;animation:arte-brota .45s cubic-bezier(.3,1.6,.5,1) both;animation-delay:var(--d,0s)}
+.cab-arte .n{fill:#F3EEE4}
+.cab-arte .no{fill:#E6C77F}
+.cab-arte .ap{animation:arte-aparece .6s ease-out both;animation-delay:var(--d,0s)}
+.arte-oferta-educativa .viajero{fill:#E6C77F;offset-rotate:0deg;animation:arte-viaja 2.6s 1.2s cubic-bezier(.5,0,.3,1) both}
+@keyframes arte-viaja{from{offset-distance:0%}to{offset-distance:100%}}
+.arte-convenios .izq{animation:arte-acerca-izq 1.4s .2s cubic-bezier(.3,0,.2,1) both}
+.arte-convenios .der{animation:arte-acerca-der 1.4s .2s cubic-bezier(.3,0,.2,1) both}
+.arte-convenios .interseccion{fill:rgba(230,199,127,.45)}
+@keyframes arte-acerca-izq{from{transform:translateX(-50px)}}
+@keyframes arte-acerca-der{from{transform:translateX(50px)}}
+.arte-noticias .onda{fill:none;stroke:#E6C77F;stroke-width:2;opacity:0;transform-box:view-box;transform-origin:110px 200px;animation:arte-onda 3.2s ease-out infinite;animation-delay:var(--d)}
+@keyframes arte-onda{0%{opacity:.7;transform:scale(1)}70%{opacity:0;transform:scale(1.18)}100%{opacity:0}}
+.arte-divulgacion-acceso-abierto .arco{transform-box:view-box;transform-origin:240px 160px;animation:arte-abre .7s 1.9s cubic-bezier(.3,1.5,.5,1) both}
+@keyframes arte-abre{from{transform:none}to{transform:translateY(-26px)}}
+.arte-divulgacion-acceso-abierto .arco{transform:translateY(-26px)}
+.arte-galeria .foto-cae{animation:arte-cae .8s cubic-bezier(.3,1.3,.5,1) both;animation-delay:var(--d)}
+.arte-galeria .marco-foto{fill:rgba(243,238,228,.08);stroke:#F3EEE4;stroke-width:2.6}
+.arte-galeria .paisaje{fill:none;stroke:#E6C77F;stroke-width:2;stroke-linejoin:round}
+.arte-galeria .sol{fill:#E6C77F}
+@keyframes arte-cae{from{opacity:0;transform:translateY(-60px)}}
+.arte-descargas .flecha{animation:arte-baja .7s 1.6s cubic-bezier(.3,1.3,.5,1) both}
+.arte-proyectos-tecnologicos .chip{fill:#E6C77F}
+.arte-especialidad .borla{transform-box:view-box;transform-origin:200px 140px;animation:arte-borla 2.4s 2.5s ease-in-out 2 alternate both}
+@keyframes arte-borla{from{transform:rotate(0)}to{transform:rotate(-4deg)}}
+@media (min-width:901px){.cab:has(.cab-arte) h1,.cab:has(.cab-arte) .cab-in > p,.cab:has(.cab-arte) .wrap > p{max-width:calc(100% - min(36vw,440px) - 24px)}}
