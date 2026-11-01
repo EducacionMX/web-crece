@@ -874,3 +874,19 @@ body.cartel-abierto{overflow:hidden}
  .page-perfil .cab{--remate-alto:36px}
  .page .cab > :is(.cab-in,.cab-grid){padding-bottom:calc(var(--remate-alto) + 32px)}
 }
+
+/* Portada: sección de investigación (sustituye al bloque de perfil personal) */
+.lineas-inv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.linea-inv{display:flex;flex-direction:column;gap:8px;padding:22px;background:var(--cal);border:1px solid var(--linea);text-decoration:none;color:inherit;transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s ease,box-shadow .3s ease}
+.linea-inv::before{content:"";width:11px;height:11px;border:2.5px solid var(--acento);transform:rotate(45deg);margin:2px 0 8px 2px}
+.linea-inv:hover{transform:translateY(-4px);border-color:var(--acento);box-shadow:0 18px 30px -20px rgba(46,34,28,.45);color:inherit}
+.linea-inv-t{font-family:var(--f-display);font-weight:600;font-size:20px;line-height:1.2}
+.linea-inv-d{font-size:14.5px;color:var(--tinta-2);line-height:1.5}
+.grupo-inv{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 32px;margin-top:22px;padding:30px;background:var(--banda);color:#F3EEE4}
+.grupo-inv h3{font-family:var(--f-display);font-weight:600;font-size:26px;line-height:1.15;margin:10px 0 8px;color:#fff}
+.grupo-inv p{margin:0;color:#E9E1D3;max-width:40em}
+.grupo-inv .ceja{color:var(--ocre-claro)}
+.grupo-inv .btn-2{color:#F3EEE4;border-color:#F3EEE4;background:transparent}
+.grupo-inv .btn-2:hover{background:#F3EEE4;color:var(--banda)}
+@media (max-width:900px){.lineas-inv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.lineas-inv{grid-template-columns:minmax(0,1fr)}}
