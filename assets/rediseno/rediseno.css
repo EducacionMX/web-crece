@@ -53,8 +53,8 @@ a{color:inherit}a:hover{color:#00577F}
 .figura{margin:0;position:relative}
 .paralaje{will-change:transform}
 .fachada{position:relative;aspect-ratio:1382/835;max-width:100%;overflow:hidden;background:#FFFFFF;clip-path:polygon(0 10%,10% 10%,10% 5%,20% 5%,20% 0,100% 0,100% 100%,0 100%)}
-.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;-webkit-mask-image:linear-gradient(100deg,#000 42%,transparent 58%);mask-image:linear-gradient(100deg,#000 42%,transparent 58%);-webkit-mask-size:300% 100%;mask-size:300% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:0 0;mask-position:0 0;animation:pinta 2.2s 4s cubic-bezier(.45,.05,.3,1) both,respira 22s 6.4s ease-in-out infinite alternate;transform-origin:50% 60%}
-.lineas{position:absolute;inset:0;width:100%;height:100%;opacity:0;animation:lineas-fuera 7s ease backwards;transition:opacity .5s ease;pointer-events:none}
+.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;-webkit-mask-image:linear-gradient(100deg,#000 42%,transparent 58%);mask-image:linear-gradient(100deg,#000 42%,transparent 58%);-webkit-mask-size:300% 100%;mask-size:300% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:0 0;mask-position:0 0;animation:pinta 2.2s 3s cubic-bezier(.45,.05,.3,1) both,respira 22s 5.4s ease-in-out infinite alternate;transform-origin:50% 60%}
+.lineas{position:absolute;inset:0;width:100%;height:100%;opacity:0;animation:lineas-fuera 6s ease backwards;transition:opacity .5s ease;pointer-events:none}
 .foto{transition:filter .5s ease}
 .trazo{fill:none;stroke:var(--banda);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0;animation:dibuja 2.4s .3s cubic-bezier(.55,.1,.3,1) both}
 .trazo.t2{animation-delay:.7s}.trazo.t3{animation-delay:1.1s}.trazo.t4{animation-delay:1.5s;stroke:var(--ocre);stroke-width:2}
