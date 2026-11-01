@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -69,235 +69,222 @@
     .member-card p { margin: 0; color: var(--gray); font-size: .9rem; }
     @media (max-width: 900px) { .profile-layout { grid-template-columns: 1fr; } .profile-aside { position: static; } .profile-grid, .member-grid { grid-template-columns: 1fr; } }
   </style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&amp;family=Public+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/rediseno/rediseno.css">
+<script src="assets/rediseno/rediseno.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="dep-header">
-  <div class="container dep-hdr">
-    <a class="dep-brand" href="index.html"><span class="dep-brand-name">DEP</span><span class="dep-brand-sub">Divisi&oacute;n de Estudios de Posgrado, ECE</span></a>
-    <nav class="dep-nav-main" id="menu-principal" aria-label="Principal">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">CRECE</a></li>
-        <li><a href="oferta-educativa.html">Formaci&oacute;n</a></li>
-        <li><a href="investigacion.html" aria-current="true">Investigaci&oacute;n</a></li>
-        <li><a href="publicaciones.html">Publicaciones</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      <a class="dep-cta dep-cta--menu" href="https://sdm.uienl.edu.mx/ece/" target="_blank" rel="noopener">Mis cursos y diplomados</a>
-      <a class="dep-cta dep-cta--menu" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener">Consultar constancia</a>
+<div class="page page-perfil">
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="marca" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M2 32V18h6v-6h6V4h6v8h6v6h6v14z" fill="none" stroke="#00577F" stroke-width="2.4" stroke-linejoin="miter"></path><path d="M14 32V20h6v12" fill="none" stroke="#B8892E" stroke-width="2.4"></path></svg>
+      <span class="marca-sigla">DEP</span>
+      <span class="marca-texto">División de Estudios de Posgrado · ECE</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú" hidden><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Menú</span></button>
+    <nav class="nav" id="menu-principal" aria-label="Principal">
+      <a href="nosotros.html">CRECE</a>
+      <a href="oferta-educativa.html">Formación</a>
+      <a href="convocatorias.html">Convocatorias</a>
+      <a href="investigacion.html">Investigación</a>
+      <a href="vectores.html">Vectores</a>
+      <a href="perfil-academico.html" aria-current="page">Perfil académico</a>
+      <a href="contacto.html">Contacto</a>
+    <div class="acciones">
+      <a class="btn btn-2" href="https://educacionmx.github.io/CRECE/">Constancias</a>
+      <a class="btn btn-1" href="https://sdm.uienl.edu.mx/ece/">Mis cursos</a>
+    </div>
     </nav>
-    <a class="dep-cta dep-cta--solid" href="https://sdm.uienl.edu.mx/ece/" target="_blank" rel="noopener">Mis cursos</a>
-    <a class="dep-cta" href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 15l2 2 4-4"/></svg>Consultar constancia</a>
-    <button class="dep-burger" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir men&uacute;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
 </header>
-<nav class="dep-subnav" aria-label="Investigaci&oacute;n">
-  <div class="container"><ul>
-    <li><a href="investigacion.html">L&iacute;neas y proyectos</a></li>
-    <li><a href="perfil-academico.html" aria-current="page">Perfil acad&eacute;mico</a></li>
-  </ul></div>
-</nav>
+<main id="contenido">
 
-  <main id="contenido">
-    <section class="page-hero">
-      <div class="container page-hero-inner">
-        <div class="breadcrumb"><a href="index.html">Inicio</a><span>/</span><a href="publicaciones.html">Publicaciones</a><span>/</span><span>Perfil acad&eacute;mico</span></div>
-        <h1>Perfil acad&eacute;mico</h1>
-        <p>Trayectorias acad&eacute;micas, identificadores, l&iacute;neas de investigaci&oacute;n y evidencias verificables de integrantes del CRECE.</p>
+<section class="cab" aria-labelledby="nombre">
+  <div class="wrap cab-grid">
+    <div class="retrato">
+      <div class="retrato-fondo"><img class="retrato-foto" src="assets/jose-alfredo-fernandez.jpg" width="222" height="231" decoding="async" fetchpriority="high" alt="Dr. José Alfredo Fernández González"></div>
+      <svg aria-hidden="true" class="retrato-marco" viewBox="0 0 100 100" preserveAspectRatio="none"><path pathLength="1" d="M0 9H12V1H88V9H100V100H0Z" vector-effect="non-scaling-stroke"></path></svg>
+    </div>
+    <div>
+      <nav class="miga" aria-label="Ruta"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span>Investigación</span><span aria-hidden="true">/</span><span>Perfil académico</span></nav>
+      <h1 class="nombre" id="nombre">Dr. José Alfredo Fernández González</h1>
+      <p class="cargo">Doctor en Educación con acentuación en Comunicación y Tecnología Educativa. Coordinador del CRECE y Director Editorial de la Revista Vectores, Escuela de Ciencias de la Educación.</p>
+      <div class="insignias">
+        <div class="insignia"><span class="sello">SNII</span><span><b>Candidato a Investigador Nacional</b><small>SNII · vigencia 2026-2029</small></span></div>
+        <div class="insignia"><span class="sello">PD</span><span><b>Perfil Deseable</b><small>PRODEP · vigencia 2026-2029</small></span></div>
       </div>
-    </section>
+      <div class="ids">
+        <a class="id" href="https://orcid.org/0000-0002-0487-7091"><span>ORCID</span>0000-0002-0487-7091</a>
+        <a class="id" href="https://scholar.google.com/citations?user=NVOZ-MIAAAAJ&amp;hl=es"><span>Google Académico</span>perfil</a>
+        <span class="id"><span>CVU</span>947644</span>
+        <a class="id" href="publicaciones.html">Producción académica</a>
+      </div>
+    </div>
+  </div>
+  <svg class="remate" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 46V32H220V20H340V8H1100V20H1220V32H1440V46Z" fill="#F3EEE4"></path></svg>
+</section>
 
-    <section class="section section--tint">
-      <div class="container">
-        <div class="profile-layout">
-          <aside class="profile-aside">
-            <img class="profile-photo-lg" src="assets/jose-alfredo-fernandez.jpg" width="222" height="231" decoding="async" alt="Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez">
-            <h2>Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez</h2>
-            <div class="profile-role">Coordinaci&oacute;n CRECE</div>
-            <p>Doctor en Educaci&oacute;n con Acentuaci&oacute;n en Comunicaci&oacute;n y Tecnolog&iacute;a Educativa.</p>
-            <div class="profile-links">
-              <a href="https://orcid.org/0000-0002-0487-7091" target="_blank" rel="noopener">ORCID: 0000-0002-0487-7091</a>
-              <a href="https://scholar.google.com/citations?user=NVOZ-MIAAAAJ&amp;hl=es" target="_blank" rel="noopener">Google Acad&eacute;mico</a>
-              <a href="publicaciones.html">Producci&oacute;n acad&eacute;mica</a>
-            </div>
-          </aside>
+<section class="wrap" aria-label="Indicadores">
+  <div class="cifras">
+    <div class="cifra"><div class="cifra-n txt" data-contador="7">7</div><div class="cifra-l">Productos con DOI, ISBN o ISSN</div></div>
+    <div class="cifra"><div class="cifra-n txt" data-contador="7">7</div><div class="cifra-l">Tesis de maestría y doctorado dirigidas</div></div>
+    <div class="cifra"><div class="cifra-n txt" data-contador="117">117</div><div class="cifra-l">Cursos en línea impartidos desde 2022</div></div>
+    <div class="cifra"><div class="cifra-n txt" data-contador="22931">22,931</div><div class="cifra-l">Docentes atendidos en formación continua</div></div>
+  </div>
+</section>
 
-          <div>
-            <article class="profile-main-card">
-              <span class="eyebrow">Perfil documentado</span>
-              <h2>Trayectoria acad&eacute;mica</h2>
-              <p>Este perfil concentra datos acad&eacute;micos verificables para presentar de manera ordenada la producci&oacute;n, l&iacute;neas de investigaci&oacute;n, formaci&oacute;n de recursos humanos, proyectos y actividades de divulgaci&oacute;n vinculadas al trabajo del CRECE.</p>
-              <div class="profile-grid">
-                <div class="profile-fact"><strong>CVU</strong><span>947644</span></div>
-                <div class="profile-fact"><strong>SNII</strong><span>Candidato</span></div>
-                <div class="profile-fact"><strong>Instituci&oacute;n</strong><span>Escuela de Ciencias de la Educaci&oacute;n</span></div>
-                <div class="profile-fact"><strong>Adscripci&oacute;n operativa</strong><span>Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa</span></div>
-              </div>
-            </article>
+<section class="wrap bloque">
+  <div class="dos">
+    <div>
+      <p class="ceja">Investigación</p>
+      <h2 class="h2">Líneas de investigación</h2>
+<p>Este perfil concentra datos acad&eacute;micos verificables para presentar de manera ordenada la producci&oacute;n, l&iacute;neas de investigaci&oacute;n, formaci&oacute;n de recursos humanos, proyectos y actividades de divulgaci&oacute;n vinculadas al trabajo del CRECE.</p>
+      <div class="lineas">
+        <span class="linea-i">Educación superior</span>
+        <span class="linea-i">Formación continua docente</span>
+        <span class="linea-i">Tecnología educativa</span>
+        <span class="linea-i">Inteligencia artificial aplicada a la educación</span>
+        <span class="linea-i">Educación en línea</span>
+      </div>
+    </div>
+    <div>
+      <p class="ceja">Formación</p>
+      <h2 class="h2">Trayectoria académica</h2>
+      <ol class="tray">
+        <li><b>Doctorado en Educación</b><span>Acentuación en Comunicación y Tecnología Educativa · ECE</span></li>
+        <li><b>Maestría en Psicopedagogía</b><span>ECE · promedio 10, primer lugar de generación</span></li>
+        <li><b>Licenciatura en Educación Primaria</b><span>Escuela Normal Miguel F. Martínez</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
 
-            <section class="profile-section-card">
-              <h2>L&iacute;neas de investigaci&oacute;n</h2>
-              <p>Educaci&oacute;n superior, formaci&oacute;n continua docente, tecnolog&iacute;a educativa, inteligencia artificial aplicada a la educaci&oacute;n y educaci&oacute;n en l&iacute;nea.</p>
-            </section>
+<section class="wrap" aria-labelledby="t-evid">
+  <p class="ceja">Evidencias verificables</p>
+  <h2 class="h2" id="t-evid">Expediente académico</h2>
+  <div class="pestanas" role="tablist" aria-label="Rubros del expediente">
+    <button class="tab" type="button" role="tab" id="tab-prod" aria-controls="panel-prod" aria-selected="true" tabindex="0">Producción</button>
+<button class="tab" type="button" role="tab" id="tab-rh" aria-controls="panel-rh" aria-selected="false" tabindex="-1">Formación de recursos humanos</button>
+<button class="tab" type="button" role="tab" id="tab-doc" aria-controls="panel-doc" aria-selected="false" tabindex="-1">Docencia</button>
+<button class="tab" type="button" role="tab" id="tab-ges" aria-controls="panel-ges" aria-selected="false" tabindex="-1">Gestión académica</button>
+<button class="tab" type="button" role="tab" id="tab-div" aria-controls="panel-div" aria-selected="false" tabindex="-1">Divulgación</button>
+  </div>
+    <div class="panel" role="tabpanel" id="panel-prod" aria-labelledby="tab-prod" tabindex="0">
+      <div class="criterio"><span class="crit">SNII · producción científica</span><span class="crit">PRODEP · generación del conocimiento</span></div>
+      <ol class="pubs" data-publicaciones>
+<li class="pub" style="--i: 0"><div class="pub-a">2024</div><div><div class="tipo">Artículo</div><h3 class="pub-t">Autorregulación emocional a través del arte de la pintura en alumnos de educación primaria</h3><p class="pub-r">Jacob Fernández González, María Dolores Montañez Almaguer y José Alfredo Fernández González. VECTORES, 4(1).</p><span class="pub-id">DOI 10.56375/ve4.1-36</span></div><div class="pub-l"><a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36">Ficha →</a><a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36/23">PDF →</a></div></li>
+<li class="pub" style="--i: 1"><div class="pub-a">2023</div><div><div class="tipo">Artículo</div><h3 class="pub-t">Implementación de teleformación ante el confinamiento sanitario por el COVID-19 en primaria</h3><p class="pub-r">Joan Alexis Rodríguez Villarreal, Arturo Delgado Santos y José Alfredo Fernández González. VECTORES, 2(2), 33-43.</p><span class="pub-id">DOI 10.56375/ve2.2-30</span></div><div class="pub-l"><a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14">Ficha →</a><a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14/11">PDF →</a></div></li>
+<li class="pub" style="--i: 2"><div class="pub-a">2023</div><div><div class="tipo">Capítulo de libro</div><h3 class="pub-t">Aprendizaje socioemocional: diagnóstico y propuestas emergentes después del COVID-19</h3><p class="pub-r">José Alfredo Fernández-González, María de Jesús Araiza-Vázquez y Yuliana Margarita Alcalá-Arriaga. En Educación en tiempos de crisis: pandemia, guerra e incertidumbre, cap. 3.</p><span class="pub-id">ISBN 978-607-8788-95-8</span></div><div class="pub-l"><a href="https://libros.uanl.mx/index.php/u/catalog/book/172">Ficha →</a><a href="https://libros.uanl.mx/index.php/u/catalog/download/172/239/591?inline=1">PDF →</a></div></li>
+<li class="pub" style="--i: 3"><div class="pub-a">2023</div><div><div class="tipo">Capítulo de libro</div><h3 class="pub-t">El docente ante entornos virtuales en el periodo de confinamiento: nuevos retos, habilidades y competencias</h3><p class="pub-r">Sergio Guadalupe Torres Flores, Víctor Alberto Jáuregui Montalvo y José Alfredo Fernández González. En Comunicación y tecnologías de la información en tiempos de pandemia, cap. 1.</p><span class="pub-id">ISBN 978-607-27-2257-6</span></div><div class="pub-l"><a href="https://www.researchgate.net/publication/388859311_Comunicacion_y_Tecnologias_de_la_informacion_en_tiempos_de_pandemia">Ficha →</a></div></li>
+<li class="pub" style="--i: 4"><div class="pub-a">2022</div><div><div class="tipo">Artículo</div><h3 class="pub-t">Necesidades emocionales en un grupo de tercer grado de primaria en confinamiento por COVID-19</h3><p class="pub-r">Yuliana Margarita Alcalá Arriaga, Joan Alexis Rodríguez Villarreal, Jacob Fernández González y José Alfredo Fernández González. VECTORES, 1(1), 106-115.</p><span class="pub-id">DOI 10.56375/ve1.1-17</span></div><div class="pub-l"><a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9">Ficha →</a><a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9/7">PDF →</a></div></li>
+<li class="pub" style="--i: 5"><div class="pub-a">2020</div><div><div class="tipo">Artículo</div><h3 class="pub-t">Planeamiento de la educación</h3><p class="pub-r">José Alfredo Fernández-González y María de Jesús Araiza-Vázquez. VinculaTégica EFAN, 6(2), 1917-1924.</p><span class="pub-id">DOI 10.29105/vtga6.2-697</span></div><div class="pub-l"><a href="https://vinculategica.uanl.mx/index.php/v/article/view/697">Ficha →</a><a href="https://vinculategica.uanl.mx/index.php/v/article/view/697/575">PDF →</a></div></li>
+<li class="pub" style="--i: 6"><div class="pub-a">2020</div><div><div class="tipo">Artículo</div><h3 class="pub-t">Experiencia docente en un grupo de tercer grado de primaria en tiempo de contingencia por el COVID-19</h3><p class="pub-r">José Alfredo Fernández González y María de Jesús Araiza Vázquez. Daena: International Journal of Good Conscience, 15(3), 1-23.</p><span class="pub-id">ISSN 1870-557X</span></div><div class="pub-l"><a href="https://www.spentamexico.org/v15-n3/A6.15%283%291-13.pdf">Ficha →</a></div></li>
+</ol>
+      <p class="nota perfil-memorias"><strong>Memorias y ponencias:</strong> apartado preparado para integrar registros cuando se cuente con ficha, programa, constancia, memoria publicada o enlace oficial.</p>
+      <div class="proceso">
+        <h3>En proceso</h3>
+        <ul>
+          <li>Educación inclusiva en la formación docente: una propuesta de innovación curricular ante la diversidad escolar. Con Rocío Tirado Velarde y Héctor Azael Hernández Moreno. [Revista, año y DOI por completar]</li>
+          <li>Energías verdes: experiencia docente innovadora en educación ambiental para primaria. Capítulo, con Rocío Tirado Velarde y Rodrigo Luna Guevara. Libro institucional 2026, Escuela Normal Miguel F. Martínez. En corrección tras dictamen.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="panel" role="tabpanel" id="panel-rh" aria-labelledby="tab-rh" tabindex="0" hidden>
+      <div class="criterio"><span class="crit">SNII · formación de recursos humanos</span><span class="crit">PRODEP · tutoría y dirección de tesis</span></div>
+      <h3 class="grupo-t">Maestría en Psicopedagogía <span>ECE · junio 2026</span></h3>
+      <div class="tarjetas">
+        <div class="tarj"><span class="tarj-k">Dulce María Salas de la Rosa</span><p class="tarj-t">Estrategias de aprendizaje y motivación académica en estudiantes universitarios: un estudio correlacional</p></div>
+        <div class="tarj"><span class="tarj-k">Norma Dalia Pérez Vizzuett</span><p class="tarj-t">Diseño de estrategia psicopedagógica con patrones para pensamiento matemático en bachillerato</p></div>
+        <div class="tarj"><span class="tarj-k">Luis Vladymir Cantu Peña</span><p class="tarj-t">Teatro con guiñol para fomentar la empatía en segundo grado de primaria</p></div>
+      </div>
+      <h3 class="grupo-t">Doctorado en Educación <span>ECE · Comunicación y Tecnología Educativa</span></h3>
+      <div class="tarjetas">
+        <div class="tarj"><span class="tarj-k">Yesenia Judith Hernández Luna</span><p class="tarj-t">IA generativa en la lectura y escritura argumentativa de secundaria</p></div>
+        <div class="tarj"><span class="tarj-k">Erika Ileana Vallejo Cadena</span><p class="tarj-t">Impacto de la inteligencia artificial en el aprendizaje del inglés en estudiantes de secundaria</p></div>
+      </div>
+      <h3 class="grupo-t">Maestría en Educación <span>Centro de Actualización del Magisterio de Monterrey</span></h3>
+      <div class="tarjetas">
+        <div class="tarj"><span class="tarj-k">José Alfonso Mendo Alanís</span><p class="tarj-t">Estrategias y herramientas que propicien el desarrollo socioemocional en grupos de sexto</p></div>
+        <div class="tarj"><span class="tarj-k">Oscar Yael Navarro Montes</span><p class="tarj-t">Inteligencia Artificial para optimizar y fortalecer procesos de aprendizaje en sexto grado</p></div>
+      </div>
+    </div>
+    <div class="panel" role="tabpanel" id="panel-doc" aria-labelledby="tab-doc" tabindex="0" hidden>
+      <div class="criterio"><span class="crit">PRODEP · docencia</span><span class="crit">SNII · trayectoria docente</span></div>
+      <div class="tarjetas">
+        <div class="tarj"><span class="tarj-k">ECE · Doctorado · ago-dic 2026</span><p class="tarj-t">Tendencias de la Educación a Distancia</p><p class="tarj-d">Curso en Moodle con sesiones en línea.</p></div>
+        <div class="tarj"><span class="tarj-k">ECE · Doctorado · ago-dic 2026</span><p class="tarj-t">Corrientes Contemporáneas de Psicología</p><p class="tarj-d">Trabajo colaborativo por equipos.</p></div>
+        <div class="tarj"><span class="tarj-k">UPN Unidad 191 · Licenciatura</span><p class="tarj-t">Educación de Personas Jóvenes y Adultas, y Evaluación y seguimiento</p><p class="tarj-d">Cuarto y octavo semestre.</p></div>
+        <div class="tarj"><span class="tarj-k">CAMM · desde 2022</span><p class="tarj-t">Coordinación e instrucción de cursos en línea</p><p class="tarj-d">117 cursos, 565 grupos y 22,931 docentes atendidos, según CV de junio 2026.</p></div>
+        <div class="tarj"><span class="tarj-k">Educación superior · desde 2021</span><p class="tarj-t">Docencia en posgrado y formación continua</p><p class="tarj-d">Maestría en Psicopedagogía, Doctorado en Educación y oferta del CRECE.</p></div>
+        <div class="tarj"><span class="tarj-k">SENL · 2015-2025</span><p class="tarj-t">Docente de educación primaria</p><p class="tarj-d">Secretaría de Educación de Nuevo León.</p></div>
+      </div>
+    </div>
+    <div class="panel" role="tabpanel" id="panel-ges" aria-labelledby="tab-ges" tabindex="0" hidden>
+      <div class="criterio"><span class="crit">PRODEP · gestión académica</span></div>
+      <div class="tarjetas">
+        <div class="tarj"><span class="tarj-k">Desde octubre 2025</span><p class="tarj-t">Fundador y coordinador del CRECE</p><p class="tarj-d">Centro de Recursos para la Enseñanza y Ciencia Educativa de la ECE.</p></div>
+        <div class="tarj"><span class="tarj-k">Revista Vectores</span><p class="tarj-t">Director Editorial</p><p class="tarj-d">Revista arbitrada coeditada por la ECE, la UANL y la FCC.</p></div>
+        <div class="tarj"><span class="tarj-k">Desde agosto 2026</span><p class="tarj-t">Coordinador General del Turno Matutino</p><p class="tarj-d">Escuela de Ciencias de la Educación.</p></div>
+        <div class="tarj"><span class="tarj-k">2026</span><p class="tarj-t">Conformación del Comité de Ética de la ECE</p><p class="tarj-d">Propuesta e integración del comité.</p></div>
+        <div class="tarj"><span class="tarj-k">CRECE</span><p class="tarj-t">Grupo Innovación Educativa e Inteligencia Artificial</p><p class="tarj-d">Grupo de interés con tres doctores.</p></div>
+        <div class="tarj"><span class="tarj-k">ECE</span><p class="tarj-t">Coordinación de la Maestría en Psicopedagogía</p><p class="tarj-d">[Periodo por completar]</p></div>
+      </div>
+    </div>
+    <div class="panel" role="tabpanel" id="panel-div" aria-labelledby="tab-div" tabindex="0" hidden>
+      <div class="criterio"><span class="crit">SNII · acceso universal al conocimiento</span><span class="crit">PRODEP · vinculación</span></div>
+      <div class="tarjetas">
+        <div class="tarj"><span class="tarj-k">2026 · UANLeer</span><p class="tarj-t">Presentación de la Revista Vectores</p><p class="tarj-d">Jornadas de Revistas Académicas UANL, con la FCC.</p></div>
+        <div class="tarj"><span class="tarj-k">1 de octubre de 2025</span><p class="tarj-t">Convenio ECE-FCC UANL</p><p class="tarj-d">Para fortalecer y relanzar la Revista Vectores.</p></div>
+        <div class="tarj"><span class="tarj-k">2025</span><p class="tarj-t">Convenio ECE-CAMM</p><p class="tarj-d">Colaboración para la oferta de formación continua del CRECE.</p></div>
+        <div class="tarj"><span class="tarj-k">En preparación</span><p class="tarj-t">Datos y materiales abiertos con DOI</p><p class="tarj-d">Instrumentos y datos anonimizados de las investigaciones del CRECE en Zenodo.</p></div>
+      </div>
+    </div>
 
-            <section class="profile-section-card">
-              <h2>Producci&oacute;n acad&eacute;mica de autor&iacute;a y coautor&iacute;a</h2>
-              <p>Productos documentados con ficha editorial, DOI, ISBN, ISSN, PDF o enlace acad&eacute;mico disponible.</p>
-              <div class="product-list">
-                <article class="product-item">
-                  <h3>Planeamiento de la educaci&oacute;n</h3>
-                  <p class="product-meta">Jos&eacute; Alfredo Fern&aacute;ndez-Gonz&aacute;lez &middot; Mar&iacute;a de Jes&uacute;s Araiza-V&aacute;zquez. VinculaT&eacute;gica EFAN, 6(2), 1917-1924, 2020.</p>
-                  <p class="product-meta">DOI: 10.29105/vtga6.2-697</p>
-                  <div class="product-links">
-                    <a href="https://vinculategica.uanl.mx/index.php/v/article/view/697" target="_blank" rel="noopener">Ficha</a>
-                    <a href="https://vinculategica.uanl.mx/index.php/v/article/view/697/575" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </article>
-                <article class="product-item">
-                  <h3>Autorregulaci&oacute;n emocional a trav&eacute;s del arte de la pintura en alumnos de educaci&oacute;n primaria</h3>
-                  <p class="product-meta">Jacob Fern&aacute;ndez Gonz&aacute;lez &middot; Mar&iacute;a Dolores Monta&ntilde;ez Almaguer &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. VECTORES, 4(1), 2024.</p>
-                  <p class="product-meta">DOI: 10.56375/ve4.1-36</p>
-                  <div class="product-links">
-                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36" target="_blank" rel="noopener">Ficha</a>
-                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36/23" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </article>
-                <article class="product-item">
-                  <h3>Implementaci&oacute;n de teleformaci&oacute;n ante el confinamiento sanitario por el COVID-19 en primaria</h3>
-                  <p class="product-meta">Joan Alexis Rodr&iacute;guez Villarreal &middot; Arturo Delgado Santos &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. VECTORES, 2(2), 33-43, 2023.</p>
-                  <p class="product-meta">DOI: 10.56375/ve2.2-30</p>
-                  <div class="product-links">
-                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14" target="_blank" rel="noopener">Ficha</a>
-                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14/11" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </article>
-                <article class="product-item">
-                  <h3>Aprendizaje socioemocional: Diagn&oacute;stico y propuestas emergentes despu&eacute;s del COVID-19</h3>
-                  <p class="product-meta">Jos&eacute; Alfredo Fern&aacute;ndez-Gonz&aacute;lez &middot; Mar&iacute;a de Jes&uacute;s Araiza-V&aacute;zquez &middot; Yuliana Margarita Alcal&aacute;-Arriaga. En <em>Educaci&oacute;n en Tiempos de Crisis: Pandemia, Guerra e Incertidumbre</em>, cap. 3, 2023.</p>
-                  <p class="product-meta">ISBN: 978-607-8788-95-8</p>
-                  <div class="product-links">
-                    <a href="https://libros.uanl.mx/index.php/u/catalog/book/172" target="_blank" rel="noopener">Ficha</a>
-                    <a href="https://libros.uanl.mx/index.php/u/catalog/download/172/239/591?inline=1" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </article>
-                <article class="product-item">
-                  <h3>El docente ante entornos virtuales en el periodo de confinamiento: Nuevos retos, habilidades y competencias</h3>
-                  <p class="product-meta">Sergio Guadalupe Torres Flores &middot; V&iacute;ctor Alberto J&aacute;uregui Montalvo &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. En <em>Comunicaci&oacute;n y tecnolog&iacute;as de la informaci&oacute;n en tiempos de pandemia</em>, cap. 1, 2023.</p>
-                  <p class="product-meta">ISBN: 978-607-27-2257-6</p>
-                  <div class="product-links">
-                    <a href="https://www.researchgate.net/publication/388859311_Comunicacion_y_Tecnologias_de_la_informacion_en_tiempos_de_pandemia" target="_blank" rel="noopener">Ficha / PDF</a>
-                  </div>
-                </article>
-                <article class="product-item">
-                  <h3>Necesidades emocionales en un grupo de tercer grado de primaria en confinamiento por COVID-19</h3>
-                  <p class="product-meta">Yuliana Margarita Alcal&aacute; Arriaga &middot; Joan Alexis Rodr&iacute;guez Villarreal &middot; Jacob Fern&aacute;ndez Gonz&aacute;lez &middot; Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez. VECTORES, 1(1), 106-115, 2022.</p>
-                  <p class="product-meta">DOI: 10.56375/ve1.1-17</p>
-                  <div class="product-links">
-                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9" target="_blank" rel="noopener">Ficha</a>
-                    <a href="https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9/7" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </article>
-                <article class="product-item">
-                  <h3>Experiencia docente en un grupo de tercer grado de primaria en tiempo de contingencia por el COVID-19</h3>
-                  <p class="product-meta">Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez &middot; Mar&iacute;a de Jes&uacute;s Araiza V&aacute;zquez. Daena: International Journal of Good Conscience, 15(3), 1-23, 2020.</p>
-                  <p class="product-meta">ISSN: 1870-557X</p>
-                  <div class="product-links">
-                    <a href="https://www.spentamexico.org/v15-n3/A6.15%283%291-13.pdf" target="_blank" rel="noopener">PDF</a>
-                  </div>
-                </article>
-              </div>
-              <div class="pending-note">
-                <p><strong>Memorias y ponencias:</strong> apartado preparado para integrar registros cuando se cuente con ficha, programa, constancia, memoria publicada o enlace oficial.</p>
-              </div>
-            </section>
+  <div class="verifica">
+    <p><b>Cada producto enlaza a su fuente</b>DOI, ISBN o ISSN con ficha editorial y PDF cuando está disponible. Los registros se actualizan desde ORCID.</p>
+    <a class="btn btn-claro" href="https://orcid.org/0000-0002-0487-7091">Verificar en ORCID</a>
+  </div>
+</section>
 
-            <section class="profile-section-card">
-              <h2>Formaci&oacute;n de recursos humanos</h2>
-              <p>Direcciones de tesis vinculadas a la Escuela de Ciencias de la Educaci&oacute;n y al CAMM, organizadas como evidencia acad&eacute;mica del trabajo formativo.</p>
-              <p class="section-kicker">Escuela de Ciencias de la Educaci&oacute;n</p>
-              <div class="thesis-list">
-                <article class="thesis-item">
-                  <h3>Estrategias de aprendizaje y motivaci&oacute;n acad&eacute;mica en estudiantes universitarios: un estudio correlacional</h3>
-                  <p class="thesis-meta">Dulce Mar&iacute;a Salas de la Rosa &middot; Maestr&iacute;a en Psicopedagog&iacute;a &middot; Junio 2026.</p>
-                </article>
-                <article class="thesis-item">
-                  <h3>Dise&ntilde;o de estrategia psicopedag&oacute;gica con patrones para pensamiento matem&aacute;tico en bachillerato</h3>
-                  <p class="thesis-meta">Norma Dalia P&eacute;rez Vizzuett &middot; Maestr&iacute;a en Psicopedagog&iacute;a &middot; Junio 2026.</p>
-                </article>
-                <article class="thesis-item">
-                  <h3>Teatro con gui&ntilde;ol para fomentar la empat&iacute;a en segundo grado de primaria</h3>
-                  <p class="thesis-meta">Luis Vladymir Cantu Pe&ntilde;a &middot; Maestr&iacute;a en Psicopedagog&iacute;a &middot; Junio 2026.</p>
-                </article>
-              </div>
-              <p class="section-kicker">Doctorado en Educaci&oacute;n, CTE</p>
-              <div class="thesis-list">
-                <article class="thesis-item">
-                  <h3>IA generativa en la lectura y escritura argumentativa de secundaria</h3>
-                  <p class="thesis-meta">Yesenia Judith Hern&aacute;ndez Luna &middot; Doctorado en Educaci&oacute;n con acentuaci&oacute;n en Comunicaci&oacute;n y Tecnolog&iacute;a Educativa.</p>
-                </article>
-                <article class="thesis-item">
-                  <h3>Impacto de la inteligencia artificial en el aprendizaje del ingl&eacute;s en estudiantes de secundaria</h3>
-                  <p class="thesis-meta">Erika Ileana Vallejo Cadena &middot; Doctorado en Educaci&oacute;n con acentuaci&oacute;n en Comunicaci&oacute;n y Tecnolog&iacute;a Educativa.</p>
-                </article>
-              </div>
-              <p class="section-kicker">Centro de Actualizaci&oacute;n del Magisterio de Monterrey</p>
-              <div class="thesis-list">
-                <article class="thesis-item">
-                  <h3>Estrategias y herramientas que propicien el desarrollo socioemocional en grupos de sexto</h3>
-                  <p class="thesis-meta">Jos&eacute; Alfonso Mendo Alan&iacute;s &middot; Maestr&iacute;a en Educaci&oacute;n.</p>
-                </article>
-                <article class="thesis-item">
-                  <h3>Inteligencia Artificial para optimizar y fortalecer procesos de aprendizaje en sexto grado</h3>
-                  <p class="thesis-meta">Oscar Yael Navarro Montes &middot; Maestr&iacute;a en Educaci&oacute;n.</p>
-                </article>
-              </div>
-            </section>
-
-            <section class="profile-section-card">
-              <h2>Evidencias acad&eacute;micas</h2>
-              <ul class="evidence-list">
+<section class="wrap perfil-evidencias">
+              <h2 class="h2">Evidencias acad&eacute;micas</h2>
+              <ul class="perfil-evidencias-lista">
                 <li><strong>Publicaciones:</strong> art&iacute;culos y cap&iacute;tulos con DOI, ISBN, ISSN, ficha editorial, PDF o enlace oficial.</li>
                 <li><strong>Formaci&oacute;n de recursos humanos:</strong> direcci&oacute;n de tesis con nombre, nivel, t&iacute;tulo, instituci&oacute;n y fecha cuando se encuentra disponible.</li>
                 <li><strong>Proyectos documentados:</strong> proyectos con objetivo, periodo, responsable, productos, evidencia y estado de avance.</li>
                 <li><strong>Divulgaci&oacute;n y acceso abierto:</strong> actividades y materiales p&uacute;blicos por integrar con respaldo verificable.</li>
               </ul>
             </section>
-
-            <section class="profile-section-card">
-              <h2>Perfiles acad&eacute;micos por integrar</h2>
+<section class="wrap perfiles-pendientes" aria-labelledby="t-pendientes">
+              <h2 id="t-pendientes">Perfiles acad&eacute;micos por integrar</h2>
               <p>Los dem&aacute;s perfiles se agregar&aacute;n cuando se definan los datos acad&eacute;micos que cada integrante desea publicar y las evidencias correspondientes.</p>
-              <div class="member-grid">
-                <article class="member-card"><h3>Dra. Roc&iacute;o Tirado Velarde</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
-                <article class="member-card"><h3>Dr. Jacob Fern&aacute;ndez Gonz&aacute;lez</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
-                <article class="member-card"><h3>Joan Alexis Rodr&iacute;guez Villarreal</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
+              <div class="perfiles-pendientes-grid">
+                <article class="perfil-pendiente"><h3>Dra. Roc&iacute;o Tirado Velarde</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
+                <article class="perfil-pendiente"><h3>Dr. Jacob Fern&aacute;ndez Gonz&aacute;lez</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
+                <article class="perfil-pendiente"><h3>Joan Alexis Rodr&iacute;guez Villarreal</h3><p>Perfil acad&eacute;mico por documentar.</p></article>
               </div>
             </section>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="divider-rule"></div>
-  <footer class="dep-footer">
-  <div class="container dep-ftr-grid">
-    <div class="dep-ftr-brand">
-      <p class="dep-ftr-name">DEP</p>
-      <p>Divisi&oacute;n de Estudios de Posgrado de la Escuela de Ciencias de la Educaci&oacute;n.</p>
-      <img src="assets/logo-crece.jpg" alt="CRECE, Centro de Recursos para la Ense&ntilde;anza y Ciencia Educativa" width="150" height="49" loading="lazy" decoding="async">
+</main>
+<footer class="pie">
+  <svg class="escalon" viewBox="0 0 1440 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V34H1180V22H1060V10H380V22H260V34H0Z" fill="#F3EEE4"></path></svg>
+  <div class="wrap pie-grid">
+    <div>
+      <h3>DEP</h3>
+      <img src="assets/logo-crece.jpg" alt="CRECE, Centro de Recursos para la Enseñanza y Ciencia Educativa" width="150" height="49" loading="lazy" decoding="async" style="display:block;width:150px;height:auto;margin-top:20px">
+      <p style="margin: 0; max-width: 22em">División de Estudios de Posgrado de la Escuela de Ciencias de la Educación, Gobierno de Nuevo León.</p>
+      <p style="margin: 14px 0 0; font-family: var(--f-dato); font-size: 14px">crece@dep.edu.mx</p>
     </div>
-    <nav aria-label="CRECE (pie)"><h2>CRECE</h2><ul><li><a href="nosotros.html">Acerca del CRECE</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="convenios.html">Convenios</a></li></ul></nav>
-    <nav aria-label="Formaci&oacute;n (pie)"><h2>Formaci&oacute;n</h2><ul><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li></ul></nav>
-    <nav aria-label="Conocimiento (pie)"><h2>Conocimiento</h2><ul><li><a href="investigacion.html">Investigaci&oacute;n</a></li><li><a href="vectores.html">Revista Vectores</a></li><li><a href="publicaciones.html">Editorial ECE</a></li><li><a href="divulgacion-acceso-abierto.html">Divulgaci&oacute;n y acceso abierto</a></li></ul></nav>
-    <nav aria-label="Contacto (pie)"><h2>Contacto</h2><ul><li><a href="mailto:crece@dep.edu.mx">crece@dep.edu.mx</a></li><li><a href="https://www.facebook.com/ece.edu.mx/" target="_blank" rel="noopener">Facebook ECE</a></li><li><a href="https://educacionmx.github.io/CRECE/" target="_blank" rel="noopener">Consultar constancia</a></li><li><a href="noticias.html">Noticias</a></li></ul></nav>
+    <div><h3>CRECE</h3><ul><li><a href="nosotros.html">Acerca del CRECE</a></li><li><a href="equipo.html">Equipo</a></li><li><a href="convenios.html">Convenios</a></li></ul></div>
+    <div><h3>Formación</h3><ul><li><a href="oferta-educativa.html">Oferta educativa</a></li><li><a href="convocatorias.html">Convocatorias</a></li><li><a href="https://educacionmx.github.io/CRECE/">Consultar constancia</a></li></ul></div>
+    <div><h3>Conocimiento</h3><ul><li><a href="investigacion.html">Investigación</a></li><li><a href="vectores.html">Revista Vectores</a></li><li><a href="publicaciones.html">Editorial ECE</a></li></ul></div>
   </div>
-  <div class="container dep-ftr-bottom">
-    <p>&copy; 2026 Divisi&oacute;n de Estudios de Posgrado y CRECE, Escuela de Ciencias de la Educaci&oacute;n.<br>Responsable del sitio web: Dr. Jos&eacute; Alfredo Fern&aacute;ndez Gonz&aacute;lez.</p>
-    <p><a href="https://ece.edu.mx/" target="_blank" rel="noopener">ECE</a> &middot; Gobierno de Nuevo Le&oacute;n</p>
-  </div>
+  <div class="wrap pie-legal"><span>© 2026 División de Estudios de Posgrado y CRECE, ECE<br>Responsable del sitio web: Dr. José Alfredo Fernández González.</span><a href="https://ece.edu.mx/">ece.edu.mx · Gobierno de Nuevo León</a></div>
 </footer>
-<script src="assets/site.js" defer></script>
+
+</div>
 </body>
 </html>

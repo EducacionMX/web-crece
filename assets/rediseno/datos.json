@@ -1,0 +1,329 @@
+{
+  "crece": {
+    "fundacion": "2025-09-10",
+    "grupos": 112,
+    "alumnos": 2301,
+    "convocatorias": 14,
+    "horasFormacion": 189800,
+    "corte": "2026-10-31"
+  },
+  "vectores": {
+    "inicioRecepcion": "2026-06-16",
+    "cierre": "2026-12-15"
+  },
+  "convocatoriasArchivo": [
+    {
+      "k": "camm",
+      "prog": "ECE-CAMM",
+      "fecha": "Oct 2026",
+      "titulo": "Cursos y diplomados extracurriculares, octubre a diciembre",
+      "desc": "Cerró el 21 de octubre por grupos llenos. Las personas inscritas continúan en la plataforma del CRECE. Te invitamos a estar al pendiente de próximas convocatorias.",
+      "estado": "Cerrada",
+      "tags": [
+        "Grupos llenos"
+      ],
+      "cartel": "assets/convocatoria-crece-camm-octubre-diciembre-2026.jpg",
+      "id": "convocatoria-ece-camm-octubre-diciembre-2026",
+      "enlaces": [
+        {
+          "texto": "Plataforma del CRECE",
+          "url": "https://sdm.uienl.edu.mx/ece/"
+        },
+        {
+          "texto": "crece@dep.edu.mx",
+          "url": "mailto:crece@dep.edu.mx"
+        }
+      ]
+    },
+    {
+      "k": "camm",
+      "prog": "ECE-CAMM",
+      "fecha": "Sep 2026",
+      "titulo": "Diplomados ECE-CAMM",
+      "desc": "La convocatoria anterior para diplomados de 120 horas concluyó el 30 de septiembre de 2026. Le siguió la convocatoria de cursos y diplomados de octubre a diciembre de 2026, también cerrada.",
+      "estado": "Concluida",
+      "tags": [
+        "120 h"
+      ],
+      "cartel": "assets/convocatoria-crece-camm-diplomados-octubre-2026.jpg"
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "Jun 2026",
+      "titulo": "Vol. 6, Núm. 1, enero a junio 2026",
+      "desc": "Recepción de artículos hasta el 15 de junio de 2026.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "May 2026",
+      "titulo": "Cursos gratuitos de actualización",
+      "desc": "Cursos con valor curricular para docentes, estudiantes y público interesado.",
+      "estado": "Concluida",
+      "tags": [
+        "Gratuito"
+      ],
+      "cartel": "assets/convocatoria-crece-mayo-2026.jpg"
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Abr 2026",
+      "titulo": "Cursos y diplomados extracurriculares",
+      "desc": "Cursos de 40 horas y diplomados de 120 horas.",
+      "estado": "Concluida",
+      "tags": [
+        "40 h",
+        "120 h"
+      ],
+      "cartel": "assets/convocatoria-crece-abril-2026.jpg"
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Feb 2026",
+      "titulo": "Del aula al artículo",
+      "desc": "Curso curricular de alfabetización informacional, recursos abiertos y escritura académica.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": "assets/convocatoria-crece-febrero-2026-1.jpg"
+    },
+    {
+      "k": "camm",
+      "prog": "CRECE y CAMM",
+      "fecha": "Feb 2026",
+      "titulo": "Oferta con validez USICAMM",
+      "desc": "Cursos y diplomados extracurriculares en colaboración con el CAMM.",
+      "estado": "Concluida",
+      "tags": [
+        "USICAMM"
+      ],
+      "cartel": "assets/convocatoria-crece-febrero-2026-2.jpg"
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Feb 2026",
+      "titulo": "Docencia transformadora",
+      "desc": "Diplomado para la Nueva Escuela Mexicana y preparación para el proceso de admisión.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": "assets/convocatoria-crece-diciembre-2025-1.jpg"
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Ene 2026",
+      "titulo": "Periodo invernal",
+      "desc": "Cursos y diplomados extracurriculares para el periodo invernal.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": "assets/convocatoria-crece-enero-2026.jpg"
+    },
+    {
+      "k": "posgrado",
+      "prog": "Maestría ECE",
+      "fecha": "Dic 2025",
+      "titulo": "Coloquio de Maestría 2025",
+      "desc": "La Subdirección Académica de la Escuela de Ciencias de la Educación convocó a alumnos y egresados de Maestría al Coloquio 2025, realizado el 10 de diciembre de 2025. El encuentro incluyó concurso de carteles científicos, ponencias de avances de tesis y memoria digital de avances de tesis. Dirigido a alumnos y exalumnos de Maestría de la ECE.",
+      "estado": "Concluida",
+      "tags": [
+        "Evento académico"
+      ],
+      "cartel": "assets/coloquio-maestria-2025.jpg",
+      "enlaces": [
+        {
+          "texto": "maestria@ece.edu.mx",
+          "url": "mailto:maestria@ece.edu.mx"
+        },
+        {
+          "texto": "crece@dep.edu.mx",
+          "url": "mailto:crece@dep.edu.mx"
+        }
+      ]
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Dic 2025",
+      "titulo": "Herramientas digitales e IA",
+      "desc": "Curso aplicado a la práctica docente, del 6 al 10 de diciembre de 2025.",
+      "estado": "Concluida",
+      "tags": [
+        "Gratuito"
+      ],
+      "cartel": "assets/convocatoria-crece-diciembre-2025-2.jpg"
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Nov 2025",
+      "titulo": "Tercera convocatoria extracurricular",
+      "desc": "Gestión educativa, hoja de cálculo, procesador de textos y software de presentaciones.",
+      "estado": "Concluida",
+      "tags": [
+        "USICAMM"
+      ],
+      "cartel": "assets/convocatoria-crece-noviembre-2025.jpg"
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "Nov 2025",
+      "titulo": "Convocatoria para publicación de artículos",
+      "desc": "Recepción hasta el 10 de noviembre de 2025, en la etapa de fortalecimiento editorial.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Oct 2025",
+      "titulo": "Cursos y diplomados, noviembre y diciembre",
+      "desc": "Oferta extracurricular para el cierre de 2025.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": "assets/convocatoria-crece-octubre-2025.jpg"
+    },
+    {
+      "k": "camm",
+      "prog": "ECE-CAMM",
+      "fecha": "Oct 2025",
+      "titulo": "Oferta ECE-CAMM",
+      "desc": "Diplomados de computación aplicada y educación socioemocional, y curso de gestión educativa.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": "assets/convocatoria-crece-octubre-2025-1.jpg"
+    },
+    {
+      "k": "crece",
+      "prog": "CRECE",
+      "fecha": "Oct 2025",
+      "titulo": "Docencia transformadora",
+      "desc": "Diplomado de estudio y preparación para el examen de admisión a educación básica.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": "assets/convocatoria-crece-octubre-2025-0.jpg"
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "May 2025",
+      "titulo": "Séptima emisión de la revista",
+      "desc": "Convocatoria abierta hasta el 30 de mayo de 2025.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "Oct 2024",
+      "titulo": "Sexta emisión de la revista",
+      "desc": "Convocatoria abierta hasta el 15 de octubre de 2024.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "May 2024",
+      "titulo": "Quinta emisión de la revista",
+      "desc": "Convocatoria abierta hasta el 15 de mayo de 2024.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "Nov 2023",
+      "titulo": "Cuarta emisión de la revista",
+      "desc": "Convocatoria abierta hasta el 15 de noviembre de 2023.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    },
+    {
+      "k": "vectores",
+      "prog": "Vectores",
+      "fecha": "May 2023",
+      "titulo": "Tercera emisión de la revista",
+      "desc": "Convocatoria abierta hasta el 30 de mayo de 2023.",
+      "estado": "Concluida",
+      "tags": [],
+      "cartel": null
+    }
+  ],
+  "publicaciones": [
+    {
+      "anio": "2024",
+      "tipo": "Artículo",
+      "titulo": "Autorregulación emocional a través del arte de la pintura en alumnos de educación primaria",
+      "ref": "Jacob Fernández González, María Dolores Montañez Almaguer y José Alfredo Fernández González. VECTORES, 4(1).",
+      "id": "DOI 10.56375/ve4.1-36",
+      "ficha": "https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36",
+      "pdf": "https://vectoreseducativos.uanl.mx/index.php/revista/article/view/36/23"
+    },
+    {
+      "anio": "2023",
+      "tipo": "Artículo",
+      "titulo": "Implementación de teleformación ante el confinamiento sanitario por el COVID-19 en primaria",
+      "ref": "Joan Alexis Rodríguez Villarreal, Arturo Delgado Santos y José Alfredo Fernández González. VECTORES, 2(2), 33-43.",
+      "id": "DOI 10.56375/ve2.2-30",
+      "ficha": "https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14",
+      "pdf": "https://vectoreseducativos.uanl.mx/index.php/revista/article/view/14/11"
+    },
+    {
+      "anio": "2023",
+      "tipo": "Capítulo de libro",
+      "titulo": "Aprendizaje socioemocional: diagnóstico y propuestas emergentes después del COVID-19",
+      "ref": "José Alfredo Fernández-González, María de Jesús Araiza-Vázquez y Yuliana Margarita Alcalá-Arriaga. En Educación en tiempos de crisis: pandemia, guerra e incertidumbre, cap. 3.",
+      "id": "ISBN 978-607-8788-95-8",
+      "ficha": "https://libros.uanl.mx/index.php/u/catalog/book/172",
+      "pdf": "https://libros.uanl.mx/index.php/u/catalog/download/172/239/591?inline=1"
+    },
+    {
+      "anio": "2023",
+      "tipo": "Capítulo de libro",
+      "titulo": "El docente ante entornos virtuales en el periodo de confinamiento: nuevos retos, habilidades y competencias",
+      "ref": "Sergio Guadalupe Torres Flores, Víctor Alberto Jáuregui Montalvo y José Alfredo Fernández González. En Comunicación y tecnologías de la información en tiempos de pandemia, cap. 1.",
+      "id": "ISBN 978-607-27-2257-6",
+      "ficha": "https://www.researchgate.net/publication/388859311_Comunicacion_y_Tecnologias_de_la_informacion_en_tiempos_de_pandemia",
+      "pdf": ""
+    },
+    {
+      "anio": "2022",
+      "tipo": "Artículo",
+      "titulo": "Necesidades emocionales en un grupo de tercer grado de primaria en confinamiento por COVID-19",
+      "ref": "Yuliana Margarita Alcalá Arriaga, Joan Alexis Rodríguez Villarreal, Jacob Fernández González y José Alfredo Fernández González. VECTORES, 1(1), 106-115.",
+      "id": "DOI 10.56375/ve1.1-17",
+      "ficha": "https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9",
+      "pdf": "https://vectoreseducativos.uanl.mx/index.php/revista/article/view/9/7"
+    },
+    {
+      "anio": "2020",
+      "tipo": "Artículo",
+      "titulo": "Planeamiento de la educación",
+      "ref": "José Alfredo Fernández-González y María de Jesús Araiza-Vázquez. VinculaTégica EFAN, 6(2), 1917-1924.",
+      "id": "DOI 10.29105/vtga6.2-697",
+      "ficha": "https://vinculategica.uanl.mx/index.php/v/article/view/697",
+      "pdf": "https://vinculategica.uanl.mx/index.php/v/article/view/697/575"
+    },
+    {
+      "anio": "2020",
+      "tipo": "Artículo",
+      "titulo": "Experiencia docente en un grupo de tercer grado de primaria en tiempo de contingencia por el COVID-19",
+      "ref": "José Alfredo Fernández González y María de Jesús Araiza Vázquez. Daena: International Journal of Good Conscience, 15(3), 1-23.",
+      "id": "ISSN 1870-557X",
+      "ficha": "https://www.spentamexico.org/v15-n3/A6.15%283%291-13.pdf",
+      "pdf": ""
+    }
+  ]
+}
