@@ -222,7 +222,7 @@
       elemento.textContent = formato.format(diasVectores);
     });
     todos('[data-convocatorias-abiertas]').forEach((elemento) => {
-      elemento.textContent = formato.format(diasVectores > 0 ? 2 : 1);
+      elemento.textContent = formato.format(diasVectores > 0 ? 3 : 2);
     });
     todos('[data-vectores-estado]').forEach((elemento) => {
       const abierta = diasVectores > 0;

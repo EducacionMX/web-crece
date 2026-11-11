@@ -15,32 +15,9 @@
     {
       "k": "camm",
       "prog": "ECE-CAMM",
-      "fecha": "Oct 2026",
-      "titulo": "Cursos y diplomados extracurriculares, octubre a diciembre",
-      "desc": "Cerró el 21 de octubre por grupos llenos. Las personas inscritas continúan en la plataforma del CRECE. Te invitamos a estar al pendiente de próximas convocatorias.",
-      "estado": "Cerrada",
-      "tags": [
-        "Grupos llenos"
-      ],
-      "cartel": "assets/convocatoria-crece-camm-octubre-diciembre-2026.jpg",
-      "id": "convocatoria-ece-camm-octubre-diciembre-2026",
-      "enlaces": [
-        {
-          "texto": "Plataforma del CRECE",
-          "url": "https://sdm.uienl.edu.mx/ece/"
-        },
-        {
-          "texto": "crece@dep.edu.mx",
-          "url": "mailto:crece@dep.edu.mx"
-        }
-      ]
-    },
-    {
-      "k": "camm",
-      "prog": "ECE-CAMM",
       "fecha": "Sep 2026",
       "titulo": "Diplomados ECE-CAMM",
-      "desc": "La convocatoria anterior para diplomados de 120 horas concluyó el 30 de septiembre de 2026. Le siguió la convocatoria de cursos y diplomados de octubre a diciembre de 2026, también cerrada.",
+      "desc": "La convocatoria anterior para diplomados de 120 horas concluyó el 30 de septiembre de 2026. Le siguió la convocatoria de cursos y diplomados de octubre a diciembre de 2026, vigente con nuevos grupos.",
       "estado": "Concluida",
       "tags": [
         "120 h"

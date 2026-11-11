@@ -231,6 +231,8 @@ a{color:inherit}a:hover{color:#00577F}
 .page-convocatorias .seccion{padding-block:72px}
 .page-convocatorias .sec-cab{margin-bottom:32px}
 .abiertas{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:22px;align-items:start}
+.abiertas > .conv:not(:last-child){grid-column:1}
+.abiertas > .conv:last-child:not(:first-child){grid-column:2;grid-row:1 / span 2}
 .page-convocatorias .conv{animation:asoma .7s cubic-bezier(.2,.8,.2,1) both}
 .conv + .conv{animation-delay:.12s}
 .page-convocatorias .conv-cab{padding:16px 24px}
@@ -285,7 +287,7 @@ a{color:inherit}a:hover{color:#00577F}
   .archivo,.pasos{grid-template-columns:repeat(2,minmax(0,1fr))}
   .paso:nth-child(3){padding-left:0;border-left:0}
 }
-@media (max-width:900px){.abiertas{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:900px){.abiertas{grid-template-columns:minmax(0,1fr)}.abiertas > .conv:not(:last-child),.abiertas > .conv:last-child:not(:first-child){grid-column:auto;grid-row:auto}}
 @media (max-width:560px){
   .archivo,.pasos{grid-template-columns:minmax(0,1fr)}
   .paso + .paso{padding-left:0;border-left:0;border-top:1px solid var(--linea)}
