@@ -15,9 +15,33 @@
     {
       "k": "camm",
       "prog": "ECE-CAMM",
+      "fecha": "Oct 2026",
+      "titulo": "Cursos y diplomados extracurriculares, octubre 2026",
+      "desc": "Cursos de 40 horas ($500) y diplomados de 120 horas ($1,200). Los inscritos en octubre concluyen los cursos el 29 de noviembre y los diplomados el 29 de diciembre de 2026. Sus constancias se envían en la primera semana de diciembre y de enero, respectivamente.",
+      "estado": "Concluida",
+      "tags": [
+        "40 h",
+        "120 h"
+      ],
+      "cartel": "assets/convocatoria-crece-camm-octubre-diciembre-2026.jpg",
+      "id": "convocatoria-ece-camm-octubre-2026",
+      "enlaces": [
+        {
+          "texto": "Plataforma del CRECE",
+          "url": "https://sdm.uienl.edu.mx/ece/"
+        },
+        {
+          "texto": "crece@dep.edu.mx",
+          "url": "mailto:crece@dep.edu.mx"
+        }
+      ]
+    },
+    {
+      "k": "camm",
+      "prog": "ECE-CAMM",
       "fecha": "Sep 2026",
       "titulo": "Diplomados ECE-CAMM",
-      "desc": "La convocatoria anterior para diplomados de 120 horas concluyó el 30 de septiembre de 2026. Le siguió la convocatoria de cursos y diplomados de octubre a diciembre de 2026, vigente con nuevos grupos.",
+      "desc": "La convocatoria anterior para diplomados de 120 horas concluyó el 30 de septiembre de 2026. Le siguió la convocatoria de cursos y diplomados de octubre de 2026.",
       "estado": "Concluida",
       "tags": [
         "120 h"
