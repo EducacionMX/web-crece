@@ -452,7 +452,7 @@ a{color:inherit}a:hover{color:#00577F}
 .page-convocatorias .conv-detalles a{color:var(--acento);text-decoration:underline}
 .page-convocatorias .btn{border-radius:0;font-family:var(--f-texto);letter-spacing:normal;padding-block:0;box-shadow:none;white-space:normal}
 .cartel-miniatura{display:grid;gap:8px;justify-items:center;align-self:start;color:var(--acento);font-size:14px;font-weight:600;text-decoration:none;margin-bottom:14px}
-.cartel-miniatura img{width:100%;max-width:220px;aspect-ratio:3/4;object-fit:contain;object-position:top;background:var(--cal);border:1px solid var(--linea);cursor:zoom-in;transition:transform .2s ease}
+.cartel-miniatura img{width:100%;max-width:220px;aspect-ratio:3/4;object-fit:contain;object-position:center;background:var(--cal);border:1px solid var(--linea);cursor:zoom-in;transition:transform .2s ease}
 .cartel-miniatura:hover img{transform:translateY(-3px)}
 .cartel-visor{position:fixed;inset:0;margin:auto;padding:20px;background:var(--cal);color:var(--tinta);border:2px solid var(--ocre);width:min(94vw,960px);max-width:94vw;max-height:94dvh;overflow:auto}
 .cartel-visor::backdrop{background:rgba(26,26,26,.88)}
